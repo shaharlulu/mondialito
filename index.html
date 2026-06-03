@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>ליגת חברים | מונדיאל 2026</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --bg0:#050609;--bg2:#0d1120;--bg3:#131829;--bg4:#1a2035;
+  --rim0:#1a2035;--rim1:#222c42;--rim2:#2d3a54;
+  --txt:#eef1fb;--muted:#6b7a99;--faint:#3d4a63;
+  --acc:#5b6ef5;--acc2:#7b5cf0;--acg:rgba(91,110,245,.22);
+  --grn:#00d97e;--gold:#f5b731;--red:#ff4757;
+  --gk:#f59e0b;--def:#3b82f6;--mid:#10b981;--fwd:#ef4444;
+}
+html{font-size:15px}
+body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg0);color:var(--txt);min-height:100vh;-webkit-font-smoothing:antialiased}
+button{font-family:inherit;cursor:pointer;touch-action:manipulation}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#090c14}::-webkit-scrollbar-thumb{background:var(--rim1);border-radius:3px}
+
+/* AUTH */
+#auth-bg{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;
+  background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(91,110,245,.18),transparent 70%),var(--bg0)}
+.abox{background:var(--bg2);border:1px solid var(--rim1);border-radius:22px;padding:40px 36px;width:100%;max-width:400px;box-shadow:0 32px 80px rgba(0,0,0,.6)}
+.aball{width:64px;height:64px;background:linear-gradient(135deg,var(--acc),var(--acc2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 12px;box-shadow:0 8px 28px var(--acg)}
+.alogo{text-align:center;margin-bottom:28px}
+.alogo h1{font-size:22px;font-weight:800;letter-spacing:-.5px}
+.alogo p{font-size:12px;color:var(--muted);margin-top:5px}
+.atabs{display:flex;gap:3px;background:var(--bg3);border-radius:11px;padding:4px;margin-bottom:22px}
+.atab{flex:1;padding:10px;border:none;background:none;color:var(--muted);border-radius:8px;font-size:13px;font-weight:600;transition:.15s;min-height:40px}
+.atab.on{background:var(--bg2);color:var(--txt);box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.fg{margin-bottom:14px}
+.fl{display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
+.fi{width:100%;padding:11px 13px;background:var(--bg3);border:1.5px solid var(--rim1);border-radius:10px;color:var(--txt);font-size:16px;outline:none;transition:.15s;font-family:inherit}
+.fi:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--acg)}
+.fi::placeholder{color:var(--faint)}
+.aerr{min-height:16px;color:var(--red);font-size:12px;text-align:center;margin:6px 0;font-weight:500}
+.abtn{width:100%;padding:13px;background:linear-gradient(135deg,var(--acc),var(--acc2));border:none;border-radius:11px;color:#fff;font-size:14px;font-weight:700;transition:.2s;margin-top:4px;min-height:46px}
+.abtn:hover{opacity:.9;transform:translateY(-1px)}
+.aswitch{text-align:center;font-size:12px;color:var(--faint);margin-top:12px}
+.alink{background:none;border:none;color:var(--acc);font-size:12px;font-weight:600;padding:2px 4px;min-height:28px}
+
+/* SHELL */
+#shell{display:none;flex-direction:column;min-height:100vh}
+#shell.on{display:flex}
+.nav{background:rgba(9,12,20,.96);border-bottom:1px solid var(--rim0);
+  display:flex;align-items:center;justify-content:space-between;padding:0 16px;height:56px;
+  position:sticky;top:0;z-index:100;gap:8px}
+.brand{display:flex;align-items:center;gap:9px;flex-shrink:0}
+.bic{width:34px;height:34px;background:linear-gradient(135deg,var(--acc),var(--acc2));border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.bnm{font-weight:800;font-size:13px;line-height:1.15}
+.byr{font-size:10px;color:var(--faint);display:block}
+.ntabs{display:flex;gap:2px;background:var(--bg2);border:1px solid var(--rim0);border-radius:11px;padding:3px;flex-shrink:0}
+.nt{background:none;border:none;color:var(--muted);padding:7px 11px;border-radius:8px;font-size:12px;font-weight:700;transition:.15s;white-space:nowrap;min-height:34px}
+.nt:hover{color:var(--txt)}.nt.on{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff}
+.nt.fnt.on{background:linear-gradient(135deg,#059669,#10b981)}
+.ubtn{display:flex;align-items:center;gap:7px;background:var(--bg2);border:1px solid var(--rim1);border-radius:30px;padding:4px 12px 4px 4px;min-height:36px;flex-shrink:0}
+.uav{width:27px;height:27px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;flex-shrink:0}
+.unm{font-size:12px;color:var(--muted);font-weight:600}
+.main{flex:1;padding:20px 16px 80px;max-width:860px;margin:0 auto;width:100%}
+.page{display:none}.page.on{display:block}
+.ph{margin-bottom:16px}
+.ph h2{font-size:19px;font-weight:800;letter-spacing:-.4px;margin-bottom:4px}
+.ph p{font-size:12px;color:var(--muted)}
+.phr{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px}
+.lvchip{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--grn);font-weight:700}
+.lvd{width:6px;height:6px;background:var(--grn);border-radius:50%;animation:pd 1.2s infinite}
+@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.2;transform:scale(2)}}
+.pills{display:flex;gap:5px;margin-bottom:14px;flex-wrap:wrap}
+.pill{padding:7px 14px;border:1.5px solid var(--rim0);border-radius:30px;background:transparent;color:var(--muted);font-size:12px;font-weight:600;transition:.15s;min-height:36px;display:inline-flex;align-items:center}
+.pill:hover{color:var(--txt);border-color:var(--rim2)}.pill.on{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;border-color:transparent}
+
+/* MATCH CARD */
+.mg{display:flex;flex-direction:column;gap:9px}
+.mc{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:18px;overflow:hidden;position:relative;transition:border-color .2s}
+.mc.lv{border-color:rgba(0,217,126,.3)}.mc.pd{border-color:rgba(91,110,245,.4)}
+.mcbar{position:absolute;top:0;right:0;width:3px;height:100%}
+.mc.lv .mcbar{background:linear-gradient(180deg,var(--grn),rgba(0,217,126,.15))}
+.mc.pd .mcbar{background:linear-gradient(180deg,var(--acc),rgba(91,110,245,.15))}
+.mci{padding:14px 18px 14px 14px}
+.mct{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.stg{font-size:10px;font-weight:700;padding:2px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.3px}
+.sg{background:rgba(91,110,245,.12);color:#8597ff;border:1px solid rgba(91,110,245,.2)}
+.sr{background:rgba(123,92,240,.12);color:#a78bfa;border:1px solid rgba(123,92,240,.2)}
+.sf{background:rgba(255,71,87,.12);color:#ff8a9a;border:1px solid rgba(255,71,87,.2)}
+.lvbadge{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;color:var(--grn)}
+.tlbl{font-size:11px;color:var(--faint)}
+.trow{display:grid;grid-template-columns:1fr 88px 1fr;align-items:center;gap:8px}
+.tsd{display:flex;flex-direction:column;align-items:center;gap:6px}
+.flr{border-radius:50%;overflow:hidden;border:2.5px solid var(--rim1);background:var(--bg3);flex-shrink:0}
+.tnm{font-size:12px;font-weight:700;text-align:center;color:#c5cde6}
+.scbox{text-align:center}
+.scnum{font-family:ui-monospace,monospace;font-size:26px;font-weight:700;letter-spacing:4px}
+.scnum.live{color:var(--grn);text-shadow:0 0 18px rgba(0,217,126,.4)}
+.vsxt{font-size:12px;color:var(--rim2);font-weight:700;letter-spacing:2px}
+.pz{margin-top:11px;padding-top:11px;border-top:1px solid rgba(26,32,53,.7)}
+.ph2{font-size:11px;color:var(--faint);margin-bottom:7px}
+.prow2{display:flex;align-items:center;gap:7px}
+.sci{width:46px;height:40px;background:var(--bg3);border:1.5px solid var(--rim2);border-radius:9px;color:var(--txt);font-family:monospace;font-size:18px;font-weight:700;text-align:center;outline:none;transition:.15s;-moz-appearance:textfield}
+.sci::-webkit-inner-spin-button,.sci::-webkit-outer-spin-button{-webkit-appearance:none}
+.sci:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--acg)}
+.scsep{color:var(--faint);font-weight:800;font-size:16px}
+.svb{margin-right:auto;padding:8px 14px;background:linear-gradient(135deg,var(--acc),var(--acc2));border:none;border-radius:9px;color:#fff;font-size:12px;font-weight:700;min-height:36px}
+.svb:hover{opacity:.88}.svb.ok{background:rgba(0,217,126,.12);color:var(--grn);border:1.5px solid rgba(0,217,126,.3)}
+.ptsb{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
+.pt5{background:rgba(0,217,126,.1);color:#34d399;border:1px solid rgba(0,217,126,.25)}
+.pt3{background:rgba(91,110,245,.1);color:#818cf8;border:1px solid rgba(91,110,245,.25)}
+.pt0{background:rgba(61,74,99,.08);color:var(--muted);border:1px solid var(--rim0)}
+
+/* LEADERBOARD */
+.lbc{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:18px;overflow:hidden;margin-bottom:14px}
+.lbhd{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border-bottom:1px solid var(--rim0)}
+.lbht{font-size:13px;font-weight:700}
+.lbr{display:flex;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid rgba(26,32,53,.4);transition:background .15s;min-height:54px}
+.lbr:last-child{border-bottom:none}.lbr.me{background:rgba(91,110,245,.05)}.lbr:hover{background:var(--bg3)}
+.rkw{width:30px;text-align:center;flex-shrink:0}
+.rkm{font-size:16px}.rkn{font-family:monospace;font-size:11px;color:var(--faint)}
+.lbav{width:36px;height:36px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff}
+.lbi{flex:1;min-width:0}
+.lbnm{font-size:13px;font-weight:700}
+.lbsb{font-size:11px;color:var(--faint);margin-top:2px}
+.metag{font-size:10px;background:rgba(91,110,245,.15);color:#818cf8;padding:2px 7px;border-radius:8px;font-weight:700;margin-right:5px}
+.lbpts{font-family:monospace;font-size:21px;font-weight:700;color:var(--acc);flex-shrink:0}
+.skg{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.skitem{background:var(--bg2);border:1px solid var(--rim0);border-radius:11px;padding:9px 13px;display:flex;align-items:center;justify-content:space-between}
+.skl{font-size:12px;color:var(--muted)}.skp{font-family:monospace;font-size:13px;font-weight:700;color:var(--acc)}
+
+/* BONUS */
+.bhero{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:18px}
+.bh{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:18px;padding:18px;text-align:center}
+.bh.gd{border-color:rgba(245,183,49,.25)}.bh.pu{border-color:rgba(91,110,245,.25)}
+.bhic{font-size:32px;margin-bottom:7px;display:block}
+.bht{font-size:13px;font-weight:700;margin-bottom:5px}
+.bhp{font-family:monospace;font-size:24px;font-weight:800}
+.bh.gd .bhp{color:var(--gold)}.bh.pu .bhp{color:#a78bfa}
+.sec{font-size:10px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.sec::after{content:"";flex:1;height:1px;background:var(--rim0)}
+.tpg{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:18px}
+.tp{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:13px;padding:11px 5px;display:flex;flex-direction:column;align-items:center;gap:7px;min-height:80px}
+.tp:hover{border-color:var(--rim2)}.tp.on{border-color:var(--acc);background:rgba(91,110,245,.08)}
+.tpfl{width:42px;height:42px;border-radius:50%;overflow:hidden;background:var(--bg3);border:2px solid var(--rim1);flex-shrink:0}
+.tpnm{font-size:11px;font-weight:600;text-align:center;color:var(--muted)}.tp.on .tpnm{color:#818cf8}
+.spg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
+.spc{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:13px;padding:10px 11px;display:flex;align-items:center;gap:10px;min-height:68px}
+.spc:hover{border-color:var(--rim2)}.spc.on{border-color:var(--gold);background:rgba(245,183,49,.06)}
+.spph{width:48px;height:48px;border-radius:50%;flex-shrink:0;border:2.5px solid var(--rim1);overflow:hidden;background:var(--bg3)}
+.spnm{font-size:12px;font-weight:700}.spc.on .spnm{color:var(--gold)}
+.spnat{font-size:11px;color:var(--faint);margin-top:2px}
+.cbwrap{background:rgba(91,110,245,.06);border:1.5px solid rgba(91,110,245,.2);border-radius:13px;padding:13px;margin-bottom:16px;display:none}
+.cbwrap.on{display:block}
+.cbt{font-size:11px;font-weight:700;color:#818cf8;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.cbg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.bok{background:rgba(0,217,126,.08);border:1.5px solid rgba(0,217,126,.2);color:var(--grn);border-radius:11px;padding:10px;font-size:13px;font-weight:600;text-align:center;display:none;margin-bottom:12px}
+.bok.on{display:block}
+.bigbtn{width:100%;padding:13px;background:linear-gradient(135deg,var(--acc),var(--acc2));border:none;border-radius:12px;color:#fff;font-size:14px;font-weight:800;min-height:46px}
+.bigbtn:hover:not(:disabled){opacity:.88;transform:translateY(-1px)}
+.bigbtn:disabled{background:var(--rim0);color:var(--faint);cursor:not-allowed;transform:none}
+
+/* FANTASY */
+.f-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px}
+.f-title{font-size:19px;font-weight:800;letter-spacing:-.4px}
+.f-sub{font-size:12px;color:var(--muted);margin-top:3px}
+.budstrip{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:14px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.budmain{flex:1;min-width:160px}
+.budlbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
+.budtrack{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.budfill{height:100%;background:linear-gradient(90deg,#10b981,#3b82f6);border-radius:3px;transition:width .4s;width:0%}
+.budfill.warn{background:linear-gradient(90deg,#f59e0b,#ef4444)}
+.budnums{display:flex;justify-content:space-between;margin-top:4px;font-size:11px}
+.budleft{font-family:monospace;font-size:22px;font-weight:800;color:var(--grn);flex-shrink:0}
+.budleft.warn{color:var(--red)}
+.poc-row{display:flex;gap:8px;flex-wrap:wrap}
+.poc{font-size:11px;font-weight:700;display:flex;align-items:center;gap:4px}
+.poc-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.flayout{display:grid;grid-template-columns:1fr 320px;gap:14px;align-items:start}
+@media(max-width:720px){.flayout{grid-template-columns:1fr}}
+.pitch-card{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:18px;overflow:hidden}
+.pitch-hd{padding:12px 15px;border-bottom:1px solid var(--rim0);display:flex;align-items:center;justify-content:space-between}
+.pitch-htitle{font-size:13px;font-weight:700}
+.save-sq-btn{padding:8px 16px;background:linear-gradient(135deg,#059669,#10b981);border:none;border-radius:9px;color:#fff;font-size:12px;font-weight:700;min-height:36px}
+.save-sq-btn:hover{opacity:.88}.save-sq-btn:disabled{background:var(--rim0);color:var(--faint)}
+.pitch{
+  background:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px),
+    linear-gradient(170deg,#0a4d1a,#0d6224 40%,#0a4d1a 55%,#0d6224 95%,#0a4d1a);
+  background-size:44px 44px,44px 44px,100% 100%;
+  padding:12px 6px 10px;position:relative;min-height:480px}
+.pitch::before{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);
+  width:68px;height:68px;border:1.5px solid rgba(255,255,255,.1);border-radius:50%;pointer-events:none}
+.pitch::after{content:"";position:absolute;top:50%;left:8px;right:8px;height:1.5px;
+  background:rgba(255,255,255,.08);transform:translateY(-50%);pointer-events:none}
+.pitch-row{display:flex;justify-content:center;gap:5px;margin-bottom:4px;position:relative;z-index:2}
+.bench-row{margin-top:10px;padding-top:10px;border-top:2px dashed rgba(255,255,255,.1)}
+.bench-lbl{text-align:center;font-size:10px;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;position:relative;z-index:2}
+.slot{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:60px;padding:4px 2px;position:relative;z-index:3}
+.slot-circle{width:52px;height:52px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;transition:border-color .18s,box-shadow .18s;cursor:pointer;font-size:22px;opacity:.6}
+.slot.filled .slot-circle{opacity:1;border-color:rgba(255,255,255,.55);box-shadow:0 3px 12px rgba(0,0,0,.5)}
+.slot.active .slot-circle{border-color:var(--gold)!important;box-shadow:0 0 0 3px rgba(245,183,49,.4);background:rgba(245,183,49,.1);opacity:1}
+.slot:not(.filled):hover .slot-circle{border-color:rgba(255,255,255,.4);opacity:.85}
+.slot-circle img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.slot-name{font-size:10px;font-weight:700;color:rgba(255,255,255,.9);text-align:center;max-width:62px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:rgba(0,0,0,.55);padding:2px 6px;border-radius:7px;pointer-events:none}
+.slot-badge{font-size:8px;font-weight:700;padding:1px 5px;border-radius:5px;color:#fff;pointer-events:none}
+.b-gk{background:var(--gk)}.b-def{background:var(--def)}.b-mid{background:var(--mid)}.b-fwd{background:var(--fwd)}
+.b-cap{background:var(--gold);color:#000}.b-vc{background:var(--acc)}
+.slot-menu{position:absolute;bottom:calc(100% + 4px);left:50%;transform:translateX(-50%);
+  background:var(--bg2);border:1px solid var(--rim2);border-radius:10px;padding:4px;
+  display:none;gap:3px;z-index:50;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.6)}
+.slot.filled:hover .slot-menu{display:flex}
+.smb{padding:5px 10px;border:none;border-radius:7px;font-size:10px;font-weight:700;min-height:28px}
+.smb-c{background:var(--gold);color:#000}.smb-v{background:var(--acc);color:#fff}.smb-r{background:var(--red);color:#fff}
+.sel-panel{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;max-height:700px;position:sticky;top:70px}
+.sel-hd{padding:12px 14px;border-bottom:1px solid var(--rim0);flex-shrink:0}
+.sel-hint{font-size:12px;font-weight:700;color:var(--gold);background:rgba(245,183,49,.08);border:1px solid rgba(245,183,49,.2);border-radius:9px;padding:8px 12px;margin-bottom:10px;display:none;text-align:center}
+.sel-hint.show{display:block}
+.sel-search{width:100%;padding:9px 11px;background:var(--bg3);border:1.5px solid var(--rim1);border-radius:9px;color:var(--txt);font-size:16px;outline:none;transition:.15s;margin-bottom:8px;font-family:inherit}
+.sel-search:focus{border-color:var(--acc)}
+.sel-search::placeholder{color:var(--faint)}
+.pos-btns{display:flex;gap:4px;margin-bottom:6px}
+.posb{flex:1;padding:7px 4px;border:1.5px solid var(--rim1);border-radius:8px;background:var(--bg3);color:var(--muted);font-size:11px;font-weight:700;min-height:34px}
+.posb.gk.on{background:rgba(245,158,11,.15);border-color:var(--gk);color:var(--gk)}
+.posb.def.on{background:rgba(59,130,246,.15);border-color:var(--def);color:var(--def)}
+.posb.mid.on{background:rgba(16,185,129,.15);border-color:var(--mid);color:var(--mid)}
+.posb.fwd.on{background:rgba(239,68,68,.15);border-color:var(--fwd);color:var(--fwd)}
+.posb.all.on{background:var(--acg);border-color:var(--acc);color:var(--acc)}
+.sort-strip{display:flex;align-items:center;gap:5px}
+.sort-lbl{font-size:11px;color:var(--faint);flex-shrink:0}
+.sortb{padding:4px 8px;border:1px solid var(--rim1);border-radius:6px;background:var(--bg3);color:var(--muted);font-size:11px;min-height:28px}
+.sortb.on{border-color:var(--acc);color:var(--acc);background:var(--acg)}
+.player-list{flex:1;overflow-y:auto;padding:6px}
+.player-list::-webkit-scrollbar{width:3px}
+.player-list::-webkit-scrollbar-thumb{background:var(--rim1);border-radius:2px}
+.pli{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:12px;border:1.5px solid transparent;min-height:58px;transition:background .12s,border-color .12s}
+.pli.clickable{cursor:pointer}
+.pli.clickable:hover{background:var(--bg3);border-color:var(--rim1)}
+.pli.clickable:active{background:var(--bg4)}
+.pli.insq{opacity:.35;cursor:default}
+.pli.insq:hover{background:transparent;border-color:transparent}
+.pli.selrow{background:rgba(91,110,245,.1);border-color:rgba(91,110,245,.35)}
+.pli-photo{width:42px;height:42px;border-radius:50%;overflow:hidden;border:2px solid var(--rim1);flex-shrink:0;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--muted)}
+.pli-photo img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.pli-info{flex:1;min-width:0}
+.pli-name{font-size:13px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pli-meta{display:flex;align-items:center;gap:5px;margin-top:3px}
+.pos-chip{font-size:9px;font-weight:700;padding:2px 6px;border-radius:5px;color:#fff}
+.pli-price{font-family:monospace;font-size:14px;font-weight:700;flex-shrink:0}
+.add-btn{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));border:none;color:#fff;font-size:18px;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:transform .15s;line-height:1}
+.add-btn:hover{transform:scale(1.15)}.add-btn:disabled{background:var(--rim1);color:var(--faint);cursor:not-allowed;transform:none;opacity:.5}
+.saved-banner{background:rgba(16,185,129,.08);border:1.5px solid rgba(16,185,129,.2);color:var(--grn);border-radius:11px;padding:10px;font-size:13px;font-weight:600;text-align:center;display:none;margin-bottom:13px}
+.saved-banner.on{display:block}
+
+/* TOAST */
+#tw{position:fixed;bottom:20px;right:20px;z-index:999;display:none}
+#tw.on{display:block;animation:tin .35s cubic-bezier(.16,1,.3,1)}
+@keyframes tin{from{transform:translateX(110%) scale(.9);opacity:0}to{transform:translateX(0) scale(1);opacity:1}}
+.toast{background:var(--bg2);border:1.5px solid rgba(0,217,126,.38);border-radius:16px;padding:13px 15px;min-width:230px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.toast-x{position:absolute;top:10px;left:12px;background:none;border:none;color:var(--faint);font-size:16px;line-height:1;padding:4px;min-height:28px}
+.thd{display:flex;align-items:center;gap:7px;margin-bottom:9px}
+.tic{width:28px;height:28px;background:linear-gradient(135deg,var(--grn),#00b866);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px}
+.ttt{font-size:11px;font-weight:800;color:var(--grn);text-transform:uppercase;letter-spacing:.5px}
+.tbd{display:flex;align-items:center;gap:9px}
+.tfl{width:30px;height:30px;border-radius:50%;overflow:hidden;border:1.5px solid var(--rim1);flex-shrink:0;background:var(--bg3)}
+.tsc{font-family:monospace;font-size:20px;font-weight:800}
+.tmn{font-size:11px;color:var(--faint);margin-top:4px}
+
+@media(max-width:580px){
+  .bhero,.tpg{grid-template-columns:1fr 1fr}
+  .spg{grid-template-columns:1fr}
+  .ntabs .nt{padding:5px 8px;font-size:11px}
+}
+
+/* Fantasy alignment fixes */
+.slot { direction: ltr; }  /* prevent RTL from shifting slot elements */
+.pli  { direction: ltr; }  /* prevent RTL offset on player rows */
+.add-btn { margin-left: 0; flex-shrink: 0; }
+.pli-price { text-align: center; min-width: 44px; }
+
+
+/* RTL fix - direction on wrapper, not html/body (prevents click offset) */
+#rtl-root { direction: rtl; }
+body { overflow-y: scroll; } /* force scrollbar on right even in RTL */
+
+/* ── NATION FILTER BUTTONS ── */
+.nat-btns{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:6px}
+.natb{padding:4px 7px;border:1.5px solid var(--rim1);border-radius:7px;background:var(--bg3);
+  color:var(--muted);font-size:12px;min-height:28px;transition:.15s;line-height:1}
+.natb:hover{border-color:var(--rim2);color:var(--txt)}
+.natb.on{border-color:var(--acc);background:var(--acg);color:var(--acc)}
+
+/* ── DESIGN OVERHAUL ── */
+/* Glassmorphism cards */
+.mc,.lbc,.bh,.tp,.spc,.pitch-card,.sel-panel,.budstrip{
+  box-shadow:0 4px 24px rgba(0,0,0,.35);
+}
+/* Smoother hover on match cards */
+.mc:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.5)}
+/* Nav glow */
+.nav{box-shadow:0 1px 0 var(--rim0),0 4px 20px rgba(0,0,0,.4)}
+/* Better active nav tab */
+.nt.on{box-shadow:0 2px 10px rgba(91,110,245,.4)}
+.nt.fnt.on{box-shadow:0 2px 10px rgba(16,185,129,.4)}
+/* Leaderboard rank glow for top 3 */
+.lbr:first-child{background:rgba(245,183,49,.04)}
+.lbr:nth-child(2){background:rgba(180,180,180,.03)}
+.lbr:nth-child(3){background:rgba(180,100,50,.03)}
+/* Better pitch */
+.pitch{border-radius:0 0 18px 18px}
+/* Slot hover effect */
+.slot:hover .slot-circle{transform:scale(1.08)}
+.slot-circle{transition:border-color .18s,box-shadow .18s,transform .15s}
+/* Better player rows */
+.pli{border-radius:14px}
+.pli.clickable:hover{box-shadow:0 2px 10px rgba(0,0,0,.3)}
+/* Budget bar glow */
+.budfill{box-shadow:0 0 8px rgba(16,185,129,.4)}
+.budfill.warn{box-shadow:0 0 8px rgba(239,68,68,.4)}
+/* Improved pills */
+.pill:hover{transform:translateY(-1px)}
+.pill.on{box-shadow:0 2px 10px rgba(91,110,245,.35)}
+/* Better bonus cards */
+.tp:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.spc:hover{transform:translateY(-1px)}
+/* Section header */
+.sec{padding-bottom:8px;margin-bottom:12px}
+/* Leaderboard points glow */
+.lbpts{text-shadow:0 0 20px rgba(91,110,245,.4)}
+/* Input focus ring */
+.fi:focus,.sel-search:focus,.sci:focus{
+  box-shadow:0 0 0 3px var(--acg),0 2px 8px rgba(91,110,245,.2)}
+/* Auth box glow */
+.abox{box-shadow:0 32px 80px rgba(0,0,0,.6),0 0 0 1px rgba(91,110,245,.1),inset 0 1px 0 rgba(255,255,255,.03)}
+/* Add btn pulse on hover */
+.add-btn:hover{box-shadow:0 0 12px rgba(91,110,245,.5)}
+/* Save button glow */
+.save-sq-btn:hover{box-shadow:0 4px 14px rgba(5,150,105,.4)}
+/* Toast shadow */
+.toast{box-shadow:0 24px 60px rgba(0,0,0,.7),0 0 0 1px rgba(0,217,126,.1)}
+/* Selected player row */
+.pli.selrow{box-shadow:0 2px 12px rgba(91,110,245,.25)}
+/* Slot active glow */
+.slot.active .slot-circle{box-shadow:0 0 0 3px rgba(245,183,49,.45),0 4px 20px rgba(245,183,49,.3)!important}
+/* Fantasy layout gap refinement */
+.flayout{gap:16px}
+/* Better scrollbar */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-thumb{background:var(--rim2);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:var(--acc)}
+/* Smooth transitions everywhere */
+.atab,.nt,.pill,.posb,.natb,.sortb,.tp,.spc,.pli,.lbr{transition:all .15s ease}
+
+
+/* GROUPS */
+.groups-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:4px}
+.group-card{background:var(--bg2);border:1.5px solid var(--rim0);border-radius:16px;overflow:hidden;transition:transform .15s,border-color .2s}
+.group-card:hover{transform:translateY(-2px);border-color:var(--rim2)}
+.group-hd{background:linear-gradient(135deg,var(--acc),var(--acc2));padding:10px 14px;display:flex;align-items:center;justify-content:space-between}
+.group-letter{font-size:18px;font-weight:900;color:#fff}
+.group-badge{font-size:10px;color:rgba(255,255,255,.7);font-weight:600}
+.group-teams{padding:8px}
+.group-team{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:9px;transition:background .15s;cursor:pointer}
+.group-team:hover{background:var(--bg3)}
+.group-team-flag{width:24px;height:17px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--bg3)}
+.group-team-flag img{width:100%;height:100%;object-fit:cover;display:block}
+.group-team-name{font-size:12px;font-weight:600;color:var(--txt);flex:1}
+.group-team-pts{font-family:monospace;font-size:11px;color:var(--muted)}
+@media(max-width:580px){.groups-grid{grid-template-columns:1fr 1fr}}
+
+</style>
+</head>
+<body>
+
+<!-- AUTH -->
+<div id="rtl-root">
+<div id="auth-bg">
+  <div class="abox">
+    <div class="alogo">
+      <div class="aball">&#9917;</div>
+      <h1>&#1500;&#1497;&#1490;&#1514; &#1495;&#1489;&#1512;&#1497;&#1501;</h1>
+      <p>&#1502;&#1493;&#1504;&#1491;&#1497;&#1488;&#1500; 2026</p>
+    </div>
+    <div class="atabs">
+      <button class="atab on" id="tab-login" onclick="setMode('login',this)">&#1492;&#1514;&#1495;&#1489;&#1512;&#1493;&#1514;</button>
+      <button class="atab" id="tab-reg" onclick="setMode('register',this)">&#1492;&#1512;&#1513;&#1502;&#1492;</button>
+    </div>
+    <div class="fg"><label class="fl">&#1513;&#1501; &#1502;&#1513;&#1514;&#1502;&#1513;</label>
+      <input class="fi" id="a-user" type="text" autocomplete="username"></div>
+    <div class="fg"><label class="fl">&#1505;&#1497;&#1505;&#1502;&#1488;</label>
+      <input class="fi" id="a-pass" type="password" autocomplete="current-password"></div>
+    <div class="aerr" id="a-err"></div>
+    <button class="abtn" id="a-btn" onclick="doAuth()">&#1492;&#1514;&#1495;&#1489;&#1512;</button>
+    <p class="aswitch">
+      <span id="sw-txt">&#1488;&#1497;&#1503; &#1500;&#1498; &#1495;&#1513;&#1489;&#1493;&#1503;?</span>
+      <button class="alink" onclick="toggleMode()" id="sw-btn">&#1492;&#1497;&#1512;&#1513;&#1501; &#1495;&#1497;&#1504;&#1501;</button>
+    </p>
+  </div>
+</div>
+
+<!-- SHELL -->
+<div id="shell">
+  <nav class="nav">
+    <div class="brand">
+      <div class="bic">&#9917;</div>
+      <div><span class="bnm">&#1500;&#1497;&#1490;&#1514; &#1495;&#1489;&#1512;&#1497;&#1501;</span><span class="byr">&#1502;&#1493;&#1504;&#1491;&#1497;&#1488;&#1500; 2026</span></div>
+    </div>
+    <div class="ntabs">
+      <button class="nt on"  onclick="goPage('matches',this)">&#1502;&#1513;&#1495;&#1511;&#1497;&#1501;</button>
+      <button class="nt"     onclick="goPage('lb',this)">&#1496;&#1489;&#1500;&#1492;</button>
+      <button class="nt"     onclick="goPage('bonus',this)">&#1489;&#1493;&#1504;&#1493;&#1505; &#11088;</button>
+      <button class="nt" onclick="goPage('groups',this)">&#127959; &#1489;&#1514;&#1497;&#1501;</button>
+      <button class="nt fnt" onclick="goPage('fantasy',this)">&#127918; &#1508;&#1504;&#1496;&#1494;&#1497;</button>
+    </div>
+    <div class="ubtn" onclick="logout()">
+      <div class="uav" id="u-av">&#1513;</div>
+      <span class="unm" id="u-nm">&#1513;&#1495;&#1512;</span>
+    </div>
+  </nav>
+  <div class="main">
+    <div class="page on" id="pg-matches">
+      <div class="ph"><h2>&#1500;&#1493;&#1495; &#1502;&#1513;&#1495;&#1511;&#1497;&#1501;</h2><p>&#1492;&#1490;&#1513; &#1504;&#1497;&#1495;&#1493;&#1513; &#1500;&#1508;&#1504;&#1497; &#1492;&#1508;&#1514;&#1497;&#1495;&#1492;</p></div>
+      <div class="pills">
+        <button class="pill on" onclick="filtM('all',this)">הכל</button>
+        <button class="pill" onclick="filtM('live',this)"><span style="color:var(--grn)">&#9679;</span> לייב</button>
+        <button class="pill" onclick="filtM('group',this)">שלב בתים</button>
+        <button class="pill" onclick="filtM('r32',this)">שמינית</button>
+        <button class="pill" onclick="filtM('r16',this)">שישית</button>
+        <button class="pill" onclick="filtM('qf',this)">רבע</button>
+        <button class="pill" onclick="filtM('sf',this)">חצי</button>
+      </div>
+      <div class="mg" id="m-list"></div>
+    </div>
+    <div class="page" id="pg-lb">
+      <div class="phr">
+<h2 id="lb-title">טבלת הימורים</h2>        <div class="lvchip"><div class="lvd"></div>LIVE</div>
+      </div>
+      <div class="lbc">
+        <div class="lbhd"><span class="lbht">&#1491;&#1497;&#1512;&#1493;&#1490; &#1513;&#1495;&#1511;&#1504;&#1497;&#1501;</span><div class="lvchip"><div class="lvd"></div>&#1495;&#1497;</div></div>
+        <div id="lb-rows"></div>
+      </div>
+      <div class="skg">
+        <div class="skitem"><span class="skl">&#1514;&#1493;&#1510;&#1488;&#1492; &#1502;&#1491;&#1493;&#1497;&#1511;&#1514;</span><span class="skp">+5</span></div>
+        <div class="skitem"><span class="skl">&#1499;&#1497;&#1493;&#1493;&#1503; &#1504;&#1499;&#1493;&#1503;</span><span class="skp">+3</span></div>
+        <div class="skitem"><span class="skl">&#1504;&#1489;&#1495;&#1512;&#1514; &#1494;&#1493;&#1499;&#1492;</span><span class="skp">+20</span></div>
+        <div class="skitem"><span class="skl">&#1502;&#1500;&#1498; &#1513;&#1506;&#1512;&#1497;&#1501;</span><span class="skp">+15</span></div>
+      </div>
+    </div>
+    <div class="page" id="pg-bonus">
+      <div class="ph"><h2>&#1492;&#1497;&#1502;&#1493;&#1512;&#1497; &#1489;&#1493;&#1504;&#1493;&#1505;</h2><p>&#1504;&#1497;&#1495;&#1493;&#1513;&#1497;&#1501; &#1500;&#1496;&#1493;&#1512;&#1504;&#1497;&#1512; &#1499;&#1493;&#1500;&#1493;</p></div>
+      <div class="bhero">
+        <div class="bh gd"><span class="bhic">&#127942;</span><div class="bht">&#1504;&#1489;&#1495;&#1512;&#1514; &#1494;&#1493;&#1499;&#1492;</div><div class="bhp">+20</div></div>
+        <div class="bh pu"><span class="bhic">&#128081;</span><div class="bht">&#1502;&#1500;&#1498; &#1513;&#1506;&#1512;&#1497;&#1501;</div><div class="bhp">+15</div></div>
+      </div>
+      <div class="cbwrap" id="cur-b">
+        <div class="cbt">&#1492;&#1504;&#1497;&#1495;&#1493;&#1513;&#1497;&#1501; &#1513;&#1500;&#1498;</div>
+        <div class="cbg" id="cb-vals"></div>
+      </div>
+      <div class="bok" id="b-ok">&#10003; &#1504;&#1513;&#1502;&#1512;&#1493;!</div>
+      <div class="sec">&#1489;&#1495;&#1512; &#1504;&#1489;&#1495;&#1512;&#1514; &#1494;&#1493;&#1499;&#1492;</div>
+      <div class="tpg" id="tp-g"></div>
+      <div class="sec">&#1489;&#1495;&#1512; &#1502;&#1500;&#1498; &#1513;&#1506;&#1512;&#1497;&#1501;</div>
+      <div class="spg" id="sp-g"></div>
+      <button class="bigbtn" id="b-btn" onclick="saveBonus()" disabled>&#1513;&#1502;&#1493;&#1512; &#1504;&#1497;&#1495;&#1493;&#1513;&#1497; &#1489;&#1493;&#1504;&#1493;&#1505;</button>
+    </div>
+    
+    <!-- GROUPS PAGE -->
+    <div class="page" id="pg-groups">
+      <div class="ph"><h2>&#127959; &#1513;&#1500;&#1489; &#1492;&#1489;&#1514;&#1497;&#1501;</h2><p>&#1499;&#1500; &#1492;&#1489;&#1514;&#1497;&#1501; &#1493;&#1492;&#1514;&#1493;&#1510;&#1488;&#1493;&#1514;</p></div>
+      <div id="groups-grid" class="groups-grid"></div>
+    </div>
+
+    <div class="page" id="pg-fantasy">
+      <div class="f-hdr">
+        <div><div class="f-title">&#127918; &#1500;&#1497;&#1490;&#1514; &#1508;&#1504;&#1496;&#1494;&#1497;</div>
+          <div class="f-sub">11+4 &#1513;&#1495;&#1511;&#1504;&#1497;&#1501; &#1489;&#1514;&#1511;&#1510;&#1497;&#1489; $120M</div></div>
+      </div>
+      <div class="budstrip">
+        <div class="budmain">
+          <div class="budlbl">&#1514;&#1511;&#1510;&#1497;&#1489;</div>
+          <div class="budtrack"><div class="budfill" id="bfill"></div></div>
+          <div class="budnums">
+            <span style="font-family:monospace;font-size:12px;font-weight:700" id="bused">$0.0M</span>
+            <span style="color:var(--muted)">/ $120M</span>
+          </div>
+        </div>
+        <div style="text-align:center">
+          <div class="budlbl">&#1504;&#1493;&#1514;&#1512;</div>
+          <div class="budleft" id="bleft">$120M</div>
+        </div>
+        <div class="poc-row">
+          <div class="poc"><div class="poc-dot" style="background:var(--gk)"></div><span id="c-gk" style="color:var(--gk)">0/2</span></div>
+          <div class="poc"><div class="poc-dot" style="background:var(--def)"></div><span id="c-def" style="color:var(--def)">0/5</span></div>
+          <div class="poc"><div class="poc-dot" style="background:var(--mid)"></div><span id="c-mid" style="color:var(--mid)">0/4</span></div>
+          <div class="poc"><div class="poc-dot" style="background:var(--fwd)"></div><span id="c-fwd" style="color:var(--fwd)">0/4</span></div>
+        </div>
+      </div>
+      <div class="saved-banner" id="tsaved">&#10003; &#1492;&#1492;&#1512;&#1499;&#1489; &#1504;&#1513;&#1502;&#1512;!</div>
+      <div class="flayout">
+        <div class="pitch-card">
+          <div class="pitch-hd">
+            <span class="pitch-htitle">&#9917; &#1492;&#1502;&#1490;&#1512;&#1513;</span>
+            <button class="save-sq-btn" id="sbtn" onclick="saveSquad()" disabled>&#1513;&#1502;&#1493;&#1512; &#1492;&#1512;&#1499;&#1489;</button>
+          </div>
+          <div class="pitch">
+            <div class="pitch-row" id="row-fwd"></div>
+            <div class="pitch-row" id="row-mid"></div>
+            <div class="pitch-row" id="row-def"></div>
+            <div class="pitch-row" id="row-gk"></div>
+            <div class="bench-lbl">&#8212; &#1505;&#1508;&#1505;&#1500; &#8212;</div>
+            <div class="pitch-row bench-row" id="row-bench"></div>
+          </div>
+        </div>
+        <div class="sel-panel">
+          <div class="sel-hd">
+            <div class="sel-hint" id="sel-hint">&#1500;&#1495;&#1509; &#1506;&#1500; &#1506;&#1502;&#1491;&#1492; &#1489;&#1502;&#1490;&#1512;&#1513;</div>
+            <input class="sel-search" id="sel-q" type="text" oninput="filterSel()" placeholder="&#128269; &#1495;&#1508;&#1513;...">
+            <div class="pos-btns">
+              <button class="posb all on" onclick="setSF('ALL',this)">&#1492;&#1499;&#1500;</button>
+              <button class="posb gk"  onclick="setSF('GK',this)">GK</button>
+              <button class="posb def" onclick="setSF('DEF',this)">DEF</button>
+              <button class="posb mid" onclick="setSF('MID',this)">MID</button>
+              <button class="posb fwd" onclick="setSF('FWD',this)">FWD</button>
+            </div>
+            <div class="nat-btns" id="nat-btns"><button class="natb on" onclick="setNat('ALL',this)">הכל</button><button class="natb" onclick="setNat('AR',this)">ARG</button><button class="natb" onclick="setNat('AT',this)">AUT</button><button class="natb" onclick="setNat('AU',this)">AUS</button><button class="natb" onclick="setNat('BA',this)">BIH</button><button class="natb" onclick="setNat('BE',this)">BEL</button><button class="natb" onclick="setNat('BR',this)">BRA</button><button class="natb" onclick="setNat('CA',this)">CAN</button><button class="natb" onclick="setNat('CD',this)">COD</button><button class="natb" onclick="setNat('CH',this)">SUI</button><button class="natb" onclick="setNat('CI',this)">CIV</button><button class="natb" onclick="setNat('CO',this)">COL</button><button class="natb" onclick="setNat('CV',this)">CPV</button><button class="natb" onclick="setNat('CW',this)">CUR</button><button class="natb" onclick="setNat('CZ',this)">CZE</button><button class="natb" onclick="setNat('DE',this)">GER</button><button class="natb" onclick="setNat('DZ',this)">ALG</button><button class="natb" onclick="setNat('EC',this)">ECU</button><button class="natb" onclick="setNat('EG',this)">EGY</button><button class="natb" onclick="setNat('ES',this)">ESP</button><button class="natb" onclick="setNat('FR',this)">FRA</button><button class="natb" onclick="setNat('GB-ENG',this)">ENG</button><button class="natb" onclick="setNat('GB-SCT',this)">SCO</button><button class="natb" onclick="setNat('GH',this)">GHA</button><button class="natb" onclick="setNat('HR',this)">CRO</button><button class="natb" onclick="setNat('HT',this)">HAI</button><button class="natb" onclick="setNat('IQ',this)">IRQ</button><button class="natb" onclick="setNat('IR',this)">IRI</button><button class="natb" onclick="setNat('JO',this)">JOR</button><button class="natb" onclick="setNat('JP',this)">JPN</button><button class="natb" onclick="setNat('KR',this)">KOR</button><button class="natb" onclick="setNat('MA',this)">MAR</button><button class="natb" onclick="setNat('MX',this)">MEX</button><button class="natb" onclick="setNat('NL',this)">NED</button><button class="natb" onclick="setNat('NO',this)">NOR</button><button class="natb" onclick="setNat('NZ',this)">NZL</button><button class="natb" onclick="setNat('PA',this)">PAN</button><button class="natb" onclick="setNat('PT',this)">POR</button><button class="natb" onclick="setNat('PY',this)">PAR</button><button class="natb" onclick="setNat('QA',this)">QAT</button><button class="natb" onclick="setNat('SA',this)">KSA</button><button class="natb" onclick="setNat('SE',this)">SWE</button><button class="natb" onclick="setNat('SN',this)">SEN</button><button class="natb" onclick="setNat('TN',this)">TUN</button><button class="natb" onclick="setNat('TR',this)">TUR</button><button class="natb" onclick="setNat('US',this)">USA</button><button class="natb" onclick="setNat('UY',this)">URU</button><button class="natb" onclick="setNat('UZ',this)">UZB</button><button class="natb" onclick="setNat('ZA',this)">RSA</button></div>
+            <div class="sort-strip">
+              <span class="sort-lbl">&#1502;&#1497;&#1493;&#1503;:</span>
+              <button class="sortb on" onclick="setSS('price',this)">&#1502;&#1495;&#1497;&#1512;</button>
+              <button class="sortb"    onclick="setSS('rating',this)">&#1491;&#1497;&#1512;&#1493;&#1490;</button>
+              <button class="sortb"    onclick="setSS('name',this)">&#1513;&#1501;</button>
+            </div>
+          </div>
+          <div class="player-list" id="plist"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="tw">
+  <div class="toast">
+    <button class="toast-x" onclick="document.getElementById('tw').classList.remove('on')">&#215;</button>
+    <div class="thd"><div class="tic">&#9917;</div><span class="ttt">&#1513;&#1506;&#1512;!</span></div>
+    <div class="tbd">
+      <div class="tfl" id="t-hfl"></div>
+      <span class="tsc" id="t-sc"></span>
+      <div class="tfl" id="t-afl"></div>
+    </div>
+    <div class="tmn" id="t-mn"></div>
+  </div>
+</div>
+
+<script>
+/* ── ASSETS (pure JSON, no strings built in JS) ── */
+var FLAGS    = {"MX": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0MwMDAwIi8+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQyIiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSI0MiIgZmlsbD0iIzAwNjg0NyIvPjwvc3ZnPg==", "KR": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAzMDg3Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "ZA": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA3NzQ5Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNGRkI4MUMiLz48L3N2Zz4=", "CZ": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAzMDg3Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "CA": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0MwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "CH": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0MwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "QA": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjOEQxQjNEIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiM4RDFCM0QiLz48L3N2Zz4=", "BA": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAzMDg3Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGQ0QwMCIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDMwODciLz48L3N2Zz4=", "BR": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA5YzNiIi8+PHBvbHlnb24gcG9pbnRzPSIzMCwzIDU3LDIxIDMwLDM5IDMsMjEiIGZpbGw9IiNmZmRmMDAiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjIxIiByPSIxMCIgZmlsbD0iIzAwMjc3NiIvPjwvc3ZnPg==", "MA": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQzEyNzJEIi8+PHBvbHlnb24gcG9pbnRzPSIzMCwxMSAzMi45LDIwIDQxLjYsMjAgMzQuOSwyNS4yIDM3LjQsMzQuMSAzMCwyOC41IDIyLjYsMzQuMSAyNS4xLDI1LjIgMTguNCwyMCAyNy4xLDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDYyMzMiIHN0cm9rZS13aWR0aD0iMS44Ii8+PC9zdmc+", "HT": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAzMDg3Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0NDMDAwMCIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDMwODciLz48L3N2Zz4=", "GB-SCT": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAzMDg3Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDMwODciLz48L3N2Zz4=", "US": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQjIyMjM0Ii8+PHJlY3QgeT0iNiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYiIGZpbGw9IndoaXRlIi8+PHJlY3QgeT0iMTgiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHk9IjMwIiB3aWR0aD0iNjAiIGhlaWdodD0iNiIgZmlsbD0id2hpdGUiLz48cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjIiIGZpbGw9IiMzQzNCNkUiLz48L3N2Zz4=", "PY": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRDUyQjFFIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDM4QTgiLz48L3N2Zz4=", "AU": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAwMDhCIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNGRjAwMDAiLz48L3N2Zz4=", "TR": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0MwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "DE": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRkZDRTAwIi8+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjI4IiBmaWxsPSIjREQwMDAwIi8+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjE0IiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+", "EC": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRkZEMTAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iIzAwMzA4NyIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "CI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRjc3RjAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDlBNDQiLz48L3N2Zz4=", "CW": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAyQjdGIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0Y5RTgxNCIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDJCN0YiLz48L3N2Zz4=", "NL": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMjE0NjhCIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0id2hpdGUiLz48cmVjdCB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNBRTFDMjgiLz48L3N2Zz4=", "JP": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjMwIiBjeT0iMjEiIHI9IjEzIiBmaWxsPSIjQkMwMDJEIi8+PC9zdmc+", "TN": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0MwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "SE": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA2QUE3Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZFQ0MwMiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDZBQTciLz48L3N2Zz4=", "BE": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZEREEyNCIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNFRjMzNDAiLz48L3N2Zz4=", "EG": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0MwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDAwMDAiLz48L3N2Zz4=", "IR": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMjM5RjQwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNEQTAwMDAiLz48L3N2Zz4=", "NZ": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAyNDdEIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0NDMTQyQiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDI0N0QiLz48L3N2Zz4=", "ES": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQzYwQjFFIi8+PHJlY3QgeT0iMTAuNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjIxIiBmaWxsPSIjRkZDNDAwIi8+PC9zdmc+", "UY": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjNzVBQURCIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiM3NUFBREIiLz48L3N2Zz4=", "SA": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA2QzM1Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDZDMzUiLz48L3N2Zz4=", "CV": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDAzODkzIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRDcwMCIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "FR": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRUQyOTM5Ii8+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQyIiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSI0MiIgZmlsbD0iIzAwMjM5NSIvPjwvc3ZnPg==", "SN": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA4NTNGIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZERUY0MiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNFMzFCMjMiLz48L3N2Zz4=", "NO": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRUYyQjJEIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDI4NjgiLz48L3N2Zz4=", "IQ": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0UxMTI2Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDdBM0QiLz48L3N2Zz4=", "AR": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjNzRBQ0RGIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjIxIiByPSI1IiBmaWxsPSIjRjZCNDBFIi8+PC9zdmc+", "DZ": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA2MjMzIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "AT": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0MwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "JO": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA3QTNEIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDQzAwMDAiLz48L3N2Zz4=", "PT": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRkYwMDAwIi8+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA2NjAwIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIyMSIgcj0iOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZFOTAwIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=", "CO": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRkNEMTE2Ii8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iIzAwMzA4NyIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDRTExMjYiLz48L3N2Zz4=", "UZ": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMUVCNTNBIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMxRUI1M0EiLz48L3N2Zz4=", "CD": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA3RkZGIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZCREU0QSIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNDRTExMjYiLz48L3N2Zz4=", "GB-ENG": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjI2IiB5PSIwIiB3aWR0aD0iOCIgaGVpZ2h0PSI0MiIgZmlsbD0iI0NGMEEyQyIvPjxyZWN0IHk9IjE3IiB3aWR0aD0iNjAiIGhlaWdodD0iOCIgZmlsbD0iI0NGMEEyQyIvPjwvc3ZnPg==", "HR": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjRkYwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDMwODciLz48L3N2Zz4=", "GH": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMDA2QjNGIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZDRDExNiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiNFRjMzNDAiLz48L3N2Zz4=", "PA": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjQ0MwMDAwIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMwMDMwODciLz48L3N2Zz4=", "TBD": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MiI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiBmaWxsPSIjMzMzMzMzIi8+PHJlY3QgeT0iMTQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHk9IjI4IiB3aWR0aD0iNjAiIGhlaWdodD0iMTQiIGZpbGw9IiMzMzMzMzMiLz48L3N2Zz4="};
+var KITS={"MX": ["#006847", "#FFFFFF"], "KR": ["#003087", "#CC0000"], "ZA": ["#007749", "#FFB81C"], "CZ": ["#003087", "#FFFFFF"], "CA": ["#FF0000", "#FFFFFF"], "CH": ["#FF0000", "#FFFFFF"], "QA": ["#8D1B3D", "#FFFFFF"], "BA": ["#003087", "#FFCD00"], "BR": ["#009c3b", "#FFD700"], "MA": ["#C1272D", "#006233"], "HT": ["#003087", "#CC0000"], "GB-SCT": ["#003087", "#FFFFFF"], "US": ["#002868", "#BF0A30"], "PY": ["#D52B1E", "#FFFFFF"], "AU": ["#FFD700", "#006600"], "TR": ["#CC0000", "#FFFFFF"], "DE": ["#FFFFFF", "#000000"], "EC": ["#FFD100", "#003087"], "CI": ["#F77F00", "#FFFFFF"], "CW": ["#002B7F", "#F9E814"], "NL": ["#FF6600", "#FFFFFF"], "JP": ["#0D2C6C", "#FFFFFF"], "SE": ["#006AA7", "#FECC02"], "TN": ["#CC0000", "#FFFFFF"], "BE": ["#000000", "#FDDA24"], "EG": ["#CC0000", "#FFFFFF"], "IR": ["#239F40", "#FFFFFF"], "NZ": ["#00247D", "#CC142B"], "ES": ["#CC0000", "#FFD700"], "UY": ["#75AADB", "#FFFFFF"], "SA": ["#006C35", "#FFFFFF"], "CV": ["#003893", "#FFD700"], "FR": ["#002395", "#FFFFFF"], "SN": ["#00853F", "#FFFFFF"], "NO": ["#EF2B2D", "#FFFFFF"], "IQ": ["#CE1126", "#FFFFFF"], "AR": ["#75AADB", "#FFFFFF"], "DZ": ["#006233", "#FFFFFF"], "AT": ["#CC0000", "#FFFFFF"], "JO": ["#007A3D", "#FFFFFF"], "PT": ["#006600", "#FF0000"], "CO": ["#FCD116", "#003087"], "UZ": ["#1EB53A", "#FFFFFF"], "CD": ["#007FFF", "#FBDE4A"], "GB-ENG": ["#FFFFFF", "#CF081F"], "HR": ["#FF0000", "#FFFFFF"], "GH": ["#006B3F", "#FFD700"], "PA": ["#CC0000", "#FFFFFF"]};
+function mkJersey(nat,pos,num){
+  var k=KITS[nat]||["#333366","#FFFFFF"];
+  var bg=k[0],fg=k[1];
+  var pc={GK:"f59e0b",DEF:"3b82f6",MID:"10b981",FWD:"ef4444"}[pos]||"555555";
+  var s={AR:"#C49A6C",FR:"#9A7040",BR:"#5C2A0A",
+    "GB-ENG":"#F5D5B0",ES:"#C49A6C",DE:"#F5D5B0",PT:"#C49A6C",NL:"#F5D5B0",
+    BE:"#F5D5B0",HR:"#F5D5B0",MX:"#9A7040",US:"#9A7040",JP:"#F5D5B0",
+    MA:"#9A7040",NO:"#F5D5B0",CO:"#9A7040",SN:"#5C2A0A",CH:"#F5D5B0",
+    CA:"#F5D5B0",EC:"#9A7040",KR:"#F5D5B0",AU:"#F5D5B0",UY:"#C49A6C",
+    EG:"#9A7040",AT:"#F5D5B0",TR:"#9A7040",GH:"#5C2A0A","GB-SCT":"#F5D5B0",
+    SE:"#F5D5B0",TN:"#9A7040",QA:"#9A7040",BA:"#F5D5B0",ZA:"#5C2A0A",
+    CZ:"#F5D5B0",HT:"#5C2A0A",PY:"#9A7040",CI:"#5C2A0A",CW:"#5C2A0A",
+    IQ:"#9A7040",DZ:"#9A7040",JO:"#9A7040",UZ:"#C49A6C",CD:"#5C2A0A",
+    SA:"#9A7040",CV:"#5C2A0A",NZ:"#F5D5B0",IR:"#9A7040",PA:"#9A7040"}[nat]||"#9A7040";
+  var svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">'+
+    '<circle cx="25" cy="25" r="25" fill="'+bg+'"/>'+
+    '<path d="M5 40 Q8 31 13 28 Q16 37 25 38 Q34 37 37 28 Q42 31 45 40 Q37 50 25 50 Q13 50 5 40Z" fill="'+fg+'" opacity=".95"/>'+
+    '<text x="25" y="44" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="8" fill="'+bg+'" opacity=".9">'+num+'</text>'+
+    '<ellipse cx="25" cy="22" rx="9" ry="10" fill="'+s+'"/>'+
+    '<ellipse cx="25" cy="10" rx="9" ry="7" fill="'+s+'" opacity=".6"/>'+
+    '<ellipse cx="20" cy="21" rx="2" ry="1.5" fill="white"/>'+
+    '<ellipse cx="30" cy="21" rx="2" ry="1.5" fill="white"/>'+
+    '<rect x="16" y="47" width="18" height="5" rx="2.5" fill="#'+pc+'"/>'+
+    '<text x="25" y="51.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="3.5" fill="white">'+pos+'</text>'+
+    '</svg>';
+  return "data:image/svg+xml;base64,"+btoa(svg);
+}
+;
+var PORTRAITS= {"mbappe": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMwMDMwODciLz48cGF0aCBkPSJNOCA2MiBRMTMgNDggMjAgNDQgUTI0IDU4IDQwIDYwIFE1NiA1OCA2MCA0NCBRNjcgNDggNzIgNjIgUTYwIDc4IDQwIDgwIFEyMCA3OCA4IDYyWiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45NSIvPjxwYXRoIGQ9Ik0yOCA0NCBRNDAgNTMgNTIgNDQgUTQ5IDM5IDQwIDM4IFEzMSAzOSAyOCA0NFoiIGZpbGw9IiMwMDMwODciIG9wYWNpdHk9IjAuNjUiLz48dGV4dCB4PSI0MCIgeT0iNzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIwLjg4Ij4xMDwvdGV4dD48ZWxsaXBzZSBjeD0iNDAiIGN5PSIzOCIgcng9IjYuNSIgcnk9IjYiIGZpbGw9IiM1QzMzMTciLz48ZWxsaXBzZSBjeD0iNDAiIGN5PSIyNiIgcng9IjE1IiByeT0iMTYiIGZpbGw9IiM1QzMzMTciLz48ZWxsaXBzZSBjeD0iMjUuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iNC41IiBmaWxsPSIjNUMzMzE3Ii8+PGVsbGlwc2UgY3g9IjU0LjUiIGN5PSIyNyIgcng9IjMuNSIgcnk9IjQuNSIgZmlsbD0iIzVDMzMxNyIvPjxlbGxpcHNlIGN4PSI0MCIgY3k9IjE3IiByeD0iMTUiIHJ5PSIxMSIgZmlsbD0iIzBBMDUwMCIvPjxwYXRoIGQ9Ik0yNiAyMiBRMjkgMTIgNDAgMTEgUTUxIDEyIDU0IDIyIFE1MCAxNiA0MCAxNSBRMzAgMTYgMjYgMjJaIiBmaWxsPSIjMEEwNTAwIi8+PHBhdGggZD0iTTMwIDIzLjUgUTM0IDIxLjUgMzggMjMuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEEwNTAwIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTQyIDIzLjUgUTQ2IDIxLjUgNTAgMjMuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEEwNTAwIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGVsbGlwc2UgY3g9IjMzLjUiIGN5PSIyNyIgcng9IjMuNSIgcnk9IjIuNyIgZmlsbD0id2hpdGUiLz48ZWxsaXBzZSBjeD0iNDYuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iMi43IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjM0IiBjeT0iMjcuMiIgcj0iMi4xIiBmaWxsPSIjMTUwODAwIi8+PGNpcmNsZSBjeD0iNDciIGN5PSIyNy4yIiByPSIyLjEiIGZpbGw9IiMxNTA4MDAiLz48Y2lyY2xlIGN4PSIzNC44IiBjeT0iMjYuNSIgcj0iMC43IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3LjgiIGN5PSIyNi41IiByPSIwLjciIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTM4IDMyIFE0MCAzNSA0MiAzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM0QxRjBBIiBzdHJva2Utd2lkdGg9IjEuMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMzcuNSIgY3k9IjMzIiByPSIxLjEiIGZpbGw9IiMzRDFGMEEiIG9wYWNpdHk9IjAuNjUiLz48Y2lyY2xlIGN4PSI0Mi41IiBjeT0iMzMiIHI9IjEuMSIgZmlsbD0iIzNEMUYwQSIgb3BhY2l0eT0iMC42NSIvPjxwYXRoIGQ9Ik0zNS41IDM3IFE0MCA0MSA0NC41IDM3IiBmaWxsPSJub25lIiBzdHJva2U9IiMzRDFGMEEiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cmVjdCB4PSIyNyIgeT0iNzUiIHdpZHRoPSIyNiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2VmNDQ0NCIvPjx0ZXh0IHg9IjQwIiB5PSI4MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iNiIgZmlsbD0id2hpdGUiPkZXRDwvdGV4dD48L3N2Zz4=", "haaland": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiM2Q0FCREQiLz48cGF0aCBkPSJNOCA2MiBRMTMgNDggMjAgNDQgUTI0IDU4IDQwIDYwIFE1NiA1OCA2MCA0NCBRNjcgNDggNzIgNjIgUTYwIDc4IDQwIDgwIFEyMCA3OCA4IDYyWiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45NSIvPjxwYXRoIGQ9Ik0yOCA0NCBRNDAgNTMgNTIgNDQgUTQ5IDM5IDQwIDM4IFEzMSAzOSAyOCA0NFoiIGZpbGw9IiM2Q0FCREQiIG9wYWNpdHk9IjAuNjUiLz48dGV4dCB4PSI0MCIgeT0iNzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjNkNBQkREIiBvcGFjaXR5PSIwLjg4Ij45PC90ZXh0PjxlbGxpcHNlIGN4PSI0MCIgY3k9IjM4IiByeD0iNi41IiByeT0iNiIgZmlsbD0iI0YwQzg5OCIvPjxlbGxpcHNlIGN4PSI0MCIgY3k9IjI2IiByeD0iMTUiIHJ5PSIxNiIgZmlsbD0iI0YwQzg5OCIvPjxlbGxpcHNlIGN4PSIyNS41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSI0LjUiIGZpbGw9IiNGMEM4OTgiLz48ZWxsaXBzZSBjeD0iNTQuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iNC41IiBmaWxsPSIjRjBDODk4Ii8+PGVsbGlwc2UgY3g9IjQwIiBjeT0iMTciIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjRThDMDQwIi8+PHBhdGggZD0iTTI2IDIyIFEyOSAxMiA0MCAxMSBRNTEgMTIgNTQgMjIgUTUwIDE2IDQwIDE1IFEzMCAxNiAyNiAyMloiIGZpbGw9IiNFOEMwNDAiLz48cGF0aCBkPSJNMzAgMjMuNSBRMzQgMjEuNSAzOCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiNFOEMwNDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNNDIgMjMuNSBRNDYgMjEuNSA1MCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiNFOEMwNDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZWxsaXBzZSBjeD0iMzMuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iMi43IiBmaWxsPSJ3aGl0ZSIvPjxlbGxpcHNlIGN4PSI0Ni41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSIyLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMzQiIGN5PSIyNy4yIiByPSIyLjEiIGZpbGw9IiMxNTA4MDAiLz48Y2lyY2xlIGN4PSI0NyIgY3k9IjI3LjIiIHI9IjIuMSIgZmlsbD0iIzE1MDgwMCIvPjxjaXJjbGUgY3g9IjM0LjgiIGN5PSIyNi41IiByPSIwLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNDcuOCIgY3k9IjI2LjUiIHI9IjAuNyIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMzggMzIgUTQwIDM1IDQyIDMyIiBmaWxsPSJub25lIiBzdHJva2U9IiNDODkwNjAiIHN0cm9rZS13aWR0aD0iMS4xIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIzNy41IiBjeT0iMzMiIHI9IjEuMSIgZmlsbD0iI0M4OTA2MCIgb3BhY2l0eT0iMC42NSIvPjxjaXJjbGUgY3g9IjQyLjUiIGN5PSIzMyIgcj0iMS4xIiBmaWxsPSIjQzg5MDYwIiBvcGFjaXR5PSIwLjY1Ii8+PHBhdGggZD0iTTM1LjUgMzcgUTQwIDQxIDQ0LjUgMzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M4OTA2MCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxyZWN0IHg9IjI3IiB5PSI3NSIgd2lkdGg9IjI2IiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjZWY0NDQ0Ii8+PHRleHQgeD0iNDAiIHk9IjgyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSI2IiBmaWxsPSJ3aGl0ZSI+RldEPC90ZXh0Pjwvc3ZnPg==", "vinicius": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJNOCA2MiBRMTMgNDggMjAgNDQgUTI0IDU4IDQwIDYwIFE1NiA1OCA2MCA0NCBRNjcgNDggNzIgNjIgUTYwIDc4IDQwIDgwIFEyMCA3OCA4IDYyWiIgZmlsbD0iI0NDMDAwMCIgb3BhY2l0eT0iMC45NSIvPjxwYXRoIGQ9Ik0yOCA0NCBRNDAgNTMgNTIgNDQgUTQ5IDM5IDQwIDM4IFEzMSAzOSAyOCA0NFoiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNjUiLz48dGV4dCB4PSI0MCIgeT0iNzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjg4Ij43PC90ZXh0PjxlbGxpcHNlIGN4PSI0MCIgY3k9IjM4IiByeD0iNi41IiByeT0iNiIgZmlsbD0iIzVDMzMxNyIvPjxlbGxpcHNlIGN4PSI0MCIgY3k9IjI2IiByeD0iMTUiIHJ5PSIxNiIgZmlsbD0iIzVDMzMxNyIvPjxlbGxpcHNlIGN4PSIyNS41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSI0LjUiIGZpbGw9IiM1QzMzMTciLz48ZWxsaXBzZSBjeD0iNTQuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iNC41IiBmaWxsPSIjNUMzMzE3Ii8+PGVsbGlwc2UgY3g9IjQwIiBjeT0iMTciIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjMEEwNTAwIi8+PHBhdGggZD0iTTI2IDIyIFEyOSAxMiA0MCAxMSBRNTEgMTIgNTQgMjIgUTUwIDE2IDQwIDE1IFEzMCAxNiAyNiAyMloiIGZpbGw9IiMwQTA1MDAiLz48cGF0aCBkPSJNMzAgMjMuNSBRMzQgMjEuNSAzOCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiMwQTA1MDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNNDIgMjMuNSBRNDYgMjEuNSA1MCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiMwQTA1MDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZWxsaXBzZSBjeD0iMzMuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iMi43IiBmaWxsPSJ3aGl0ZSIvPjxlbGxpcHNlIGN4PSI0Ni41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSIyLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMzQiIGN5PSIyNy4yIiByPSIyLjEiIGZpbGw9IiMxNTA4MDAiLz48Y2lyY2xlIGN4PSI0NyIgY3k9IjI3LjIiIHI9IjIuMSIgZmlsbD0iIzE1MDgwMCIvPjxjaXJjbGUgY3g9IjM0LjgiIGN5PSIyNi41IiByPSIwLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNDcuOCIgY3k9IjI2LjUiIHI9IjAuNyIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMzggMzIgUTQwIDM1IDQyIDMyIiBmaWxsPSJub25lIiBzdHJva2U9IiMzRDFGMEEiIHN0cm9rZS13aWR0aD0iMS4xIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIzNy41IiBjeT0iMzMiIHI9IjEuMSIgZmlsbD0iIzNEMUYwQSIgb3BhY2l0eT0iMC42NSIvPjxjaXJjbGUgY3g9IjQyLjUiIGN5PSIzMyIgcj0iMS4xIiBmaWxsPSIjM0QxRjBBIiBvcGFjaXR5PSIwLjY1Ii8+PHBhdGggZD0iTTM1LjUgMzcgUTQwIDQxIDQ0LjUgMzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNEMUYwQSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxyZWN0IHg9IjI3IiB5PSI3NSIgd2lkdGg9IjI2IiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjZWY0NDQ0Ii8+PHRleHQgeD0iNDAiIHk9IjgyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSI2IiBmaWxsPSJ3aGl0ZSI+RldEPC90ZXh0Pjwvc3ZnPg==", "messi": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiM3NUFBREIiLz48cGF0aCBkPSJNOCA2MiBRMTMgNDggMjAgNDQgUTI0IDU4IDQwIDYwIFE1NiA1OCA2MCA0NCBRNjcgNDggNzIgNjIgUTYwIDc4IDQwIDgwIFEyMCA3OCA4IDYyWiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45NSIvPjxwYXRoIGQ9Ik0yOCA0NCBRNDAgNTMgNTIgNDQgUTQ5IDM5IDQwIDM4IFEzMSAzOSAyOCA0NFoiIGZpbGw9IiM3NUFBREIiIG9wYWNpdHk9IjAuNjUiLz48dGV4dCB4PSI0MCIgeT0iNzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjNzVBQURCIiBvcGFjaXR5PSIwLjg4Ij4xMDwvdGV4dD48ZWxsaXBzZSBjeD0iNDAiIGN5PSIzOCIgcng9IjYuNSIgcnk9IjYiIGZpbGw9IiNDODkyNEUiLz48ZWxsaXBzZSBjeD0iNDAiIGN5PSIyNiIgcng9IjE1IiByeT0iMTYiIGZpbGw9IiNDODkyNEUiLz48ZWxsaXBzZSBjeD0iMjUuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iNC41IiBmaWxsPSIjQzg5MjRFIi8+PGVsbGlwc2UgY3g9IjU0LjUiIGN5PSIyNyIgcng9IjMuNSIgcnk9IjQuNSIgZmlsbD0iI0M4OTI0RSIvPjxlbGxpcHNlIGN4PSI0MCIgY3k9IjE3IiByeD0iMTUiIHJ5PSIxMSIgZmlsbD0iIzNEMjAwMCIvPjxwYXRoIGQ9Ik0yNiAyMiBRMjkgMTIgNDAgMTEgUTUxIDEyIDU0IDIyIFE1MCAxNiA0MCAxNSBRMzAgMTYgMjYgMjJaIiBmaWxsPSIjM0QyMDAwIi8+PHBhdGggZD0iTTMwIDIzLjUgUTM0IDIxLjUgMzggMjMuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM0QyMDAwIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTQyIDIzLjUgUTQ2IDIxLjUgNTAgMjMuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM0QyMDAwIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGVsbGlwc2UgY3g9IjMzLjUiIGN5PSIyNyIgcng9IjMuNSIgcnk9IjIuNyIgZmlsbD0id2hpdGUiLz48ZWxsaXBzZSBjeD0iNDYuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iMi43IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjM0IiBjeT0iMjcuMiIgcj0iMi4xIiBmaWxsPSIjMTUwODAwIi8+PGNpcmNsZSBjeD0iNDciIGN5PSIyNy4yIiByPSIyLjEiIGZpbGw9IiMxNTA4MDAiLz48Y2lyY2xlIGN4PSIzNC44IiBjeT0iMjYuNSIgcj0iMC43IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3LjgiIGN5PSIyNi41IiByPSIwLjciIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTM4IDMyIFE0MCAzNSA0MiAzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEI2MDMwIiBzdHJva2Utd2lkdGg9IjEuMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMzcuNSIgY3k9IjMzIiByPSIxLjEiIGZpbGw9IiM4QjYwMzAiIG9wYWNpdHk9IjAuNjUiLz48Y2lyY2xlIGN4PSI0Mi41IiBjeT0iMzMiIHI9IjEuMSIgZmlsbD0iIzhCNjAzMCIgb3BhY2l0eT0iMC42NSIvPjxwYXRoIGQ9Ik0zNS41IDM3IFE0MCA0MSA0NC41IDM3IiBmaWxsPSJub25lIiBzdHJva2U9IiM4QjYwMzAiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cmVjdCB4PSIyNyIgeT0iNzUiIHdpZHRoPSIyNiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2VmNDQ0NCIvPjx0ZXh0IHg9IjQwIiB5PSI4MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iNiIgZmlsbD0id2hpdGUiPkZXRDwvdGV4dD48L3N2Zz4=", "bellingham": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiNDQzAwMDAiLz48cGF0aCBkPSJNOCA2MiBRMTMgNDggMjAgNDQgUTI0IDU4IDQwIDYwIFE1NiA1OCA2MCA0NCBRNjcgNDggNzIgNjIgUTYwIDc4IDQwIDgwIFEyMCA3OCA4IDYyWiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45NSIvPjxwYXRoIGQ9Ik0yOCA0NCBRNDAgNTMgNTIgNDQgUTQ5IDM5IDQwIDM4IFEzMSAzOSAyOCA0NFoiIGZpbGw9IiNDQzAwMDAiIG9wYWNpdHk9IjAuNjUiLz48dGV4dCB4PSI0MCIgeT0iNzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjQ0MwMDAwIiBvcGFjaXR5PSIwLjg4Ij41PC90ZXh0PjxlbGxpcHNlIGN4PSI0MCIgY3k9IjM4IiByeD0iNi41IiByeT0iNiIgZmlsbD0iIzlBNzA0MCIvPjxlbGxpcHNlIGN4PSI0MCIgY3k9IjI2IiByeD0iMTUiIHJ5PSIxNiIgZmlsbD0iIzlBNzA0MCIvPjxlbGxpcHNlIGN4PSIyNS41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSI0LjUiIGZpbGw9IiM5QTcwNDAiLz48ZWxsaXBzZSBjeD0iNTQuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iNC41IiBmaWxsPSIjOUE3MDQwIi8+PGVsbGlwc2UgY3g9IjQwIiBjeT0iMTciIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjMEEwNTAwIi8+PHBhdGggZD0iTTI2IDIyIFEyOSAxMiA0MCAxMSBRNTEgMTIgNTQgMjIgUTUwIDE2IDQwIDE1IFEzMCAxNiAyNiAyMloiIGZpbGw9IiMwQTA1MDAiLz48cGF0aCBkPSJNMzAgMjMuNSBRMzQgMjEuNSAzOCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiMwQTA1MDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNNDIgMjMuNSBRNDYgMjEuNSA1MCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiMwQTA1MDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZWxsaXBzZSBjeD0iMzMuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iMi43IiBmaWxsPSJ3aGl0ZSIvPjxlbGxpcHNlIGN4PSI0Ni41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSIyLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMzQiIGN5PSIyNy4yIiByPSIyLjEiIGZpbGw9IiMxNTA4MDAiLz48Y2lyY2xlIGN4PSI0NyIgY3k9IjI3LjIiIHI9IjIuMSIgZmlsbD0iIzE1MDgwMCIvPjxjaXJjbGUgY3g9IjM0LjgiIGN5PSIyNi41IiByPSIwLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNDcuOCIgY3k9IjI2LjUiIHI9IjAuNyIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMzggMzIgUTQwIDM1IDQyIDMyIiBmaWxsPSJub25lIiBzdHJva2U9IiM2QjQ1MjAiIHN0cm9rZS13aWR0aD0iMS4xIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIzNy41IiBjeT0iMzMiIHI9IjEuMSIgZmlsbD0iIzZCNDUyMCIgb3BhY2l0eT0iMC42NSIvPjxjaXJjbGUgY3g9IjQyLjUiIGN5PSIzMyIgcj0iMS4xIiBmaWxsPSIjNkI0NTIwIiBvcGFjaXR5PSIwLjY1Ii8+PHBhdGggZD0iTTM1LjUgMzcgUTQwIDQxIDQ0LjUgMzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZCNDUyMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxyZWN0IHg9IjI3IiB5PSI3NSIgd2lkdGg9IjI2IiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjMTBiOTgxIi8+PHRleHQgeD0iNDAiIHk9IjgyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSI2IiBmaWxsPSJ3aGl0ZSI+TUlEPC90ZXh0Pjwvc3ZnPg==", "kane": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMxMzIyNTciLz48cGF0aCBkPSJNOCA2MiBRMTMgNDggMjAgNDQgUTI0IDU4IDQwIDYwIFE1NiA1OCA2MCA0NCBRNjcgNDggNzIgNjIgUTYwIDc4IDQwIDgwIFEyMCA3OCA4IDYyWiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45NSIvPjxwYXRoIGQ9Ik0yOCA0NCBRNDAgNTMgNTIgNDQgUTQ5IDM5IDQwIDM4IFEzMSAzOSAyOCA0NFoiIGZpbGw9IiMxMzIyNTciIG9wYWNpdHk9IjAuNjUiLz48dGV4dCB4PSI0MCIgeT0iNzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjMTMyMjU3IiBvcGFjaXR5PSIwLjg4Ij45PC90ZXh0PjxlbGxpcHNlIGN4PSI0MCIgY3k9IjM4IiByeD0iNi41IiByeT0iNiIgZmlsbD0iI0YwQzg5OCIvPjxlbGxpcHNlIGN4PSI0MCIgY3k9IjI2IiByeD0iMTUiIHJ5PSIxNiIgZmlsbD0iI0YwQzg5OCIvPjxlbGxpcHNlIGN4PSIyNS41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSI0LjUiIGZpbGw9IiNGMEM4OTgiLz48ZWxsaXBzZSBjeD0iNTQuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iNC41IiBmaWxsPSIjRjBDODk4Ii8+PGVsbGlwc2UgY3g9IjQwIiBjeT0iMTciIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjM0QyMDAwIi8+PHBhdGggZD0iTTI2IDIyIFEyOSAxMiA0MCAxMSBRNTEgMTIgNTQgMjIgUTUwIDE2IDQwIDE1IFEzMCAxNiAyNiAyMloiIGZpbGw9IiMzRDIwMDAiLz48cGF0aCBkPSJNMzAgMjMuNSBRMzQgMjEuNSAzOCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiMzRDIwMDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNNDIgMjMuNSBRNDYgMjEuNSA1MCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiMzRDIwMDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZWxsaXBzZSBjeD0iMzMuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iMi43IiBmaWxsPSJ3aGl0ZSIvPjxlbGxpcHNlIGN4PSI0Ni41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSIyLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMzQiIGN5PSIyNy4yIiByPSIyLjEiIGZpbGw9IiMxNTA4MDAiLz48Y2lyY2xlIGN4PSI0NyIgY3k9IjI3LjIiIHI9IjIuMSIgZmlsbD0iIzE1MDgwMCIvPjxjaXJjbGUgY3g9IjM0LjgiIGN5PSIyNi41IiByPSIwLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNDcuOCIgY3k9IjI2LjUiIHI9IjAuNyIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMzggMzIgUTQwIDM1IDQyIDMyIiBmaWxsPSJub25lIiBzdHJva2U9IiNDODkwNjAiIHN0cm9rZS13aWR0aD0iMS4xIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIzNy41IiBjeT0iMzMiIHI9IjEuMSIgZmlsbD0iI0M4OTA2MCIgb3BhY2l0eT0iMC42NSIvPjxjaXJjbGUgY3g9IjQyLjUiIGN5PSIzMyIgcj0iMS4xIiBmaWxsPSIjQzg5MDYwIiBvcGFjaXR5PSIwLjY1Ii8+PHBhdGggZD0iTTM1LjUgMzcgUTQwIDQxIDQ0LjUgMzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M4OTA2MCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxyZWN0IHg9IjI3IiB5PSI3NSIgd2lkdGg9IjI2IiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjZWY0NDQ0Ii8+PHRleHQgeD0iNDAiIHk9IjgyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSI2IiBmaWxsPSJ3aGl0ZSI+RldEPC90ZXh0Pjwvc3ZnPg==", "yamal": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMwMDQxNzAiLz48cGF0aCBkPSJNOCA2MiBRMTMgNDggMjAgNDQgUTI0IDU4IDQwIDYwIFE1NiA1OCA2MCA0NCBRNjcgNDggNzIgNjIgUTYwIDc4IDQwIDgwIFEyMCA3OCA4IDYyWiIgZmlsbD0iI0E1MDA0NCIgb3BhY2l0eT0iMC45NSIvPjxwYXRoIGQ9Ik0yOCA0NCBRNDAgNTMgNTIgNDQgUTQ5IDM5IDQwIDM4IFEzMSAzOSAyOCA0NFoiIGZpbGw9IiMwMDQxNzAiIG9wYWNpdHk9IjAuNjUiLz48dGV4dCB4PSI0MCIgeT0iNzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjMDA0MTcwIiBvcGFjaXR5PSIwLjg4Ij4xOTwvdGV4dD48ZWxsaXBzZSBjeD0iNDAiIGN5PSIzOCIgcng9IjYuNSIgcnk9IjYiIGZpbGw9IiM5QTcwNDAiLz48ZWxsaXBzZSBjeD0iNDAiIGN5PSIyNiIgcng9IjE1IiByeT0iMTYiIGZpbGw9IiM5QTcwNDAiLz48ZWxsaXBzZSBjeD0iMjUuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iNC41IiBmaWxsPSIjOUE3MDQwIi8+PGVsbGlwc2UgY3g9IjU0LjUiIGN5PSIyNyIgcng9IjMuNSIgcnk9IjQuNSIgZmlsbD0iIzlBNzA0MCIvPjxlbGxpcHNlIGN4PSI0MCIgY3k9IjE3IiByeD0iMTUiIHJ5PSIxMSIgZmlsbD0iIzBBMDUwMCIvPjxwYXRoIGQ9Ik0yNiAyMiBRMjkgMTIgNDAgMTEgUTUxIDEyIDU0IDIyIFE1MCAxNiA0MCAxNSBRMzAgMTYgMjYgMjJaIiBmaWxsPSIjMEEwNTAwIi8+PHBhdGggZD0iTTMwIDIzLjUgUTM0IDIxLjUgMzggMjMuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEEwNTAwIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTQyIDIzLjUgUTQ2IDIxLjUgNTAgMjMuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEEwNTAwIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGVsbGlwc2UgY3g9IjMzLjUiIGN5PSIyNyIgcng9IjMuNSIgcnk9IjIuNyIgZmlsbD0id2hpdGUiLz48ZWxsaXBzZSBjeD0iNDYuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iMi43IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjM0IiBjeT0iMjcuMiIgcj0iMi4xIiBmaWxsPSIjMTUwODAwIi8+PGNpcmNsZSBjeD0iNDciIGN5PSIyNy4yIiByPSIyLjEiIGZpbGw9IiMxNTA4MDAiLz48Y2lyY2xlIGN4PSIzNC44IiBjeT0iMjYuNSIgcj0iMC43IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3LjgiIGN5PSIyNi41IiByPSIwLjciIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTM4IDMyIFE0MCAzNSA0MiAzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkI0NTIwIiBzdHJva2Utd2lkdGg9IjEuMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMzcuNSIgY3k9IjMzIiByPSIxLjEiIGZpbGw9IiM2QjQ1MjAiIG9wYWNpdHk9IjAuNjUiLz48Y2lyY2xlIGN4PSI0Mi41IiBjeT0iMzMiIHI9IjEuMSIgZmlsbD0iIzZCNDUyMCIgb3BhY2l0eT0iMC42NSIvPjxwYXRoIGQ9Ik0zNS41IDM3IFE0MCA0MSA0NC41IDM3IiBmaWxsPSJub25lIiBzdHJva2U9IiM2QjQ1MjAiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cmVjdCB4PSIyNyIgeT0iNzUiIHdpZHRoPSIyNiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2VmNDQ0NCIvPjx0ZXh0IHg9IjQwIiB5PSI4MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iNiIgZmlsbD0id2hpdGUiPkZXRDwvdGV4dD48L3N2Zz4=", "pedri": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMwMDQxNzAiLz48cGF0aCBkPSJNOCA2MiBRMTMgNDggMjAgNDQgUTI0IDU4IDQwIDYwIFE1NiA1OCA2MCA0NCBRNjcgNDggNzIgNjIgUTYwIDc4IDQwIDgwIFEyMCA3OCA4IDYyWiIgZmlsbD0iI0E1MDA0NCIgb3BhY2l0eT0iMC45NSIvPjxwYXRoIGQ9Ik0yOCA0NCBRNDAgNTMgNTIgNDQgUTQ5IDM5IDQwIDM4IFEzMSAzOSAyOCA0NFoiIGZpbGw9IiMwMDQxNzAiIG9wYWNpdHk9IjAuNjUiLz48dGV4dCB4PSI0MCIgeT0iNzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjMDA0MTcwIiBvcGFjaXR5PSIwLjg4Ij44PC90ZXh0PjxlbGxpcHNlIGN4PSI0MCIgY3k9IjM4IiByeD0iNi41IiByeT0iNiIgZmlsbD0iI0M4OTI0RSIvPjxlbGxpcHNlIGN4PSI0MCIgY3k9IjI2IiByeD0iMTUiIHJ5PSIxNiIgZmlsbD0iI0M4OTI0RSIvPjxlbGxpcHNlIGN4PSIyNS41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSI0LjUiIGZpbGw9IiNDODkyNEUiLz48ZWxsaXBzZSBjeD0iNTQuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iNC41IiBmaWxsPSIjQzg5MjRFIi8+PGVsbGlwc2UgY3g9IjQwIiBjeT0iMTciIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjM0QyMDAwIi8+PHBhdGggZD0iTTI2IDIyIFEyOSAxMiA0MCAxMSBRNTEgMTIgNTQgMjIgUTUwIDE2IDQwIDE1IFEzMCAxNiAyNiAyMloiIGZpbGw9IiMzRDIwMDAiLz48cGF0aCBkPSJNMzAgMjMuNSBRMzQgMjEuNSAzOCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiMzRDIwMDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNNDIgMjMuNSBRNDYgMjEuNSA1MCAyMy41IiBmaWxsPSJub25lIiBzdHJva2U9IiMzRDIwMDAiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZWxsaXBzZSBjeD0iMzMuNSIgY3k9IjI3IiByeD0iMy41IiByeT0iMi43IiBmaWxsPSJ3aGl0ZSIvPjxlbGxpcHNlIGN4PSI0Ni41IiBjeT0iMjciIHJ4PSIzLjUiIHJ5PSIyLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMzQiIGN5PSIyNy4yIiByPSIyLjEiIGZpbGw9IiMxNTA4MDAiLz48Y2lyY2xlIGN4PSI0NyIgY3k9IjI3LjIiIHI9IjIuMSIgZmlsbD0iIzE1MDgwMCIvPjxjaXJjbGUgY3g9IjM0LjgiIGN5PSIyNi41IiByPSIwLjciIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNDcuOCIgY3k9IjI2LjUiIHI9IjAuNyIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMzggMzIgUTQwIDM1IDQyIDMyIiBmaWxsPSJub25lIiBzdHJva2U9IiM4QjYwMzAiIHN0cm9rZS13aWR0aD0iMS4xIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIzNy41IiBjeT0iMzMiIHI9IjEuMSIgZmlsbD0iIzhCNjAzMCIgb3BhY2l0eT0iMC42NSIvPjxjaXJjbGUgY3g9IjQyLjUiIGN5PSIzMyIgcj0iMS4xIiBmaWxsPSIjOEI2MDMwIiBvcGFjaXR5PSIwLjY1Ii8+PHBhdGggZD0iTTM1LjUgMzcgUTQwIDQxIDQ0LjUgMzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhCNjAzMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxyZWN0IHg9IjI3IiB5PSI3NSIgd2lkdGg9IjI2IiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjMTBiOTgxIi8+PHRleHQgeD0iNDAiIHk9IjgyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSI2IiBmaWxsPSJ3aGl0ZSI+TUlEPC90ZXh0Pjwvc3ZnPg=="};
+var FP       = [{"id": "mx1_guillermo_oc", "name": "Guillermo Ochoa", "pos": "GK", "nat": "MX", "price": 5.5, "rating": 82, "club": "Las Vegas Lights"}, {"id": "mx2_carlos_aceve", "name": "Carlos Acevedo", "pos": "GK", "nat": "MX", "price": 4.5, "rating": 79, "club": "Santos"}, {"id": "mx4_jesus_gallar", "name": "Jesus Gallardo", "pos": "DEF", "nat": "MX", "price": 6.0, "rating": 82, "club": "Monterrey"}, {"id": "mx5_cesar_montes", "name": "Cesar Montes", "pos": "DEF", "nat": "MX", "price": 6.5, "rating": 83, "club": "Monterrey"}, {"id": "mx6_edson_alvare", "name": "Edson Alvarez", "pos": "MID", "nat": "MX", "price": 9.0, "rating": 87, "club": "West Ham"}, {"id": "mx7_santiago_gim", "name": "Santiago Gimenez", "pos": "FWD", "nat": "MX", "price": 10.0, "rating": 87, "club": "Feyenoord"}, {"id": "mx8_raul_jimenez", "name": "Raul Jimenez", "pos": "FWD", "nat": "MX", "price": 8.5, "rating": 84, "club": "Fulham"}, {"id": "mx9_hirving_loza", "name": "Hirving Lozano", "pos": "FWD", "nat": "MX", "price": 7.5, "rating": 82, "club": "PSV"}, {"id": "mx10_orbelin_pine", "name": "Orbelin Pineda", "pos": "MID", "nat": "MX", "price": 7.0, "rating": 81, "club": "Cruz Azul"}, {"id": "mx11_brian_gutier", "name": "Brian Gutierrez", "pos": "MID", "nat": "MX", "price": 7.5, "rating": 82, "club": "Chicago Fire"}, {"id": "mx12_julian_quino", "name": "Julian Quinones", "pos": "FWD", "nat": "MX", "price": 7.0, "rating": 80, "club": "Atlas"}, {"id": "kr1_son_heungmin", "name": "Son Heung-min", "pos": "FWD", "nat": "KR", "price": 10.5, "rating": 89, "club": "LAFC"}, {"id": "kr2_kim_minjae", "name": "Kim Min-jae", "pos": "DEF", "nat": "KR", "price": 9.0, "rating": 88, "club": "Bayern"}, {"id": "kr3_lee_kangin", "name": "Lee Kang-in", "pos": "MID", "nat": "KR", "price": 9.0, "rating": 87, "club": "PSG"}, {"id": "kr4_hwang_heecha", "name": "Hwang Hee-chan", "pos": "FWD", "nat": "KR", "price": 8.0, "rating": 84, "club": "Wolves"}, {"id": "kr5_jo_hyeonwoo", "name": "Jo Hyeon-woo", "pos": "GK", "nat": "KR", "price": 5.0, "rating": 82, "club": "Ulsan"}, {"id": "kr6_yang_hyunjun", "name": "Yang Hyun-jun", "pos": "FWD", "nat": "KR", "price": 8.0, "rating": 83, "club": "Celtic"}, {"id": "kr7_bae_junho", "name": "Bae Jun-ho", "pos": "MID", "nat": "KR", "price": 8.0, "rating": 83, "club": "Stoke City"}, {"id": "kr8_cho_guesung", "name": "Cho Gue-sung", "pos": "FWD", "nat": "KR", "price": 7.5, "rating": 82, "club": "Midtjylland"}, {"id": "za1_ronwen_willi", "name": "Ronwen Williams", "pos": "GK", "nat": "ZA", "price": 5.5, "rating": 82, "club": "Mamelodi Sundowns"}, {"id": "za2_lyle_foster", "name": "Lyle Foster", "pos": "FWD", "nat": "ZA", "price": 7.5, "rating": 81, "club": "Burnley"}, {"id": "za3_oswin_appoll", "name": "Oswin Appollis", "pos": "FWD", "nat": "ZA", "price": 7.5, "rating": 80, "club": "Orlando Pirates"}, {"id": "za4_teboho_mokoe", "name": "Teboho Mokoena", "pos": "MID", "nat": "ZA", "price": 7.0, "rating": 79, "club": "Mamelodi Sundowns"}, {"id": "za5_relebohile_m", "name": "Relebohile Mofokeng", "pos": "FWD", "nat": "ZA", "price": 7.0, "rating": 79, "club": "Orlando Pirates"}, {"id": "za6_evidence_mak", "name": "Evidence Makgopa", "pos": "FWD", "nat": "ZA", "price": 6.5, "rating": 78, "club": "Orlando Pirates"}, {"id": "cz1_tomas_soucek", "name": "Tomas Soucek", "pos": "MID", "nat": "CZ", "price": 8.0, "rating": 84, "club": "West Ham"}, {"id": "cz2_patrik_schic", "name": "Patrik Schick", "pos": "FWD", "nat": "CZ", "price": 9.0, "rating": 85, "club": "Leverkusen"}, {"id": "cz3_adam_hlozek", "name": "Adam Hlozek", "pos": "FWD", "nat": "CZ", "price": 8.0, "rating": 82, "club": "Hoffenheim"}, {"id": "cz4_matej_kovar", "name": "Matej Kovar", "pos": "GK", "nat": "CZ", "price": 5.5, "rating": 83, "club": "PSV"}, {"id": "cz5_ladislav_kre", "name": "Ladislav Krejci", "pos": "DEF", "nat": "CZ", "price": 6.5, "rating": 80, "club": "Wolves"}, {"id": "cz6_pavel_sulc", "name": "Pavel Sulc", "pos": "MID", "nat": "CZ", "price": 7.0, "rating": 80, "club": "Lyon"}, {"id": "ca1_alphonso_dav", "name": "Alphonso Davies", "pos": "DEF", "nat": "CA", "price": 9.5, "rating": 88, "club": "Bayern"}, {"id": "ca2_jonathan_dav", "name": "Jonathan David", "pos": "FWD", "nat": "CA", "price": 11.0, "rating": 89, "club": "Lille"}, {"id": "ca3_tajon_buchan", "name": "Tajon Buchanan", "pos": "MID", "nat": "CA", "price": 8.0, "rating": 84, "club": "Inter"}, {"id": "ca4_ismail_kone", "name": "Ismail Kone", "pos": "MID", "nat": "CA", "price": 8.0, "rating": 83, "club": "Marseille"}, {"id": "ca5_cyle_larin", "name": "Cyle Larin", "pos": "FWD", "nat": "CA", "price": 7.5, "rating": 81, "club": "Real Valladolid"}, {"id": "ca6_maxime_crepe", "name": "Maxime Crepeau", "pos": "GK", "nat": "CA", "price": 5.0, "rating": 81, "club": "NYCFC"}, {"id": "ca7_stephen_eust", "name": "Stephen Eustaquio", "pos": "MID", "nat": "CA", "price": 7.5, "rating": 82, "club": "Porto"}, {"id": "ca8_alistair_joh", "name": "Alistair Johnston", "pos": "DEF", "nat": "CA", "price": 6.5, "rating": 80, "club": "Celtic"}, {"id": "ch1_granit_xhaka", "name": "Granit Xhaka", "pos": "MID", "nat": "CH", "price": 8.5, "rating": 86, "club": "Sunderland"}, {"id": "ch2_breel_embolo", "name": "Breel Embolo", "pos": "FWD", "nat": "CH", "price": 8.0, "rating": 83, "club": "Rennes"}, {"id": "ch3_manuel_akanj", "name": "Manuel Akanji", "pos": "DEF", "nat": "CH", "price": 7.5, "rating": 85, "club": "Inter"}, {"id": "ch4_gregor_kobel", "name": "Gregor Kobel", "pos": "GK", "nat": "CH", "price": 6.0, "rating": 86, "club": "Dortmund"}, {"id": "ch5_ardon_jashar", "name": "Ardon Jashari", "pos": "MID", "nat": "CH", "price": 8.0, "rating": 83, "club": "AC Milan"}, {"id": "ch6_ruben_vargas", "name": "Ruben Vargas", "pos": "MID", "nat": "CH", "price": 7.0, "rating": 81, "club": "Sevilla"}, {"id": "ch7_noah_okafor", "name": "Noah Okafor", "pos": "FWD", "nat": "CH", "price": 8.0, "rating": 82, "club": "Leeds"}, {"id": "ch8_dan_ndoye", "name": "Dan Ndoye", "pos": "FWD", "nat": "CH", "price": 7.5, "rating": 81, "club": "Nottingham Forest"}, {"id": "qa1_akram_afif", "name": "Akram Afif", "pos": "FWD", "nat": "QA", "price": 7.0, "rating": 80, "club": "Al Sadd"}, {"id": "qa2_almoez_ali", "name": "Almoez Ali", "pos": "FWD", "nat": "QA", "price": 7.0, "rating": 80, "club": "Al Duhail"}, {"id": "qa3_hassan_alhay", "name": "Hassan Al-Haydos", "pos": "MID", "nat": "QA", "price": 6.5, "rating": 78, "club": "Al Sadd"}, {"id": "qa4_meshaal_bars", "name": "Meshaal Barsham", "pos": "GK", "nat": "QA", "price": 4.5, "rating": 78, "club": "Al Sadd"}, {"id": "ba1_ermedin_demi", "name": "Ermedin Demirovic", "pos": "FWD", "nat": "BA", "price": 8.5, "rating": 83, "club": "Stuttgart"}, {"id": "ba2_edin_dzeko", "name": "Edin Dzeko", "pos": "FWD", "nat": "BA", "price": 7.5, "rating": 80, "club": "Schalke"}, {"id": "ba3_nikola_vasil", "name": "Nikola Vasilj", "pos": "GK", "nat": "BA", "price": 5.0, "rating": 80, "club": "St Pauli"}, {"id": "ba4_sead_kolasin", "name": "Sead Kolasinac", "pos": "DEF", "nat": "BA", "price": 6.5, "rating": 79, "club": "Atalanta"}, {"id": "ba5_benjamin_tah", "name": "Benjamin Tahirovic", "pos": "MID", "nat": "BA", "price": 7.5, "rating": 81, "club": "Brondby"}, {"id": "br1_vinicius_jr", "name": "Vinicius Jr.", "pos": "FWD", "nat": "BR", "price": 14.0, "rating": 93, "club": "Real Madrid"}, {"id": "br2_alisson", "name": "Alisson", "pos": "GK", "nat": "BR", "price": 6.0, "rating": 88, "club": "Liverpool"}, {"id": "br3_marquinhos", "name": "Marquinhos", "pos": "DEF", "nat": "BR", "price": 7.5, "rating": 87, "club": "PSG"}, {"id": "br4_ederson", "name": "Ederson", "pos": "GK", "nat": "BR", "price": 5.5, "rating": 86, "club": "Fenerbahce"}, {"id": "br5_raphinha", "name": "Raphinha", "pos": "FWD", "nat": "BR", "price": 10.5, "rating": 88, "club": "Barcelona"}, {"id": "br6_rodrygo", "name": "Rodrygo", "pos": "FWD", "nat": "BR", "price": 10.0, "rating": 87, "club": "Real Madrid"}, {"id": "br7_bruno_guimar", "name": "Bruno Guimaraes", "pos": "MID", "nat": "BR", "price": 10.0, "rating": 88, "club": "Newcastle"}, {"id": "br8_gabriel_maga", "name": "Gabriel Magalhaes", "pos": "DEF", "nat": "BR", "price": 8.0, "rating": 87, "club": "Arsenal"}, {"id": "br9_neymar", "name": "Neymar", "pos": "FWD", "nat": "BR", "price": 9.5, "rating": 85, "club": "Santos"}, {"id": "br10_endrick", "name": "Endrick", "pos": "FWD", "nat": "BR", "price": 10.0, "rating": 87, "club": "Lyon"}, {"id": "br11_casemiro", "name": "Casemiro", "pos": "MID", "nat": "BR", "price": 7.5, "rating": 83, "club": "Man Utd"}, {"id": "br12_lucas_paquet", "name": "Lucas Paqueta", "pos": "MID", "nat": "BR", "price": 8.5, "rating": 85, "club": "Flamengo"}, {"id": "ma1_achraf_hakim", "name": "Achraf Hakimi", "pos": "DEF", "nat": "MA", "price": 9.5, "rating": 88, "club": "PSG"}, {"id": "ma2_brahim_diaz", "name": "Brahim Diaz", "pos": "MID", "nat": "MA", "price": 9.0, "rating": 87, "club": "Real Madrid"}, {"id": "ma3_ayoub_el_kaa", "name": "Ayoub El Kaabi", "pos": "FWD", "nat": "MA", "price": 8.5, "rating": 84, "club": "Olympiacos"}, {"id": "ma4_sofyan_amrab", "name": "Sofyan Amrabat", "pos": "MID", "nat": "MA", "price": 8.0, "rating": 84, "club": "Real Betis"}, {"id": "ma5_yassine_boun", "name": "Yassine Bounou", "pos": "GK", "nat": "MA", "price": 6.0, "rating": 84, "club": "Al Hilal"}, {"id": "ma6_noussair_maz", "name": "Noussair Mazraoui", "pos": "DEF", "nat": "MA", "price": 8.0, "rating": 84, "club": "Man Utd"}, {"id": "ma7_nayef_aguerd", "name": "Nayef Aguerd", "pos": "DEF", "nat": "MA", "price": 7.0, "rating": 82, "club": "Marseille"}, {"id": "ma8_abde_ezzalzo", "name": "Abde Ezzalzouli", "pos": "FWD", "nat": "MA", "price": 8.0, "rating": 83, "club": "Real Betis"}, {"id": "ma9_bilal_el_kha", "name": "Bilal El Khannouss", "pos": "MID", "nat": "MA", "price": 8.5, "rating": 84, "club": "Stuttgart"}, {"id": "ht1_jeanricner_b", "name": "Jean-Ricner Bellegarde", "pos": "MID", "nat": "HT", "price": 7.0, "rating": 80, "club": "Wolves"}, {"id": "ht2_duckens_nazo", "name": "Duckens Nazon", "pos": "FWD", "nat": "HT", "price": 6.0, "rating": 76, "club": "Esteghlal"}, {"id": "ht3_wilson_isido", "name": "Wilson Isidor", "pos": "FWD", "nat": "HT", "price": 7.0, "rating": 79, "club": "Sunderland"}, {"id": "gbsct1_andy_roberts", "name": "Andy Robertson", "pos": "DEF", "nat": "GB-SCT", "price": 9.0, "rating": 87, "club": "Liverpool"}, {"id": "gbsct2_scott_mctomi", "name": "Scott McTominay", "pos": "MID", "nat": "GB-SCT", "price": 8.5, "rating": 85, "club": "Napoli"}, {"id": "gbsct3_billy_gilmou", "name": "Billy Gilmour", "pos": "MID", "nat": "GB-SCT", "price": 7.5, "rating": 82, "club": "Napoli"}, {"id": "gbsct4_aaron_hickey", "name": "Aaron Hickey", "pos": "DEF", "nat": "GB-SCT", "price": 7.5, "rating": 82, "club": "Brentford"}, {"id": "gbsct5_ryan_christi", "name": "Ryan Christie", "pos": "MID", "nat": "GB-SCT", "price": 7.0, "rating": 80, "club": "Bournemouth"}, {"id": "gbsct6_lawrence_sha", "name": "Lawrence Shankland", "pos": "FWD", "nat": "GB-SCT", "price": 7.5, "rating": 80, "club": "Hearts"}, {"id": "gbsct7_angus_gunn", "name": "Angus Gunn", "pos": "GK", "nat": "GB-SCT", "price": 5.0, "rating": 80, "club": "Norwich"}, {"id": "us1_christian_pu", "name": "Christian Pulisic", "pos": "MID", "nat": "US", "price": 9.5, "rating": 87, "club": "AC Milan"}, {"id": "us2_gio_reyna", "name": "Gio Reyna", "pos": "MID", "nat": "US", "price": 8.0, "rating": 83, "club": "Dortmund"}, {"id": "us3_weston_mcken", "name": "Weston McKennie", "pos": "MID", "nat": "US", "price": 8.5, "rating": 84, "club": "Juventus"}, {"id": "us4_tyler_adams", "name": "Tyler Adams", "pos": "MID", "nat": "US", "price": 8.0, "rating": 83, "club": "Bournemouth"}, {"id": "us5_folarin_balo", "name": "Folarin Balogun", "pos": "FWD", "nat": "US", "price": 9.0, "rating": 84, "club": "Monaco"}, {"id": "us6_tim_weah", "name": "Tim Weah", "pos": "MID", "nat": "US", "price": 7.5, "rating": 82, "club": "Marseille"}, {"id": "us7_antonee_robi", "name": "Antonee Robinson", "pos": "DEF", "nat": "US", "price": 7.0, "rating": 82, "club": "Fulham"}, {"id": "us8_sergi\u00f1o_dest", "name": "Sergi\u00f1o Dest", "pos": "DEF", "nat": "US", "price": 7.0, "rating": 81, "club": "PSV"}, {"id": "us9_ricardo_pepi", "name": "Ricardo Pepi", "pos": "FWD", "nat": "US", "price": 8.5, "rating": 83, "club": "PSV"}, {"id": "us10_matt_turner", "name": "Matt Turner", "pos": "GK", "nat": "US", "price": 5.5, "rating": 81, "club": "New England"}, {"id": "us11_malik_tillma", "name": "Malik Tillman", "pos": "MID", "nat": "US", "price": 7.5, "rating": 82, "club": "Leverkusen"}, {"id": "py1_miguel_almer", "name": "Miguel Almeron", "pos": "MID", "nat": "PY", "price": 8.0, "rating": 83, "club": "Atlanta"}, {"id": "py2_julio_enciso", "name": "Julio Enciso", "pos": "FWD", "nat": "PY", "price": 8.0, "rating": 82, "club": "Strasbourg"}, {"id": "py3_gustavo_gome", "name": "Gustavo Gomez", "pos": "DEF", "nat": "PY", "price": 7.0, "rating": 81, "club": "Palmeiras"}, {"id": "py4_diego_gomez", "name": "Diego Gomez", "pos": "MID", "nat": "PY", "price": 7.5, "rating": 81, "club": "Brighton"}, {"id": "py5_ramon_sosa", "name": "Ramon Sosa", "pos": "MID", "nat": "PY", "price": 7.5, "rating": 81, "club": "Palmeiras"}, {"id": "au1_mathew_ryan", "name": "Mathew Ryan", "pos": "GK", "nat": "AU", "price": 5.5, "rating": 82, "club": "Real Sociedad"}, {"id": "au2_mat_leckie", "name": "Mat Leckie", "pos": "MID", "nat": "AU", "price": 6.5, "rating": 79, "club": "Melbourne"}, {"id": "au3_mitch_iranku", "name": "Mitch Irankunda", "pos": "FWD", "nat": "AU", "price": 7.5, "rating": 81, "club": "Watford"}, {"id": "au4_riley_mcgree", "name": "Riley McGree", "pos": "MID", "nat": "AU", "price": 7.0, "rating": 79, "club": "Middlesbrough"}, {"id": "au5_aleksandar_v", "name": "Aleksandar Vujovic", "pos": "FWD", "nat": "AU", "price": 7.0, "rating": 79, "club": "Macchida Zelvia"}, {"id": "tr1_hakan_calhan", "name": "Hakan Calhanoglu", "pos": "MID", "nat": "TR", "price": 9.0, "rating": 87, "club": "Inter"}, {"id": "tr2_arda_guler", "name": "Arda Guler", "pos": "MID", "nat": "TR", "price": 9.5, "rating": 87, "club": "Real Madrid"}, {"id": "tr3_kenan_yildiz", "name": "Kenan Yildiz", "pos": "FWD", "nat": "TR", "price": 9.5, "rating": 87, "club": "Juventus"}, {"id": "tr4_altay_bayind", "name": "Altay Bayindir", "pos": "GK", "nat": "TR", "price": 5.5, "rating": 82, "club": "Man Utd"}, {"id": "tr5_ferdi_kadiog", "name": "Ferdi Kadioglu", "pos": "DEF", "nat": "TR", "price": 7.5, "rating": 84, "club": "Brighton"}, {"id": "tr6_kerem_akturk", "name": "Kerem Akturkoglu", "pos": "FWD", "nat": "TR", "price": 8.5, "rating": 84, "club": "Barcelona"}, {"id": "tr7_orkun_kokcu", "name": "Orkun Kokcu", "pos": "MID", "nat": "TR", "price": 8.5, "rating": 84, "club": "Benfica"}, {"id": "tr8_merih_demira", "name": "Merih Demiral", "pos": "DEF", "nat": "TR", "price": 7.5, "rating": 83, "club": "Al Qadsiah"}, {"id": "de1_florian_wirt", "name": "Florian Wirtz", "pos": "MID", "nat": "DE", "price": 12.0, "rating": 92, "club": "Liverpool"}, {"id": "de2_jamal_musial", "name": "Jamal Musiala", "pos": "MID", "nat": "DE", "price": 11.5, "rating": 91, "club": "Bayern"}, {"id": "de3_kai_havertz", "name": "Kai Havertz", "pos": "FWD", "nat": "DE", "price": 10.5, "rating": 88, "club": "Arsenal"}, {"id": "de4_joshua_kimmi", "name": "Joshua Kimmich", "pos": "MID", "nat": "DE", "price": 9.5, "rating": 90, "club": "Bayern"}, {"id": "de5_manuel_neuer", "name": "Manuel Neuer", "pos": "GK", "nat": "DE", "price": 5.5, "rating": 84, "club": "Bayern"}, {"id": "de6_antonio_rudi", "name": "Antonio Rudiger", "pos": "DEF", "nat": "DE", "price": 8.0, "rating": 86, "club": "Real Madrid"}, {"id": "de7_jonathan_tah", "name": "Jonathan Tah", "pos": "DEF", "nat": "DE", "price": 7.5, "rating": 84, "club": "Bayern"}, {"id": "de8_leon_goretzk", "name": "Leon Goretzka", "pos": "MID", "nat": "DE", "price": 8.5, "rating": 85, "club": "Bayern"}, {"id": "de9_leroy_sane", "name": "Leroy Sane", "pos": "FWD", "nat": "DE", "price": 9.0, "rating": 86, "club": "Galatasaray"}, {"id": "de10_nick_woltema", "name": "Nick Woltemade", "pos": "FWD", "nat": "DE", "price": 8.0, "rating": 82, "club": "Newcastle"}, {"id": "de11_david_raum", "name": "David Raum", "pos": "DEF", "nat": "DE", "price": 7.0, "rating": 82, "club": "Leipzig"}, {"id": "ec1_moises_caice", "name": "Moises Caicedo", "pos": "MID", "nat": "EC", "price": 10.5, "rating": 88, "club": "Chelsea"}, {"id": "ec2_piero_hincap", "name": "Piero Hincapie", "pos": "DEF", "nat": "EC", "price": 8.5, "rating": 85, "club": "Arsenal"}, {"id": "ec3_willian_pach", "name": "Willian Pacho", "pos": "DEF", "nat": "EC", "price": 8.0, "rating": 84, "club": "PSG"}, {"id": "ec4_enner_valenc", "name": "Enner Valencia", "pos": "FWD", "nat": "EC", "price": 7.5, "rating": 82, "club": "Pachuca"}, {"id": "ec5_gonzalo_plat", "name": "Gonzalo Plata", "pos": "FWD", "nat": "EC", "price": 7.5, "rating": 82, "club": "Flamengo"}, {"id": "ec6_kendry_paez", "name": "Kendry Paez", "pos": "MID", "nat": "EC", "price": 9.0, "rating": 85, "club": "River Plate"}, {"id": "ec7_pervis_estup", "name": "Pervis Estupinan", "pos": "DEF", "nat": "EC", "price": 7.5, "rating": 83, "club": "AC Milan"}, {"id": "ci1_amad_diallo", "name": "Amad Diallo", "pos": "FWD", "nat": "CI", "price": 9.5, "rating": 86, "club": "Man Utd"}, {"id": "ci2_simon_adingr", "name": "Simon Adingra", "pos": "FWD", "nat": "CI", "price": 9.0, "rating": 84, "club": "Monaco"}, {"id": "ci3_franck_kessi", "name": "Franck Kessie", "pos": "MID", "nat": "CI", "price": 8.0, "rating": 83, "club": "Al Ahli"}, {"id": "ci4_ibrahim_sang", "name": "Ibrahim Sangare", "pos": "MID", "nat": "CI", "price": 8.0, "rating": 83, "club": "Nottm Forest"}, {"id": "ci5_ousmane_diom", "name": "Ousmane Diomande", "pos": "DEF", "nat": "CI", "price": 8.0, "rating": 83, "club": "Sporting"}, {"id": "ci6_alban_lafont", "name": "Alban Lafont", "pos": "GK", "nat": "CI", "price": 5.5, "rating": 82, "club": "Panathinaikos"}, {"id": "ci7_angeyoan_bon", "name": "Ange-Yoan Bonny", "pos": "FWD", "nat": "CI", "price": 8.5, "rating": 83, "club": "Inter"}, {"id": "ci8_nicolas_pepe", "name": "Nicolas Pepe", "pos": "FWD", "nat": "CI", "price": 7.5, "rating": 81, "club": "Villarreal"}, {"id": "cw1_tahith_chong", "name": "Tahith Chong", "pos": "FWD", "nat": "CW", "price": 7.0, "rating": 79, "club": "Sheffield Utd"}, {"id": "cw2_cuco_martina", "name": "Cuco Martina", "pos": "DEF", "nat": "CW", "price": 5.5, "rating": 74, "club": "Retired"}, {"id": "cw3_leandro_bacu", "name": "Leandro Bacuna", "pos": "MID", "nat": "CW", "price": 6.0, "rating": 75, "club": "Igdir"}, {"id": "cw4_sontje_hanse", "name": "Sontje Hansen", "pos": "FWD", "nat": "CW", "price": 7.0, "rating": 79, "club": "Middlesbrough"}, {"id": "nl1_virgil_van_d", "name": "Virgil van Dijk", "pos": "DEF", "nat": "NL", "price": 8.5, "rating": 88, "club": "Liverpool"}, {"id": "nl2_frenkie_de_j", "name": "Frenkie de Jong", "pos": "MID", "nat": "NL", "price": 9.5, "rating": 88, "club": "Barcelona"}, {"id": "nl3_ryan_gravenb", "name": "Ryan Gravenberch", "pos": "MID", "nat": "NL", "price": 9.0, "rating": 87, "club": "Liverpool"}, {"id": "nl4_tijjani_reij", "name": "Tijjani Reijnders", "pos": "MID", "nat": "NL", "price": 9.5, "rating": 88, "club": "Man City"}, {"id": "nl5_cody_gakpo", "name": "Cody Gakpo", "pos": "FWD", "nat": "NL", "price": 10.0, "rating": 87, "club": "Liverpool"}, {"id": "nl6_nathan_ake", "name": "Nathan Ake", "pos": "DEF", "nat": "NL", "price": 7.5, "rating": 84, "club": "Man City"}, {"id": "nl7_jurrien_timb", "name": "Jurrien Timber", "pos": "DEF", "nat": "NL", "price": 8.0, "rating": 85, "club": "Arsenal"}, {"id": "nl8_teun_koopmei", "name": "Teun Koopmeiners", "pos": "MID", "nat": "NL", "price": 9.0, "rating": 86, "club": "Juventus"}, {"id": "nl9_bart_verbrug", "name": "Bart Verbruggen", "pos": "GK", "nat": "NL", "price": 6.0, "rating": 83, "club": "Brighton"}, {"id": "nl10_brian_brobbe", "name": "Brian Brobbey", "pos": "FWD", "nat": "NL", "price": 8.5, "rating": 83, "club": "Sunderland"}, {"id": "jp1_takefusa_kub", "name": "Takefusa Kubo", "pos": "MID", "nat": "JP", "price": 9.0, "rating": 86, "club": "Real Sociedad"}, {"id": "jp2_wataru_endo", "name": "Wataru Endo", "pos": "MID", "nat": "JP", "price": 8.5, "rating": 85, "club": "Liverpool"}, {"id": "jp3_daichi_kamad", "name": "Daichi Kamada", "pos": "MID", "nat": "JP", "price": 8.0, "rating": 83, "club": "Crystal Palace"}, {"id": "jp4_ritsu_doan", "name": "Ritsu Doan", "pos": "MID", "nat": "JP", "price": 8.0, "rating": 83, "club": "Freiburg"}, {"id": "jp5_ayase_ueda", "name": "Ayase Ueda", "pos": "FWD", "nat": "JP", "price": 8.0, "rating": 82, "club": "Feyenoord"}, {"id": "jp6_daizen_maeda", "name": "Daizen Maeda", "pos": "FWD", "nat": "JP", "price": 7.5, "rating": 82, "club": "Celtic"}, {"id": "jp7_zion_suzuki", "name": "Zion Suzuki", "pos": "GK", "nat": "JP", "price": 5.5, "rating": 82, "club": "Parma"}, {"id": "jp8_takehiro_tom", "name": "Takehiro Tomiyasu", "pos": "DEF", "nat": "JP", "price": 7.5, "rating": 82, "club": "Arsenal"}, {"id": "se1_viktor_gyoke", "name": "Viktor Gyokeres", "pos": "FWD", "nat": "SE", "price": 12.0, "rating": 91, "club": "Arsenal"}, {"id": "se2_alexander_is", "name": "Alexander Isak", "pos": "FWD", "nat": "SE", "price": 12.5, "rating": 91, "club": "Liverpool"}, {"id": "se3_anthony_elan", "name": "Anthony Elanga", "pos": "FWD", "nat": "SE", "price": 9.0, "rating": 84, "club": "Newcastle"}, {"id": "se4_dejan_kuluse", "name": "Dejan Kulusevski", "pos": "MID", "nat": "SE", "price": 9.5, "rating": 86, "club": "Tottenham"}, {"id": "se5_victor_linde", "name": "Victor Lindelof", "pos": "DEF", "nat": "SE", "price": 7.0, "rating": 82, "club": "Aston Villa"}, {"id": "se6_lucas_bergva", "name": "Lucas Bergvall", "pos": "MID", "nat": "SE", "price": 8.5, "rating": 84, "club": "Tottenham"}, {"id": "se7_viktor_johan", "name": "Viktor Johansson", "pos": "GK", "nat": "SE", "price": 5.0, "rating": 80, "club": "Stoke"}, {"id": "tn1_hannibal_mej", "name": "Hannibal Mejbri", "pos": "MID", "nat": "TN", "price": 8.0, "rating": 82, "club": "Burnley"}, {"id": "tn2_ellyes_skhir", "name": "Ellyes Skhiri", "pos": "MID", "nat": "TN", "price": 7.5, "rating": 81, "club": "Frankfurt"}, {"id": "tn3_montassar_ta", "name": "Montassar Talbi", "pos": "DEF", "nat": "TN", "price": 6.5, "rating": 79, "club": "Lorient"}, {"id": "tn4_khalil_ayari", "name": "Khalil Ayari", "pos": "FWD", "nat": "TN", "price": 7.0, "rating": 79, "club": "PSG"}, {"id": "tn5_aymen_dahmen", "name": "Aymen Dahmen", "pos": "GK", "nat": "TN", "price": 4.5, "rating": 78, "club": "CS Sfaxien"}, {"id": "be1_kevin_de_bru", "name": "Kevin De Bruyne", "pos": "MID", "nat": "BE", "price": 11.5, "rating": 91, "club": "Man City"}, {"id": "be2_romelu_lukak", "name": "Romelu Lukaku", "pos": "FWD", "nat": "BE", "price": 10.5, "rating": 88, "club": "Roma"}, {"id": "be3_thibaut_cour", "name": "Thibaut Courtois", "pos": "GK", "nat": "BE", "price": 6.5, "rating": 90, "club": "Real Madrid"}, {"id": "be4_jeremy_doku", "name": "Jeremy Doku", "pos": "FWD", "nat": "BE", "price": 10.0, "rating": 87, "club": "Man City"}, {"id": "be5_charles_de_k", "name": "Charles De Ketelaere", "pos": "FWD", "nat": "BE", "price": 9.5, "rating": 86, "club": "Atalanta"}, {"id": "be6_amadou_onana", "name": "Amadou Onana", "pos": "MID", "nat": "BE", "price": 9.5, "rating": 86, "club": "Arsenal"}, {"id": "be7_leandro_tros", "name": "Leandro Trossard", "pos": "FWD", "nat": "BE", "price": 9.0, "rating": 85, "club": "Arsenal"}, {"id": "be8_youri_tielem", "name": "Youri Tielemans", "pos": "MID", "nat": "BE", "price": 8.5, "rating": 84, "club": "Aston Villa"}, {"id": "be9_zeno_debast", "name": "Zeno Debast", "pos": "DEF", "nat": "BE", "price": 7.5, "rating": 83, "club": "Anderlecht"}, {"id": "eg1_mohamed_sala", "name": "Mohamed Salah", "pos": "FWD", "nat": "EG", "price": 13.0, "rating": 91, "club": "Liverpool"}, {"id": "eg2_omar_marmous", "name": "Omar Marmoush", "pos": "FWD", "nat": "EG", "price": 10.0, "rating": 87, "club": "Man City"}, {"id": "eg3_mahmoud_trez", "name": "Mahmoud Trezeguet", "pos": "MID", "nat": "EG", "price": 7.5, "rating": 81, "club": "Al Ahly"}, {"id": "eg4_hamza_abdelk", "name": "Hamza Abdelkarim", "pos": "FWD", "nat": "EG", "price": 9.0, "rating": 84, "club": "Barcelona"}, {"id": "eg5_mohamed_el_s", "name": "Mohamed El Shenawy", "pos": "GK", "nat": "EG", "price": 5.0, "rating": 80, "club": "Al Ahly"}, {"id": "eg6_mohamed_abde", "name": "Mohamed Abdelmonem", "pos": "DEF", "nat": "EG", "price": 6.5, "rating": 79, "club": "Nice"}, {"id": "ir1_mehdi_taremi", "name": "Mehdi Taremi", "pos": "FWD", "nat": "IR", "price": 9.0, "rating": 85, "club": "Man City"}, {"id": "ir2_alireza_jaha", "name": "Alireza Jahanbakhsh", "pos": "MID", "nat": "IR", "price": 7.5, "rating": 81, "club": "Feyenoord"}, {"id": "ir3_saman_ghoddo", "name": "Saman Ghoddos", "pos": "MID", "nat": "IR", "price": 7.0, "rating": 79, "club": "Brentford"}, {"id": "ir4_ehsan_hajsaf", "name": "Ehsan Hajsafi", "pos": "DEF", "nat": "IR", "price": 6.0, "rating": 77, "club": "Olympiacos"}, {"id": "ir5_alireza_beir", "name": "Alireza Beiranvand", "pos": "GK", "nat": "IR", "price": 5.0, "rating": 79, "club": "Club Brugge"}, {"id": "nz1_chris_wood", "name": "Chris Wood", "pos": "FWD", "nat": "NZ", "price": 8.0, "rating": 81, "club": "Nottm Forest"}, {"id": "nz2_liberato_cac", "name": "Liberato Cacace", "pos": "DEF", "nat": "NZ", "price": 6.5, "rating": 79, "club": "Empoli"}, {"id": "nz3_marko_stamen", "name": "Marko Stamenic", "pos": "MID", "nat": "NZ", "price": 6.5, "rating": 78, "club": "Swansea"}, {"id": "nz4_tyler_bindon", "name": "Tyler Bindon", "pos": "DEF", "nat": "NZ", "price": 6.0, "rating": 77, "club": "Nottm Forest"}, {"id": "nz5_max_crocombe", "name": "Max Crocombe", "pos": "GK", "nat": "NZ", "price": 4.5, "rating": 76, "club": "Millwall"}, {"id": "es1_lamine_yamal", "name": "Lamine Yamal", "pos": "FWD", "nat": "ES", "price": 13.0, "rating": 93, "club": "Barcelona"}, {"id": "es2_pedri", "name": "Pedri", "pos": "MID", "nat": "ES", "price": 11.0, "rating": 91, "club": "Barcelona"}, {"id": "es3_rodri", "name": "Rodri", "pos": "MID", "nat": "ES", "price": 10.0, "rating": 91, "club": "Man City"}, {"id": "es4_gavi", "name": "Gavi", "pos": "MID", "nat": "ES", "price": 9.5, "rating": 88, "club": "Barcelona"}, {"id": "es5_nico_william", "name": "Nico Williams", "pos": "FWD", "nat": "ES", "price": 11.0, "rating": 90, "club": "Bilbao"}, {"id": "es6_marc_cucurel", "name": "Marc Cucurella", "pos": "DEF", "nat": "ES", "price": 7.5, "rating": 84, "club": "Chelsea"}, {"id": "es7_pau_cubarsi", "name": "Pau Cubarsi", "pos": "DEF", "nat": "ES", "price": 8.5, "rating": 87, "club": "Barcelona"}, {"id": "es8_dani_olmo", "name": "Dani Olmo", "pos": "MID", "nat": "ES", "price": 10.0, "rating": 88, "club": "Leipzig"}, {"id": "es9_unai_simon", "name": "Unai Simon", "pos": "GK", "nat": "ES", "price": 6.0, "rating": 85, "club": "Bilbao"}, {"id": "es10_fabian_ruiz", "name": "Fabian Ruiz", "pos": "MID", "nat": "ES", "price": 8.5, "rating": 85, "club": "PSG"}, {"id": "es11_alejandro_gr", "name": "Alejandro Grimaldo", "pos": "DEF", "nat": "ES", "price": 8.5, "rating": 86, "club": "Leverkusen"}, {"id": "es12_martin_zubim", "name": "Martin Zubimendi", "pos": "MID", "nat": "ES", "price": 9.0, "rating": 87, "club": "Arsenal"}, {"id": "uy1_federico_val", "name": "Federico Valverde", "pos": "MID", "nat": "UY", "price": 11.0, "rating": 90, "club": "Real Madrid"}, {"id": "uy2_darwin_nunez", "name": "Darwin Nunez", "pos": "FWD", "nat": "UY", "price": 11.5, "rating": 90, "club": "Al Hilal"}, {"id": "uy3_ronald_arauj", "name": "Ronald Araujo", "pos": "DEF", "nat": "UY", "price": 8.5, "rating": 87, "club": "Barcelona"}, {"id": "uy4_jose_maria_g", "name": "Jose Maria Gimenez", "pos": "DEF", "nat": "UY", "price": 7.5, "rating": 84, "club": "Atletico"}, {"id": "uy5_manuel_ugart", "name": "Manuel Ugarte", "pos": "MID", "nat": "UY", "price": 9.0, "rating": 86, "club": "Man Utd"}, {"id": "uy6_rodrigo_bent", "name": "Rodrigo Bentancur", "pos": "MID", "nat": "UY", "price": 8.5, "rating": 85, "club": "Tottenham"}, {"id": "uy7_nicolas_de_l", "name": "Nicolas de la Cruz", "pos": "MID", "nat": "UY", "price": 8.0, "rating": 83, "club": "Flamengo"}, {"id": "uy8_sergio_roche", "name": "Sergio Rochet", "pos": "GK", "nat": "UY", "price": 5.0, "rating": 81, "club": "Internacional"}, {"id": "sa1_salem_al_daw", "name": "Salem Al Dawsari", "pos": "MID", "nat": "SA", "price": 7.0, "rating": 80, "club": "Al Hilal"}, {"id": "sa2_mohammed_al_", "name": "Mohammed Al Owais", "pos": "GK", "nat": "SA", "price": 5.0, "rating": 79, "club": "Al Ula"}, {"id": "sa3_firas_al_bur", "name": "Firas Al Buraikan", "pos": "FWD", "nat": "SA", "price": 7.5, "rating": 80, "club": "Al Ahli"}, {"id": "sa4_saud_abdulha", "name": "Saud Abdulhamid", "pos": "DEF", "nat": "SA", "price": 7.0, "rating": 79, "club": "Lens"}, {"id": "sa5_nasser_al_da", "name": "Nasser Al Dawsari", "pos": "MID", "nat": "SA", "price": 6.5, "rating": 79, "club": "Al Hilal"}, {"id": "cv1_ryan_mendes", "name": "Ryan Mendes", "pos": "FWD", "nat": "CV", "price": 6.0, "rating": 75, "club": "Chaves"}, {"id": "cv2_garry_rodrig", "name": "Garry Rodrigues", "pos": "FWD", "nat": "CV", "price": 6.5, "rating": 77, "club": "Sparta Rotterdam"}, {"id": "cv3_logan_costa", "name": "Logan Costa", "pos": "DEF", "nat": "CV", "price": 6.5, "rating": 77, "club": "Toulouse"}, {"id": "cv4_jamiro_monte", "name": "Jamiro Monteiro", "pos": "MID", "nat": "CV", "price": 6.5, "rating": 76, "club": "Philadelphia"}, {"id": "fr1_kylian_mbapp", "name": "Kylian Mbappe", "pos": "FWD", "nat": "FR", "price": 15.0, "rating": 96, "club": "Real Madrid"}, {"id": "fr2_antoine_grie", "name": "Antoine Griezmann", "pos": "FWD", "nat": "FR", "price": 10.0, "rating": 86, "club": "Atletico"}, {"id": "fr3_william_sali", "name": "William Saliba", "pos": "DEF", "nat": "FR", "price": 9.0, "rating": 88, "club": "Arsenal"}, {"id": "fr4_aurelien_tch", "name": "Aurelien Tchouameni", "pos": "MID", "nat": "FR", "price": 9.0, "rating": 87, "club": "Real Madrid"}, {"id": "fr5_mike_maignan", "name": "Mike Maignan", "pos": "GK", "nat": "FR", "price": 6.5, "rating": 87, "club": "AC Milan"}, {"id": "fr6_jules_kounde", "name": "Jules Kounde", "pos": "DEF", "nat": "FR", "price": 9.0, "rating": 87, "club": "Barcelona"}, {"id": "fr7_ousmane_demb", "name": "Ousmane Dembele", "pos": "FWD", "nat": "FR", "price": 10.5, "rating": 88, "club": "PSG"}, {"id": "fr8_marcus_thura", "name": "Marcus Thuram", "pos": "FWD", "nat": "FR", "price": 10.0, "rating": 87, "club": "Inter"}, {"id": "fr9_ngolo_kante", "name": "N'Golo Kante", "pos": "MID", "nat": "FR", "price": 8.0, "rating": 83, "club": "Fenerbahce"}, {"id": "fr10_warren_za\u00efre", "name": "Warren Za\u00efre-Emery", "pos": "MID", "nat": "FR", "price": 9.0, "rating": 86, "club": "PSG"}, {"id": "fr11_bradley_barc", "name": "Bradley Barcola", "pos": "FWD", "nat": "FR", "price": 9.5, "rating": 86, "club": "PSG"}, {"id": "fr12_lucas_hernan", "name": "Lucas Hernandez", "pos": "DEF", "nat": "FR", "price": 8.0, "rating": 85, "club": "PSG"}, {"id": "fr13_theo_hernand", "name": "Theo Hernandez", "pos": "DEF", "nat": "FR", "price": 9.0, "rating": 87, "club": "Al Hilal"}, {"id": "fr14_desire_doue", "name": "Desire Doue", "pos": "FWD", "nat": "FR", "price": 9.5, "rating": 86, "club": "PSG"}, {"id": "fr15_ibrahima_kon", "name": "Ibrahima Konate", "pos": "DEF", "nat": "FR", "price": 8.5, "rating": 86, "club": "Liverpool"}, {"id": "sn1_sadio_mane", "name": "Sadio Mane", "pos": "FWD", "nat": "SN", "price": 9.5, "rating": 85, "club": "Al Nassr"}, {"id": "sn2_nicolas_jack", "name": "Nicolas Jackson", "pos": "FWD", "nat": "SN", "price": 9.5, "rating": 85, "club": "Chelsea"}, {"id": "sn3_iliman_ndiay", "name": "Iliman Ndiaye", "pos": "FWD", "nat": "SN", "price": 8.5, "rating": 83, "club": "Everton"}, {"id": "sn4_idrissa_guey", "name": "Idrissa Gueye", "pos": "MID", "nat": "SN", "price": 7.0, "rating": 79, "club": "Everton"}, {"id": "sn5_pape_matar_s", "name": "Pape Matar Sarr", "pos": "MID", "nat": "SN", "price": 8.5, "rating": 84, "club": "Tottenham"}, {"id": "sn6_edouard_mend", "name": "Edouard Mendy", "pos": "GK", "nat": "SN", "price": 5.5, "rating": 82, "club": "Al Ahli"}, {"id": "sn7_kalidou_koul", "name": "Kalidou Koulibaly", "pos": "DEF", "nat": "SN", "price": 7.0, "rating": 80, "club": "Al Hilal"}, {"id": "sn8_ismaila_sarr", "name": "Ismaila Sarr", "pos": "FWD", "nat": "SN", "price": 8.0, "rating": 82, "club": "Palace"}, {"id": "no1_erling_haala", "name": "Erling Haaland", "pos": "FWD", "nat": "NO", "price": 15.0, "rating": 96, "club": "Man City"}, {"id": "no2_martin_odega", "name": "Martin Odegaard", "pos": "MID", "nat": "NO", "price": 11.0, "rating": 90, "club": "Arsenal"}, {"id": "no3_alexander_so", "name": "Alexander Sorloth", "pos": "FWD", "nat": "NO", "price": 9.0, "rating": 84, "club": "Atletico"}, {"id": "no4_sander_berge", "name": "Sander Berge", "pos": "MID", "nat": "NO", "price": 8.0, "rating": 82, "club": "Burnley"}, {"id": "no5_antonio_nusa", "name": "Antonio Nusa", "pos": "FWD", "nat": "NO", "price": 8.5, "rating": 83, "club": "Dortmund"}, {"id": "no6_oscar_bobb", "name": "Oscar Bobb", "pos": "MID", "nat": "NO", "price": 8.5, "rating": 83, "club": "Man City"}, {"id": "no7_orjan_nyland", "name": "Orjan Nyland", "pos": "GK", "nat": "NO", "price": 5.0, "rating": 79, "club": "Sunderland"}, {"id": "no8_kristoffer_a", "name": "Kristoffer Ajer", "pos": "DEF", "nat": "NO", "price": 7.0, "rating": 80, "club": "Brentford"}, {"id": "iq1_alaa_abbas", "name": "Alaa Abbas", "pos": "FWD", "nat": "IQ", "price": 5.5, "rating": 74, "club": "Al Quwa Al Jawiya"}, {"id": "iq2_amir_al_amma", "name": "Amir Al Ammari", "pos": "MID", "nat": "IQ", "price": 5.0, "rating": 72, "club": "Erbil"}, {"id": "iq3_amjad_attwan", "name": "Amjad Attwan", "pos": "GK", "nat": "IQ", "price": 4.0, "rating": 71, "club": "Al Zawraa"}, {"id": "ar1_lionel_messi", "name": "Lionel Messi", "pos": "FWD", "nat": "AR", "price": 14.5, "rating": 94, "club": "Inter Miami"}, {"id": "ar2_lautaro_mart", "name": "Lautaro Martinez", "pos": "FWD", "nat": "AR", "price": 11.5, "rating": 90, "club": "Inter"}, {"id": "ar3_julian_alvar", "name": "Julian Alvarez", "pos": "FWD", "nat": "AR", "price": 11.0, "rating": 90, "club": "Atletico"}, {"id": "ar4_alexis_mac_a", "name": "Alexis Mac Allister", "pos": "MID", "nat": "AR", "price": 10.0, "rating": 88, "club": "Liverpool"}, {"id": "ar5_enzo_fernand", "name": "Enzo Fernandez", "pos": "MID", "nat": "AR", "price": 9.5, "rating": 87, "club": "Chelsea"}, {"id": "ar6_rodrigo_de_p", "name": "Rodrigo de Paul", "pos": "MID", "nat": "AR", "price": 8.5, "rating": 84, "club": "Inter Miami"}, {"id": "ar7_emiliano_mar", "name": "Emiliano Martinez", "pos": "GK", "nat": "AR", "price": 7.0, "rating": 88, "club": "Aston Villa"}, {"id": "ar8_lisandro_mar", "name": "Lisandro Martinez", "pos": "DEF", "nat": "AR", "price": 8.5, "rating": 86, "club": "Man Utd"}, {"id": "ar9_cristian_rom", "name": "Cristian Romero", "pos": "DEF", "nat": "AR", "price": 8.5, "rating": 86, "club": "Tottenham"}, {"id": "ar10_nahuel_molin", "name": "Nahuel Molina", "pos": "DEF", "nat": "AR", "price": 7.5, "rating": 83, "club": "Atletico"}, {"id": "ar11_nico_paz", "name": "Nico Paz", "pos": "MID", "nat": "AR", "price": 9.0, "rating": 85, "club": "Como"}, {"id": "dz1_riyad_mahrez", "name": "Riyad Mahrez", "pos": "FWD", "nat": "DZ", "price": 9.5, "rating": 86, "club": "Al Ahli"}, {"id": "dz2_mohamed_amou", "name": "Mohamed Amoura", "pos": "FWD", "nat": "DZ", "price": 8.5, "rating": 83, "club": "Wolfsburg"}, {"id": "dz3_amine_gouiri", "name": "Amine Gouiri", "pos": "FWD", "nat": "DZ", "price": 8.5, "rating": 82, "club": "Marseille"}, {"id": "dz4_far\u00e8s_chaibi", "name": "Far\u00e8s Chaibi", "pos": "MID", "nat": "DZ", "price": 8.0, "rating": 81, "club": "Frankfurt"}, {"id": "dz5_ramy_benseba", "name": "Ramy Bensebaini", "pos": "DEF", "nat": "DZ", "price": 7.0, "rating": 81, "club": "Dortmund"}, {"id": "dz6_ibrahim_maza", "name": "Ibrahim Maza", "pos": "MID", "nat": "DZ", "price": 8.5, "rating": 83, "club": "Leverkusen"}, {"id": "dz7_rayan_aitnou", "name": "Rayan Ait-Nouri", "pos": "DEF", "nat": "DZ", "price": 8.0, "rating": 83, "club": "Man City"}, {"id": "dz8_houssem_aoua", "name": "Houssem Aouar", "pos": "MID", "nat": "DZ", "price": 7.5, "rating": 81, "club": "Al Ittihad"}, {"id": "at1_marcel_sabit", "name": "Marcel Sabitzer", "pos": "MID", "nat": "AT", "price": 9.0, "rating": 85, "club": "Man Utd"}, {"id": "at2_christoph_ba", "name": "Christoph Baumgartner", "pos": "MID", "nat": "AT", "price": 8.5, "rating": 83, "club": "Leipzig"}, {"id": "at3_david_alaba", "name": "David Alaba", "pos": "DEF", "nat": "AT", "price": 7.0, "rating": 82, "club": "Real Madrid"}, {"id": "at4_alexander_sc", "name": "Alexander Schlager", "pos": "GK", "nat": "AT", "price": 5.0, "rating": 80, "club": "Leipzig"}, {"id": "at5_kevin_danso", "name": "Kevin Danso", "pos": "DEF", "nat": "AT", "price": 7.5, "rating": 82, "club": "Lens"}, {"id": "at6_marko_arnaut", "name": "Marko Arnautovic", "pos": "FWD", "nat": "AT", "price": 7.5, "rating": 80, "club": "Bologna"}, {"id": "jo1_mousa_al_tam", "name": "Mousa Al Tamari", "pos": "FWD", "nat": "JO", "price": 6.0, "rating": 75, "club": "Montpellier"}, {"id": "jo2_mahmoud_al_m", "name": "Mahmoud Al Mardi", "pos": "MID", "nat": "JO", "price": 5.5, "rating": 73, "club": "Al Faisaly"}, {"id": "jo3_ibrahim_sabr", "name": "Ibrahim Sabra", "pos": "FWD", "nat": "JO", "price": 5.5, "rating": 73, "club": "Rayo Vallecano"}, {"id": "pt1_cristiano_ro", "name": "Cristiano Ronaldo", "pos": "FWD", "nat": "PT", "price": 11.5, "rating": 89, "club": "Al Nassr"}, {"id": "pt2_bruno_fernan", "name": "Bruno Fernandes", "pos": "MID", "nat": "PT", "price": 10.5, "rating": 89, "club": "Man Utd"}, {"id": "pt3_ruben_dias", "name": "Ruben Dias", "pos": "DEF", "nat": "PT", "price": 8.5, "rating": 89, "club": "Man City"}, {"id": "pt4_bernardo_sil", "name": "Bernardo Silva", "pos": "MID", "nat": "PT", "price": 10.0, "rating": 89, "club": "Man City"}, {"id": "pt5_diogo_costa", "name": "Diogo Costa", "pos": "GK", "nat": "PT", "price": 6.5, "rating": 87, "club": "Porto"}, {"id": "pt6_vitinha", "name": "Vitinha", "pos": "MID", "nat": "PT", "price": 9.5, "rating": 87, "club": "PSG"}, {"id": "pt7_pedro_neto", "name": "Pedro Neto", "pos": "FWD", "nat": "PT", "price": 9.5, "rating": 87, "club": "Chelsea"}, {"id": "pt8_rafael_leao", "name": "Rafael Leao", "pos": "FWD", "nat": "PT", "price": 10.5, "rating": 88, "club": "AC Milan"}, {"id": "pt9_nuno_mendes", "name": "Nuno Mendes", "pos": "DEF", "nat": "PT", "price": 8.5, "rating": 86, "club": "PSG"}, {"id": "pt10_joao_neves", "name": "Joao Neves", "pos": "MID", "nat": "PT", "price": 9.5, "rating": 87, "club": "PSG"}, {"id": "pt11_joao_felix", "name": "Joao Felix", "pos": "FWD", "nat": "PT", "price": 10.0, "rating": 87, "club": "Chelsea"}, {"id": "pt12_goncalo_ramo", "name": "Goncalo Ramos", "pos": "FWD", "nat": "PT", "price": 9.5, "rating": 86, "club": "PSG"}, {"id": "co1_luis_diaz", "name": "Luis Diaz", "pos": "FWD", "nat": "CO", "price": 11.0, "rating": 89, "club": "Liverpool"}, {"id": "co2_juan_cuadrad", "name": "Juan Cuadrado", "pos": "MID", "nat": "CO", "price": 7.5, "rating": 81, "club": "Inter"}, {"id": "co3_james_rodrig", "name": "James Rodriguez", "pos": "MID", "nat": "CO", "price": 8.0, "rating": 82, "club": "Rayo Vallecano"}, {"id": "co4_jhon_jader_d", "name": "Jhon Jader Duran", "pos": "FWD", "nat": "CO", "price": 9.5, "rating": 85, "club": "Aston Villa"}, {"id": "co5_davinson_san", "name": "Davinson Sanchez", "pos": "DEF", "nat": "CO", "price": 7.0, "rating": 80, "club": "Galatasaray"}, {"id": "co6_camilo_varga", "name": "Camilo Vargas", "pos": "GK", "nat": "CO", "price": 5.0, "rating": 79, "club": "Atlas"}, {"id": "co7_wilmar_barri", "name": "Wilmar Barrios", "pos": "MID", "nat": "CO", "price": 7.0, "rating": 79, "club": "Zenit"}, {"id": "uz1_eldor_shomur", "name": "Eldor Shomurodov", "pos": "FWD", "nat": "UZ", "price": 8.0, "rating": 81, "club": "Cagliari"}, {"id": "uz2_jaloliddin_m", "name": "Jaloliddin Masharipov", "pos": "MID", "nat": "UZ", "price": 7.0, "rating": 78, "club": "Bunyodkor"}, {"id": "uz3_farrukh_tash", "name": "Farrukh Tashkentov", "pos": "GK", "nat": "UZ", "price": 4.5, "rating": 75, "club": "Pakhtakor"}, {"id": "cd1_aaron_wanbis", "name": "Aaron Wan-Bissaka", "pos": "DEF", "nat": "CD", "price": 7.0, "rating": 80, "club": "Man Utd"}, {"id": "cd2_gedeon_kalul", "name": "Gedeon Kalulu", "pos": "DEF", "nat": "CD", "price": 7.0, "rating": 80, "club": "Juventus"}, {"id": "cd3_seko_fofana", "name": "Seko Fofana", "pos": "MID", "nat": "CD", "price": 7.5, "rating": 81, "club": "Rennes"}, {"id": "gbeng1_jude_belling", "name": "Jude Bellingham", "pos": "MID", "nat": "GB-ENG", "price": 13.0, "rating": 93, "club": "Real Madrid"}, {"id": "gbeng2_harry_kane", "name": "Harry Kane", "pos": "FWD", "nat": "GB-ENG", "price": 13.0, "rating": 92, "club": "Bayern"}, {"id": "gbeng3_bukayo_saka", "name": "Bukayo Saka", "pos": "MID", "nat": "GB-ENG", "price": 11.5, "rating": 90, "club": "Arsenal"}, {"id": "gbeng4_phil_foden", "name": "Phil Foden", "pos": "MID", "nat": "GB-ENG", "price": 11.5, "rating": 90, "club": "Man City"}, {"id": "gbeng5_trent_alexan", "name": "Trent Alexander-Arnold", "pos": "DEF", "nat": "GB-ENG", "price": 10.0, "rating": 90, "club": "Real Madrid"}, {"id": "gbeng6_declan_rice", "name": "Declan Rice", "pos": "MID", "nat": "GB-ENG", "price": 10.5, "rating": 90, "club": "Arsenal"}, {"id": "gbeng7_jordan_pickf", "name": "Jordan Pickford", "pos": "GK", "nat": "GB-ENG", "price": 5.5, "rating": 84, "club": "Everton"}, {"id": "gbeng8_marc_guehi", "name": "Marc Guehi", "pos": "DEF", "nat": "GB-ENG", "price": 8.0, "rating": 84, "club": "Newcastle"}, {"id": "gbeng9_cole_palmer", "name": "Cole Palmer", "pos": "MID", "nat": "GB-ENG", "price": 12.0, "rating": 91, "club": "Chelsea"}, {"id": "gbeng10_marcus_rashf", "name": "Marcus Rashford", "pos": "FWD", "nat": "GB-ENG", "price": 9.0, "rating": 84, "club": "Man Utd"}, {"id": "gbeng11_alexanderarn", "name": "Alexander-Arnold", "pos": "DEF", "nat": "GB-ENG", "price": 9.5, "rating": 89, "club": "Real Madrid"}, {"id": "gbeng12_eberechi_eze", "name": "Eberechi Eze", "pos": "MID", "nat": "GB-ENG", "price": 9.5, "rating": 87, "club": "Crystal Palace"}, {"id": "hr1_luka_modric", "name": "Luka Modric", "pos": "MID", "nat": "HR", "price": 9.5, "rating": 88, "club": "Real Madrid"}, {"id": "hr2_mateo_kovaci", "name": "Mateo Kovacic", "pos": "MID", "nat": "HR", "price": 9.0, "rating": 87, "club": "Man City"}, {"id": "hr3_josko_gvardi", "name": "Josko Gvardiol", "pos": "DEF", "nat": "HR", "price": 9.0, "rating": 88, "club": "Man City"}, {"id": "hr4_ivan_perisic", "name": "Ivan Perisic", "pos": "MID", "nat": "HR", "price": 7.5, "rating": 80, "club": "Retired"}, {"id": "hr5_dominik_liva", "name": "Dominik Livakovic", "pos": "GK", "nat": "HR", "price": 5.5, "rating": 83, "club": "Fenerbahce"}, {"id": "hr6_bruno_petkov", "name": "Bruno Petkovic", "pos": "FWD", "nat": "HR", "price": 7.5, "rating": 80, "club": "Dinamo Zagreb"}, {"id": "hr7_lovro_majer", "name": "Lovro Majer", "pos": "MID", "nat": "HR", "price": 8.5, "rating": 84, "club": "Wolfsburg"}, {"id": "gh1_mohammed_kud", "name": "Mohammed Kudus", "pos": "MID", "nat": "GH", "price": 10.0, "rating": 87, "club": "West Ham"}, {"id": "gh2_thomas_parte", "name": "Thomas Partey", "pos": "MID", "nat": "GH", "price": 8.5, "rating": 84, "club": "Arsenal"}, {"id": "gh3_jordan_ayew", "name": "Jordan Ayew", "pos": "FWD", "nat": "GH", "price": 7.5, "rating": 80, "club": "Leicester"}, {"id": "gh4_kamaldeen_su", "name": "Kamaldeen Sulemana", "pos": "FWD", "nat": "GH", "price": 8.5, "rating": 83, "club": "Southampton"}, {"id": "gh5_abdul_fatawu", "name": "Abdul Fatawu Issahaku", "pos": "FWD", "nat": "GH", "price": 8.5, "rating": 83, "club": "Leicester"}, {"id": "gh6_lawrence_ati", "name": "Lawrence Ati-Zigi", "pos": "GK", "nat": "GH", "price": 5.0, "rating": 79, "club": "St Gallen"}, {"id": "pa1_ismael_diaz", "name": "Ismael Diaz", "pos": "FWD", "nat": "PA", "price": 7.0, "rating": 78, "club": "Toulouse"}, {"id": "pa2_adalberto_ca", "name": "Adalberto Carrasquilla", "pos": "MID", "nat": "PA", "price": 7.0, "rating": 79, "club": "Inter Miami"}, {"id": "pa3_luis_mejia", "name": "Luis Mejia", "pos": "GK", "nat": "PA", "price": 4.5, "rating": 76, "club": "Monterrey"}, {"id": "pa4_ernesto_walk", "name": "Ernesto Walker", "pos": "DEF", "nat": "PA", "price": 6.0, "rating": 76, "club": "Panathinaikos"}];
+var BUDGET = 120;
+var TEAMS_DATA={"MX": {"heb": "מקסיקו", "flag": "mx", "group": "A"}, "KR": {"heb": "דרום קוריאה", "flag": "kr", "group": "A"}, "ZA": {"heb": "דרום אפריקה", "flag": "za", "group": "A"}, "CZ": {"heb": "צ'כיה", "flag": "cz", "group": "A"}, "CA": {"heb": "קנדה", "flag": "ca", "group": "B"}, "CH": {"heb": "שוויץ", "flag": "ch", "group": "B"}, "QA": {"heb": "קטאר", "flag": "qa", "group": "B"}, "BA": {"heb": "בוסניה", "flag": "ba", "group": "B"}, "BR": {"heb": "ברזיל", "flag": "br", "group": "C"}, "MA": {"heb": "מרוקו", "flag": "ma", "group": "C"}, "HT": {"heb": "האיטי", "flag": "ht", "group": "C"}, "GB-SCT": {"heb": "סקוטלנד", "flag": "gb-sct", "group": "C"}, "US": {"heb": "ארה\"ב", "flag": "us", "group": "D"}, "PY": {"heb": "פרגוואי", "flag": "py", "group": "D"}, "AU": {"heb": "אוסטרליה", "flag": "au", "group": "D"}, "TR": {"heb": "טורקיה", "flag": "tr", "group": "D"}, "DE": {"heb": "גרמניה", "flag": "de", "group": "E"}, "EC": {"heb": "אקוואדור", "flag": "ec", "group": "E"}, "CI": {"heb": "חוף השנהב", "flag": "ci", "group": "E"}, "CW": {"heb": "קוראסאו", "flag": "cw", "group": "E"}, "NL": {"heb": "הולנד", "flag": "nl", "group": "F"}, "JP": {"heb": "יפן", "flag": "jp", "group": "F"}, "TN": {"heb": "תוניסיה", "flag": "tn", "group": "F"}, "SE": {"heb": "שוודיה", "flag": "se", "group": "F"}, "BE": {"heb": "בלגיה", "flag": "be", "group": "G"}, "EG": {"heb": "מצרים", "flag": "eg", "group": "G"}, "IR": {"heb": "איראן", "flag": "ir", "group": "G"}, "NZ": {"heb": "ניו זילנד", "flag": "nz", "group": "G"}, "ES": {"heb": "ספרד", "flag": "es", "group": "H"}, "UY": {"heb": "אורוגוואי", "flag": "uy", "group": "H"}, "SA": {"heb": "סעודיה", "flag": "sa", "group": "H"}, "CV": {"heb": "קאבו ורדה", "flag": "cv", "group": "H"}, "FR": {"heb": "צרפת", "flag": "fr", "group": "I"}, "SN": {"heb": "סנגל", "flag": "sn", "group": "I"}, "NO": {"heb": "נורבגיה", "flag": "no", "group": "I"}, "IQ": {"heb": "עיראק", "flag": "iq", "group": "I"}, "AR": {"heb": "ארגנטינה", "flag": "ar", "group": "J"}, "DZ": {"heb": "אלג'יריה", "flag": "dz", "group": "J"}, "AT": {"heb": "אוסטריה", "flag": "at", "group": "J"}, "JO": {"heb": "ירדן", "flag": "jo", "group": "J"}, "PT": {"heb": "פורטוגל", "flag": "pt", "group": "K"}, "CO": {"heb": "קולומביה", "flag": "co", "group": "K"}, "UZ": {"heb": "אוזבקיסטן", "flag": "uz", "group": "K"}, "CD": {"heb": "קונגו", "flag": "cd", "group": "K"}, "GB-ENG": {"heb": "אנגליה", "flag": "gb-eng", "group": "L"}, "HR": {"heb": "קרואטיה", "flag": "hr", "group": "L"}, "GH": {"heb": "גאנה", "flag": "gh", "group": "L"}, "PA": {"heb": "פנמה", "flag": "pa", "group": "L"}};
+var GROUPS_DATA={"A": [["MX", "מקסיקו", "mx"], ["KR", "דרום קוריאה", "kr"], ["ZA", "דרום אפריקה", "za"], ["CZ", "צ'כיה", "cz"]], "B": [["CA", "קנדה", "ca"], ["CH", "שוויץ", "ch"], ["QA", "קטאר", "qa"], ["BA", "בוסניה", "ba"]], "C": [["BR", "ברזיל", "br"], ["MA", "מרוקו", "ma"], ["HT", "האיטי", "ht"], ["GB-SCT", "סקוטלנד", "gb-sct"]], "D": [["US", "ארה\"ב", "us"], ["PY", "פרגוואי", "py"], ["AU", "אוסטרליה", "au"], ["TR", "טורקיה", "tr"]], "E": [["DE", "גרמניה", "de"], ["EC", "אקוואדור", "ec"], ["CI", "חוף השנהב", "ci"], ["CW", "קוראסאו", "cw"]], "F": [["NL", "הולנד", "nl"], ["JP", "יפן", "jp"], ["TN", "תוניסיה", "tn"], ["SE", "שוודיה", "se"]], "G": [["BE", "בלגיה", "be"], ["EG", "מצרים", "eg"], ["IR", "איראן", "ir"], ["NZ", "ניו זילנד", "nz"]], "H": [["ES", "ספרד", "es"], ["UY", "אורוגוואי", "uy"], ["SA", "סעודיה", "sa"], ["CV", "קאבו ורדה", "cv"]], "I": [["FR", "צרפת", "fr"], ["SN", "סנגל", "sn"], ["NO", "נורבגיה", "no"], ["IQ", "עיראק", "iq"]], "J": [["AR", "ארגנטינה", "ar"], ["DZ", "אלג'יריה", "dz"], ["AT", "אוסטריה", "at"], ["JO", "ירדן", "jo"]], "K": [["PT", "פורטוגל", "pt"], ["CO", "קולומביה", "co"], ["UZ", "אוזבקיסטן", "uz"], ["CD", "קונגו", "cd"]], "L": [["GB-ENG", "אנגליה", "gb-eng"], ["HR", "קרואטיה", "hr"], ["GH", "גאנה", "gh"], ["PA", "פנמה", "pa"]]};
+
+/* ── USERS ── */
+var USERS = [
+  {id:1, username:"dana",    display:"\u05d3\u05e0\u05d4",   pw:"demo"},
+  {id:2, username:"micha",   display:"\u05de\u05d9\u05db\u05d4", pw:"demo"},
+  {id:3, username:"rotem",   display:"\u05e8\u05d5\u05ea\u05dd", pw:"demo"},
+  {id:4, username:"adi",     display:"\u05e2\u05d3\u05d9",   pw:"demo"},
+  {id:5, username:"\u05e9\u05d7\u05e8 \u05dc\u05d5\u05dc\u05d5",
+         display:"\u05e9\u05d7\u05e8 \u05dc\u05d5\u05dc\u05d5", pw:"2212"}
+];
+(function() {
+  var stored = JSON.parse(localStorage.getItem("fl_u") || "[]");
+  var known = {};
+  for (var i = 0; i < USERS.length; i++) known[USERS[i].username] = 1;
+  for (var j = 0; j < stored.length; j++) {
+    if (!known[stored[j].username]) USERS.push(stored[j]);
+  }
+})();
+function saveUsers() { localStorage.setItem("fl_u", JSON.stringify(USERS)); }
+/* ── פונקציות עזר, משתנים וחיבור לשרת ── */
+function G(id) { return document.getElementById(id); }
+function mk(tag, cls) { var e = document.createElement(tag); if (cls) e.className = cls; return e; }
+
+var SM_LABEL = {"group":"שלב הבתים","r32":"שמינית הגמר","r16":"שישית הגמר","qf":"רבע גמר","sf":"חצי גמר","3rd":"מקום 3/4","final":"גמר"};
+var SM_CLS = {"group":"sg","r32":"sr","r16":"sr","qf":"sq","sf":"sf","3rd":"sf","final":"sf"};
+var POS_BCLS = {GK:"b-gk",DEF:"b-def",MID:"b-mid",FWD:"b-fwd"};
+var POS_HEB = {GK:"שוער",DEF:"מגן",MID:"קשר",FWD:"חלוץ"};
+
+var me = (function(){try{return JSON.parse(localStorage.getItem("fl_me")||"null");}catch(e){return null;}})();
+var preds = {};
+var bonusData = null;
+var mFilter = "all";
+var bChamp = null;
+var bScorer = null;
+var authMode = "login";
+var squad = {};
+var capSlot = null;
+var vcSlot = null;
+var activeSlot = null;
+var selPF = "ALL";
+var selNat = "ALL";
+var selSort = "price";
+var selQ = "";
+var SLOTS = [
+  {id:"fw1",pos:"FWD",row:"fwd"},{id:"fw2",pos:"FWD",row:"fwd"},{id:"fw3",pos:"FWD",row:"fwd"},
+  {id:"md1",pos:"MID",row:"mid"},{id:"md2",pos:"MID",row:"mid"},{id:"md3",pos:"MID",row:"mid"},
+  {id:"df1",pos:"DEF",row:"def"},{id:"df2",pos:"DEF",row:"def"},{id:"df3",pos:"DEF",row:"def"},{id:"df4",pos:"DEF",row:"def"},
+  {id:"gk1",pos:"GK",row:"gk"},
+  {id:"sub-gk",pos:"GK",row:"bench"},{id:"sub-def",pos:"DEF",row:"bench"},
+  {id:"sub-mid",pos:"MID",row:"bench"},{id:"sub-fwd",pos:"FWD",row:"bench"}
+];
+
+const API = "";
+
+function setMode(m, btn) {
+  authMode = m;
+  document.querySelectorAll(".atab").forEach(b => b.classList.remove("on"));
+  btn.classList.add("on");
+  G("a-btn").textContent = m === "login" ? "התחבר" : "הירשם";
+  G("sw-txt").textContent = m === "login" ? "אין לך חשבון?" : "כבר רשום?";
+  G("sw-btn").textContent = m === "login" ? "הירשם חינם" : "התחבר";
+  G("a-err").textContent = "";
+}
+
+function toggleMode() {
+  var isL = authMode === "login";
+  setMode(isL ? "register" : "login", G(isL ? "tab-reg" : "tab-login"));
+}
+
+async function doAuth() {
+  const u = G("a-user").value.trim();
+  const p = G("a-pass").value;
+  const errEl = G("a-err");
+  const btn = G("a-btn");
+
+  errEl.textContent = "";
+  if (!u || !p) { errEl.textContent = "יש למלא שם משתמש וסיסמה"; return; }
+
+  btn.disabled = true;
+  btn.textContent = "מתחבר...";
+
+  const endpoint = authMode === "login" ? "/api/login" : "/api/register";
+  const bodyData = authMode === "login" 
+      ? { username: u, password: p } 
+      : { username: u, display_name: u, password: p };
+
+  try {
+      const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(bodyData)
+      });
+      const data = await res.json();
+      
+      if (!res.ok) {
+          errEl.textContent = data.detail || "שגיאה בפעולה";
+      } else {
+          localStorage.setItem("fl_me", JSON.stringify(data.user));
+          me = data.user;
+          enterApp();
+      }
+  } catch (e) {
+      errEl.textContent = "שגיאת רשת. ודא שהשרת פועל.";
+  }
+  btn.disabled = false;
+  btn.textContent = authMode === "login" ? "התחבר" : "הירשם";
+}
+
+function logout() {
+  localStorage.removeItem("fl_me");
+  location.reload();
+}
+
+async function loadPlayersData() {
+    try {
+        const res = await fetch(API + "/api/players");
+        if (!res.ok) throw new Error(res.status);
+        const serverPlayers = await res.json();
+        FP = serverPlayers.map(p => ({
+            id: p.id,
+            name: p.name,
+            nat: p.team || p.nat,
+            pos: p.pos || "MID",
+            price: p.price,
+            rating: 80,
+            club: p.club || p.team,
+            image: p.image 
+        }));
+    } catch (err) { console.warn("שגיאה בטעינת שחקנים", err); }
+}
+
+async function loadMatchesData() {
+    try {
+        const res = await fetch(API + "/api/matches");
+        if (!res.ok) throw new Error(res.status);
+        const serverMatches = await res.json();
+        MATCHES = serverMatches.map(m => ({
+            id: m.id || m.match_num, hn: m.hn || m.home_team, an: m.an || m.away_team,
+            hc: m.hc || m.home_code, ac: m.ac || m.away_code, hs: m.hs || m.home_score,
+            as: m.as || m.away_score, st: m.st || m.status, stage: m.stage, ko: m.ko || m.kickoff
+        }));
+    } catch (err) { console.warn("שגיאה בטעינת משחקים", err); }
+}
+
+async function loadUserData() {
+    if (!me) return;
+    try {
+        await loadPlayersData();
+        await loadMatchesData();
+
+        const rp = await fetch(API + "/api/predictions?user_id=" + me.id);
+        const dp = await rp.json();
+        preds = dp.predictions || {};
+
+        const rb = await fetch(API + "/api/bonus?user_id=" + me.id);
+        const db = await rb.json();
+        bonusData = db.bonus || null;
+        if (bonusData) { bChamp = bonusData.champ; bScorer = bonusData.scorer; }
+
+        const rs = await fetch(API + "/api/squad?user_id=" + me.id);
+        const ds = await rs.json();
+        if (ds.squad) {
+            squad = ds.squad.squad_data || ds.squad; 
+            capSlot = ds.squad.cap || null; 
+            vcSlot = ds.squad.vc || null;
+        } else {
+            squad = {}; capSlot = null; vcSlot = null;
+        }
+    } catch (e) { console.error("שגיאת רשת בטעינת נתוני משתמש:", e); }
+}
+
+async function enterApp() {
+  G("auth-bg").style.display = "none";
+  G("shell").classList.add("on");
+  var d = me.display_name || me.username;
+  G("u-av").textContent = d.charAt(0).toUpperCase();
+  G("u-nm").textContent = d;
+
+  await loadUserData();
+  if (typeof renderMatches === "function") renderMatches();
+  if (typeof renderLB === "function") renderLB();
+  if (typeof renderBonus === "function") renderBonus();
+  if (typeof renderFantasy === "function") renderFantasy();
+}
+
+async function savePred(id) {
+  var hi = G("hi" + id), ai = G("ai" + id);
+  var h = hi ? parseInt(hi.value) : NaN;
+  var a = ai ? parseInt(ai.value) : NaN;
+  if (isNaN(h) || isNaN(a)) return;
+  preds[id] = {h:h, a:a};
+
+  try {
+    await fetch(API + "/api/predictions", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ user_id: me.id, match_id: id, h: h, a: a })
+    });
+    var btn = G("sv" + id);
+    if (btn) { btn.textContent = "✓ נשמר"; btn.classList.add("ok"); }
+    if (typeof renderMatches === "function") setTimeout(renderMatches, 1100);
+  } catch(e) { console.error("שגיאת שמירה", e); }
+}
+
+async function saveBonus() {
+  if (!bChamp || !bScorer) return;
+  bonusData = {champ:bChamp, scorer:bScorer, chOk:false, scOk:false};
+
+  try {
+    await fetch(API + "/api/bonus", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ user_id: me.id, champ: bChamp, scorer: bScorer })
+    });
+    G("cur-b").classList.add("on");
+    if (typeof renderBonus === "function") renderBonus();
+    G("b-ok").classList.add("on");
+    setTimeout(function() { G("b-ok").classList.remove("on"); }, 3500);
+  } catch(e) { console.error("שגיאת שמירה", e); }
+}
+
+async function saveSquad() {
+  var ms=SLOTS.filter(function(s){return s.row!=="bench";});
+  if(!ms.every(function(s){return !!squad[s.id];})){alert("יש למלא 11 שחקנים הרכב");return;}
+
+  try {
+    await fetch(API + "/api/squad", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ user_id: me.id, squad_data: squad, cap: capSlot, vc: vcSlot })
+    });
+    G("tsaved").classList.add("on"); 
+    setTimeout(function(){G("tsaved").classList.remove("on");},3500);
+  } catch(e) { console.error("שגיאת שמירה", e); }
+}
+
+let lbActiveTab = "betting";
+function _lbTabLabel(tab) { return { betting: "טבלת הימורים", fantasy: "טבלת פנטזי", overall: "טבלה כוללת" }[tab] || ""; }
+
+async function renderLB() {
+  const container = G("lb-rows");
+  if (!container) return;
+  container.innerHTML = "<div style='padding:24px;text-align:center;color:var(--muted);font-size:13px'>טוען טבלה...</div>";
+
+  let data;
+  try {
+    const res = await fetch(API + "/api/leaderboard");
+    if (!res.ok) throw new Error("שגיאת שרת");
+    data = await res.json();
+  } catch (err) {
+    container.innerHTML = "<div style='padding:20px;text-align:center;color:var(--red);font-size:13px'>שגיאה בטעינת הטבלה</div>";
+    return;
+  }
+  container.innerHTML = "";
+
+  const hd = mk("div");
+  hd.style.cssText = "display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--rim0)";
+  const title = mk("span", "lbht"); title.textContent = _lbTabLabel(lbActiveTab); hd.appendChild(title);
+
+  const tabs = mk("div"); tabs.style.cssText = "display:flex;gap:4px";
+  [{ key: "betting", label: "הימורים" }, { key: "fantasy", label: "פנטזי" }, { key: "overall", label: "כולל" }].forEach(t => {
+    const btn = mk("button"); btn.textContent = t.label;
+    btn.style.cssText = "padding:5px 11px;border-radius:8px;font-size:11px;font-weight:700;border:1.5px solid var(--rim1);cursor:pointer;transition:.15s;" +
+      (t.key === lbActiveTab ? "background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;border-color:transparent" : "background:var(--bg3);color:var(--muted)");
+    btn.addEventListener("click", () => { lbActiveTab = t.key; renderLB(); });
+    tabs.appendChild(btn);
+  });
+  hd.appendChild(tabs); container.appendChild(hd);
+
+  const tableData = data[lbActiveTab] || [];
+  tableData.forEach(row => {
+    const isMe = (me && row.id === me.id);
+    const rowEl = mk("div", "lbr" + (isMe ? " me" : ""));
+    const rankW = mk("div", "rkw"); const medals = { 1: "🥇", 2: "🥈", 3: "🥉" };
+    rankW.textContent = medals[row.rank] || row.rank; rowEl.appendChild(rankW);
+
+    const av = mk("div", "lbav");
+    const colors = ["#5b6ef5","#0ea5e9","#ec4899","#f97316","#10b981","#8b5cf6"];
+    av.style.background = colors[(row.rank - 1) % colors.length];
+    const dispName = row.display_name || row.display || "U";
+    av.textContent = dispName.charAt(0).toUpperCase(); rowEl.appendChild(av);
+
+    const info = mk("div", "lbi"); const nm = mk("div", "lbnm");
+    if (isMe) { const tag = mk("span", "metag"); tag.textContent = "אתה"; nm.appendChild(tag); }
+    nm.appendChild(document.createTextNode(dispName)); info.appendChild(nm);
+
+    const sub = mk("div", "lbsb");
+    if (lbActiveTab === "betting") sub.textContent = `🎯 ${row.exact || 0} בול · ✓ ${row.correct_dir || row.correct || 0} כיוון`;
+    else if (lbActiveTab === "fantasy") sub.textContent = "פנטזי";
+    else sub.textContent = `הימורים ${row.betting_pts || row.points || 0} · פנטזי ${row.fantasy_pts || 0}`;
+    info.appendChild(sub); rowEl.appendChild(info);
+
+    const pts = mk("div", "lbpts");
+    if (lbActiveTab === "overall") pts.textContent = row.overall_score ? row.overall_score.toFixed(1) : "0";
+    else if (lbActiveTab === "betting") pts.textContent = row.betting_pts || row.points || "0";
+    else pts.textContent = row.fantasy_pts || row.points || "0";
+    rowEl.appendChild(pts); container.appendChild(rowEl);
+  });
+  if (!tableData.length) {
+    const empty = mk("div"); empty.style.cssText = "padding:32px;text-align:center;color:var(--muted);font-size:13px"; empty.textContent = "אין עדיין נתונים"; container.appendChild(empty);
+  }
+}
+
+/* ── ניווט בין עמודים (UI) ── */
+function goPage(pg, btn) {
+    document.querySelectorAll(".page").forEach(p => p.classList.remove("on"));
+    document.querySelectorAll(".nt").forEach(b => b.classList.remove("on"));
+    const pageEl = G("pg-" + pg); if (pageEl) pageEl.classList.add("on");
+    if (btn) btn.classList.add("on");
+
+    if (pg === "matches") renderMatches();
+    if (pg === "lb") renderLB();
+    if (pg === "bonus") renderBonus();
+    if (pg === "fantasy") renderFantasy();
+    if (pg === "groups") renderGroups();
+}
+
+/* ── עמוד משחקים ── */
+function filtM(f, btn) {
+    mFilter = f;
+    document.querySelectorAll(".pill").forEach(b => b.classList.remove("on"));
+    if (btn) btn.classList.add("on");
+    renderMatches();
+}
+
+function renderMatches() {
+    const list = G("m-list"); if (!list) return; list.innerHTML = "";
+    let arr = MATCHES || [];
+    if (mFilter !== "all") {
+        if (mFilter === "live") arr = arr.filter(m => m.st === "live" || m.st === "halftime");
+        else arr = arr.filter(m => m.stage === mFilter);
+    }
+    if (arr.length === 0) { list.innerHTML = "<div style='text-align:center;padding:20px;color:var(--muted)'>אין משחקים להצגה</div>"; return; }
+
+    arr.forEach(m => {
+        let pred = preds[m.id] || { h: "", a: "" };
+        let isLive = (m.st === "live" || m.st === "halftime"); let isFin = (m.st === "finished");
+        let stgLbl = SM_LABEL ? (SM_LABEL[m.stage] || "שלב הבתים") : "שלב הבתים";
+        let stgCls = SM_CLS ? (SM_CLS[m.stage] || "sg") : "sg";
+        let hn = TEAMS_DATA[m.hc] ? TEAMS_DATA[m.hc].heb : m.hn;
+        let an = TEAMS_DATA[m.ac] ? TEAMS_DATA[m.ac].heb : m.an;
+
+        let mc = mk("div", "mc " + (isLive ? "lv" : (preds[m.id] ? "pd" : "")));
+        let dateStr = m.ko ? new Date(m.ko).toLocaleString('he-IL', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : '';
+
+        mc.innerHTML = `
+            <div class="mcbar"></div>
+            <div class="mci">
+                <div class="mct">
+                    <span class="stg ${stgCls}">${stgLbl}</span>
+                    ${isLive ? '<span class="lvbadge"><div class="lvd"></div>חי</span>' : `<span class="tlbl">${dateStr}</span>`}
+                </div>
+                <div class="trow">
+                    <div class="tsd"><div class="flr"><img src="${FLAGS[m.hc] || ''}" style="width:100%;height:100%;object-fit:cover"></div><span class="tnm">${hn}</span></div>
+                    <div class="scbox"><div class="scnum ${isLive ? 'live' : ''}">${isFin || isLive ? (m.hs + ' - ' + m.as) : 'VS'}</div></div>
+                    <div class="tsd"><div class="flr"><img src="${FLAGS[m.ac] || ''}" style="width:100%;height:100%;object-fit:cover"></div><span class="tnm">${an}</span></div>
+                </div>
+                ${!isFin && !isLive ? `
+                <div class="pz">
+                    <div class="ph2">הניחוש שלך:</div>
+                    <div class="prow2">
+                        <input type="number" class="sci" id="hi${m.id}" value="${pred.h}" min="0">
+                        <span class="scsep">-</span>
+                        <input type="number" class="sci" id="ai${m.id}" value="${pred.a}" min="0">
+                        <button class="svb ${preds[m.id] ? 'ok' : ''}" id="sv${m.id}" onclick="savePred(${m.id})">${preds[m.id] ? '✓ נשמר' : 'שמור'}</button>
+                    </div>
+                </div>` : `<div class="pz"><div class="prow2" style="justify-content:center"><span style="font-size:12px;color:var(--muted)">הניחוש שלך: ${pred.h !== '' ? pred.h + '-' + pred.a : 'לא סומן'}</span></div></div>`}
+            </div>
+        `;
+        list.appendChild(mc);
+    });
+}
+
+/* ── עמוד בונוס ── */
+function renderBonus() {
+    const tpg = G("tp-g"); const spg = G("sp-g"); if (!tpg || !spg) return;
+    tpg.innerHTML = ""; spg.innerHTML = "";
+    Object.keys(TEAMS_DATA).forEach(k => {
+        let t = TEAMS_DATA[k]; let d = mk("div", "tp" + (bChamp === k ? " on" : ""));
+        d.innerHTML = `<div class="tpfl"><img src="${FLAGS[k]}" style="width:100%;height:100%;object-fit:cover"></div><span class="tpnm">${t.heb}</span>`;
+        d.onclick = () => { bChamp = k; renderBonus(); updateBBtn(); }; tpg.appendChild(d);
+    });
+    let stars = FP.filter(p => p.pos === "FWD").slice(0, 15);
+    stars.forEach(s => {
+        let d = mk("div", "spc" + (bScorer === s.id ? " on" : ""));
+        let img = PORTRAITS[s.id] || s.image || (s.nat ? mkJersey(s.nat, "FWD", 9) : "");
+        d.innerHTML = `<div class="spph"><img src="${img}" style="width:100%;height:100%;object-fit:cover"></div><div><div class="spnm">${s.name || s.n}</div><div class="spnat">${s.club || s.nat}</div></div>`;
+        d.onclick = () => { bScorer = s.id; renderBonus(); updateBBtn(); }; spg.appendChild(d);
+    });
+    if (bonusData && bonusData.champ) {
+        G("cur-b").classList.add("on");
+        let cName = TEAMS_DATA[bonusData.champ] ? TEAMS_DATA[bonusData.champ].heb : bonusData.champ;
+        let sName = stars.find(x => x.id === bonusData.scorer)?.name || stars.find(x => x.id === bonusData.scorer)?.n || bonusData.scorer;
+        G("cb-vals").innerHTML = `<div class="spc"><div class="spph"><img src="${FLAGS[bonusData.champ] || ''}" style="width:100%;height:100%;object-fit:cover"></div><div class="spnm">זוכה:<br>${cName}</div></div><div class="spc"><div class="spnm">מלך שערים:<br>${sName}</div></div>`;
+    }
+}
+function updateBBtn() { G("b-btn").disabled = !(bChamp && bScorer); }
+
+/* ── עמוד בתים ── */
+function renderGroups() {
+    const grid = G("groups-grid"); if (!grid) return; grid.innerHTML = "";
+    Object.keys(GROUPS_DATA).forEach(g => {
+        let card = mk("div", "group-card"); let hd = mk("div", "group-hd");
+        hd.innerHTML = `<span class="group-letter">בית ${g}</span>`; card.appendChild(hd);
+        let tbody = mk("div", "group-teams");
+        GROUPS_DATA[g].forEach(t => {
+            let row = mk("div", "group-team");
+            row.innerHTML = `<div class="group-team-flag"><img src="${FLAGS[t[0]]}" style="width:100%;height:100%;object-fit:cover"></div><div class="group-team-name">${t[1]}</div><div class="group-team-pts">0</div>`;
+            tbody.appendChild(row);
+        });
+        card.appendChild(tbody); grid.appendChild(card);
+    });
+}
+
+/* ── עמוד פנטזי ── */
+function renderFantasy() { renderPitch(); filterSel(); calcBudget(); }
+
+function renderPitch() {
+    ["fwd", "mid", "def", "gk", "bench"].forEach(r => { if (G("row-" + r)) G("row-" + r).innerHTML = ""; });
+    SLOTS.forEach(s => {
+        let p = squad[s.id] ? FP.find(x => x.id === squad[s.id]) : null;
+        let d = mk("div", "slot" + (p ? " filled" : "") + (activeSlot === s.id ? " active" : ""));
+        let circ = mk("div", "slot-circle");
+        if (p) circ.innerHTML = `<img src="${p.image || mkJersey(p.nat, p.pos, 10)}">`; else circ.textContent = "+";
+        circ.onclick = () => { activeSlot = s.id; setSF(s.pos, G("posb-" + s.pos.toLowerCase())); filterSel(); renderPitch(); };
+        let nm = mk("div", "slot-name"); nm.textContent = p ? p.name.split(" ").pop() : s.pos;
+        let bdg = mk("div", "slot-badge " + POS_BCLS[s.pos]); bdg.textContent = p ? p.price.toFixed(1) : POS_HEB[s.pos];
+        d.appendChild(circ); d.appendChild(nm); d.appendChild(bdg);
+        if (p) {
+            let menu = mk("div", "slot-menu");
+            menu.innerHTML = `<button class="smb smb-r" onclick="remP('${s.id}'); event.stopPropagation()">הסר</button>`;
+            d.appendChild(menu);
+        }
+        if (G("row-" + s.row)) G("row-" + s.row).appendChild(d);
+    });
+    G("sbtn").disabled = Object.keys(squad).filter(k=>SLOTS.find(s=>s.id===k && s.row!=="bench")).length < 11;
+}
+
+function setSF(pos, btn) { selPF = pos; document.querySelectorAll(".posb").forEach(b => b.classList.remove("on")); if (btn) btn.classList.add("on"); filterSel(); }
+function setNat(nat, btn) { selNat = nat; document.querySelectorAll(".natb").forEach(b => b.classList.remove("on")); if (btn) btn.classList.add("on"); filterSel(); }
+function setSS(sort, btn) { selSort = sort; document.querySelectorAll(".sortb").forEach(b => b.classList.remove("on")); if (btn) btn.classList.add("on"); filterSel(); }
+
+function filterSel() {
+    let q = G("sel-q") ? G("sel-q").value.toLowerCase() : "";
+    let arr = FP.filter(p => {
+        if (selPF !== "ALL" && p.pos !== selPF) return false;
+        if (selNat !== "ALL" && p.nat !== selNat) return false;
+        if (q && !p.name.toLowerCase().includes(q)) return false;
+        return true;
+    });
+    if (selSort === "price") arr.sort((a, b) => b.price - a.price);
+    if (selSort === "rating") arr.sort((a, b) => b.rating - a.rating);
+    if (selSort === "name") arr.sort((a, b) => a.name.localeCompare(b.name));
+
+    let list = G("plist"); if (!list) return; list.innerHTML = "";
+    let inSq = Object.values(squad);
+    arr.forEach(p => {
+        let isI = inSq.includes(p.id); let row = mk("div", "pli " + (isI ? "insq" : "clickable"));
+        let img = p.image || mkJersey(p.nat, p.pos, 10);
+        row.innerHTML = `<div class="pli-photo"><img src="${img}"></div><div class="pli-info"><div class="pli-name">${p.name}</div><div class="pli-meta"><span class="pos-chip ${POS_BCLS[p.pos]}">${p.pos}</span><span style="font-size:10px;color:var(--faint)">${TEAMS_DATA[p.nat] ? TEAMS_DATA[p.nat].heb : p.nat}</span></div></div><div class="pli-price">$${p.price.toFixed(1)}M</div><button class="add-btn" ${isI ? "disabled" : ""}>+</button>`;
+        if (!isI) row.onclick = () => addP(p); list.appendChild(row);
+    });
+}
+
+function addP(p) {
+    if (!activeSlot) {
+        let empty = SLOTS.find(s => s.pos === p.pos && !squad[s.id]);
+        if (empty) activeSlot = empty.id; else { alert("אין מקום פנוי לעמדה זו. בחר שחקן להחלפה במגרש."); return; }
+    }
+    let sDef = SLOTS.find(s => s.id === activeSlot);
+    if (sDef.pos !== p.pos) { alert("שחקן זה אינו מתאים לעמדה (" + sDef.pos + ")"); return; }
+    squad[activeSlot] = p.id; activeSlot = null; calcBudget(); renderPitch(); filterSel();
+}
+
+function remP(slotId) { delete squad[slotId]; calcBudget(); renderPitch(); filterSel(); }
+
+function calcBudget() {
+    let used = 0; let counts = { GK: 0, DEF: 0, MID: 0, FWD: 0 };
+    Object.keys(squad).forEach(k => { let p = FP.find(x => x.id === squad[k]); if (p) { used += p.price; counts[p.pos]++; } });
+    let left = BUDGET - used;
+    if (G("bused")) G("bused").textContent = "$" + used.toFixed(1) + "M";
+    if (G("bleft")) { G("bleft").textContent = "$" + left.toFixed(1) + "M"; G("bleft").className = "budleft" + (left < 0 ? " warn" : ""); }
+    let pct = Math.min(100, (used / BUDGET) * 100);
+    if (G("bfill")) { G("bfill").style.width = pct + "%"; G("bfill").className = "budfill" + (left < 0 ? " warn" : ""); }
+    ["GK", "DEF", "MID", "FWD"].forEach(pos => {
+        let max = SLOTS.filter(s => s.pos === pos).length;
+        if (G("c-" + pos.toLowerCase())) G("c-" + pos.toLowerCase()).textContent = counts[pos] + "/" + max;
+    });
+}
+
+// הפעלה אוטומטית אם מחובר
+if (me) { enterApp(); }
+</script>
+</body>
+</html>
+
+</script>
+</body>
+</html>

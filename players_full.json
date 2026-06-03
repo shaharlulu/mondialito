@@ -1,0 +1,6338 @@
+{
+    "Argentina": [
+        {
+            "name": "Emiliano Martinez",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Cristian Romero",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Nicolas Otamendi",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Rodrigo De Paul",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Alexis Mac Allister",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Lionel Messi",
+            "position": "fwd",
+            "price": 130
+        },
+        {
+            "name": "Julian Alvarez",
+            "position": "fwd",
+            "price": 95
+        },
+        {
+            "name": "Lautaro Martinez",
+            "position": "fwd",
+            "price": 90
+        },
+        {
+            "name": "Argentina Player 9",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Argentina Player 10",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Argentina Player 11",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Argentina Player 12",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Argentina Player 13",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Argentina Player 14",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Argentina Player 15",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Argentina Player 16",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Argentina Player 17",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Argentina Player 18",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Argentina Player 19",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Argentina Player 20",
+            "position": "fwd",
+            "price": 62
+        },
+        {
+            "name": "Argentina Player 21",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Argentina Player 22",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Argentina Player 23",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "Argentina Player 24",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Argentina Player 25",
+            "position": "fwd",
+            "price": 82
+        },
+        {
+            "name": "Argentina Player 26",
+            "position": "fwd",
+            "price": 68
+        }
+    ],
+    "France": [
+        {
+            "name": "Mike Maignan",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "William Saliba",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Theo Hernandez",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "N'Golo Kante",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Aurelien Tchouameni",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Antoine Griezmann",
+            "position": "mid",
+            "price": 95
+        },
+        {
+            "name": "Kylian Mbappe",
+            "position": "fwd",
+            "price": 140
+        },
+        {
+            "name": "Ousmane Dembele",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "France Player 9",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "France Player 10",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "France Player 11",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "France Player 12",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "France Player 13",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "France Player 14",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "France Player 15",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "France Player 16",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "France Player 17",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "France Player 18",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "France Player 19",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "France Player 20",
+            "position": "fwd",
+            "price": 81
+        },
+        {
+            "name": "France Player 21",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "France Player 22",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "France Player 23",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "France Player 24",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "France Player 25",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "France Player 26",
+            "position": "fwd",
+            "price": 70
+        }
+    ],
+    "England": [
+        {
+            "name": "Jordan Pickford",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Kyle Walker",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "John Stones",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Declan Rice",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Jude Bellingham",
+            "position": "mid",
+            "price": 115
+        },
+        {
+            "name": "Phil Foden",
+            "position": "mid",
+            "price": 100
+        },
+        {
+            "name": "Bukayo Saka",
+            "position": "mid",
+            "price": 100
+        },
+        {
+            "name": "Harry Kane",
+            "position": "fwd",
+            "price": 120
+        },
+        {
+            "name": "England Player 9",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "England Player 10",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "England Player 11",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "England Player 12",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "England Player 13",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "England Player 14",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "England Player 15",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "England Player 16",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "England Player 17",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "England Player 18",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "England Player 19",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "England Player 20",
+            "position": "fwd",
+            "price": 71
+        },
+        {
+            "name": "England Player 21",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "England Player 22",
+            "position": "fwd",
+            "price": 82
+        },
+        {
+            "name": "England Player 23",
+            "position": "fwd",
+            "price": 67
+        },
+        {
+            "name": "England Player 24",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "England Player 25",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "England Player 26",
+            "position": "fwd",
+            "price": 75
+        }
+    ],
+    "Brazil": [
+        {
+            "name": "Alisson",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Marquinhos",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Bruno Guimaraes",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Lucas Paqueta",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Vinicius Junior",
+            "position": "fwd",
+            "price": 125
+        },
+        {
+            "name": "Rodrygo",
+            "position": "fwd",
+            "price": 95
+        },
+        {
+            "name": "Raphinha",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "Endrick",
+            "position": "fwd",
+            "price": 80
+        },
+        {
+            "name": "Brazil Player 9",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Brazil Player 10",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Brazil Player 11",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Brazil Player 12",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Brazil Player 13",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Brazil Player 14",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Brazil Player 15",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Brazil Player 16",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Brazil Player 17",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Brazil Player 18",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Brazil Player 19",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Brazil Player 20",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Brazil Player 21",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Brazil Player 22",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "Brazil Player 23",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Brazil Player 24",
+            "position": "fwd",
+            "price": 81
+        },
+        {
+            "name": "Brazil Player 25",
+            "position": "fwd",
+            "price": 61
+        },
+        {
+            "name": "Brazil Player 26",
+            "position": "fwd",
+            "price": 76
+        }
+    ],
+    "Spain": [
+        {
+            "name": "Unai Simon",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Rodri",
+            "position": "mid",
+            "price": 80
+        },
+        {
+            "name": "Pedri",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Lamine Yamal",
+            "position": "mid",
+            "price": 95
+        },
+        {
+            "name": "Nico Williams",
+            "position": "mid",
+            "price": 90
+        },
+        {
+            "name": "Alvaro Morata",
+            "position": "fwd",
+            "price": 80
+        },
+        {
+            "name": "Spain Player 7",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Spain Player 8",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Spain Player 9",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Spain Player 10",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Spain Player 11",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Spain Player 12",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Spain Player 13",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Spain Player 14",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Spain Player 15",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Spain Player 16",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Spain Player 17",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Spain Player 18",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Spain Player 19",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Spain Player 20",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Spain Player 21",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Spain Player 22",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Spain Player 23",
+            "position": "fwd",
+            "price": 81
+        },
+        {
+            "name": "Spain Player 24",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "Spain Player 25",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Spain Player 26",
+            "position": "fwd",
+            "price": 68
+        }
+    ],
+    "Portugal": [
+        {
+            "name": "Diogo Costa",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Ruben Dias",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Bruno Fernandes",
+            "position": "mid",
+            "price": 105
+        },
+        {
+            "name": "Bernardo Silva",
+            "position": "mid",
+            "price": 95
+        },
+        {
+            "name": "Rafael Leao",
+            "position": "fwd",
+            "price": 90
+        },
+        {
+            "name": "Cristiano Ronaldo",
+            "position": "fwd",
+            "price": 105
+        },
+        {
+            "name": "Portugal Player 7",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Portugal Player 8",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Portugal Player 9",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Portugal Player 10",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Portugal Player 11",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Portugal Player 12",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Portugal Player 13",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Portugal Player 14",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Portugal Player 15",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Portugal Player 16",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Portugal Player 17",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Portugal Player 18",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Portugal Player 19",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Portugal Player 20",
+            "position": "fwd",
+            "price": 79
+        },
+        {
+            "name": "Portugal Player 21",
+            "position": "fwd",
+            "price": 60
+        },
+        {
+            "name": "Portugal Player 22",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Portugal Player 23",
+            "position": "fwd",
+            "price": 59
+        },
+        {
+            "name": "Portugal Player 24",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "Portugal Player 25",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "Portugal Player 26",
+            "position": "fwd",
+            "price": 81
+        }
+    ],
+    "Germany": [
+        {
+            "name": "Germany Player 1",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Germany Player 2",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Germany Player 3",
+            "position": "gk",
+            "price": 51
+        },
+        {
+            "name": "Germany Player 4",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Germany Player 5",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Germany Player 6",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Germany Player 7",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Germany Player 8",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Germany Player 9",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Germany Player 10",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Germany Player 11",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Germany Player 12",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Germany Player 13",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Germany Player 14",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Germany Player 15",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Germany Player 16",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Germany Player 17",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Germany Player 18",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Germany Player 19",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Germany Player 20",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Germany Player 21",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "Germany Player 22",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Germany Player 23",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Germany Player 24",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Germany Player 25",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Germany Player 26",
+            "position": "fwd",
+            "price": 69
+        }
+    ],
+    "Italy": [
+        {
+            "name": "Italy Player 1",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Italy Player 2",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Italy Player 3",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Italy Player 4",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Italy Player 5",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Italy Player 6",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Italy Player 7",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Italy Player 8",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Italy Player 9",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Italy Player 10",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Italy Player 11",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Italy Player 12",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Italy Player 13",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Italy Player 14",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Italy Player 15",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Italy Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Italy Player 17",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Italy Player 18",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "Italy Player 19",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Italy Player 20",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Italy Player 21",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Italy Player 22",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Italy Player 23",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Italy Player 24",
+            "position": "fwd",
+            "price": 81
+        },
+        {
+            "name": "Italy Player 25",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "Italy Player 26",
+            "position": "fwd",
+            "price": 57
+        }
+    ],
+    "Netherlands": [
+        {
+            "name": "Netherlands Player 1",
+            "position": "gk",
+            "price": 59
+        },
+        {
+            "name": "Netherlands Player 2",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Netherlands Player 3",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Netherlands Player 4",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Netherlands Player 5",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Netherlands Player 6",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Netherlands Player 7",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Netherlands Player 8",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Netherlands Player 9",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Netherlands Player 10",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Netherlands Player 11",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Netherlands Player 12",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Netherlands Player 13",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Netherlands Player 14",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Netherlands Player 15",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Netherlands Player 16",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Netherlands Player 17",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Netherlands Player 18",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Netherlands Player 19",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Netherlands Player 20",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Netherlands Player 21",
+            "position": "fwd",
+            "price": 76
+        },
+        {
+            "name": "Netherlands Player 22",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Netherlands Player 23",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Netherlands Player 24",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Netherlands Player 25",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "Netherlands Player 26",
+            "position": "fwd",
+            "price": 64
+        }
+    ],
+    "Belgium": [
+        {
+            "name": "Belgium Player 1",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Belgium Player 2",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Belgium Player 3",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Belgium Player 4",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Belgium Player 5",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Belgium Player 6",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Belgium Player 7",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Belgium Player 8",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Belgium Player 9",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Belgium Player 10",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Belgium Player 11",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Belgium Player 12",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Belgium Player 13",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Belgium Player 14",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Belgium Player 15",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Belgium Player 16",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Belgium Player 17",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Belgium Player 18",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Belgium Player 19",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Belgium Player 20",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "Belgium Player 21",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Belgium Player 22",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Belgium Player 23",
+            "position": "fwd",
+            "price": 70
+        },
+        {
+            "name": "Belgium Player 24",
+            "position": "fwd",
+            "price": 67
+        },
+        {
+            "name": "Belgium Player 25",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "Belgium Player 26",
+            "position": "fwd",
+            "price": 81
+        }
+    ],
+    "Croatia": [
+        {
+            "name": "Croatia Player 1",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Croatia Player 2",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Croatia Player 3",
+            "position": "gk",
+            "price": 57
+        },
+        {
+            "name": "Croatia Player 4",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Croatia Player 5",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Croatia Player 6",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Croatia Player 7",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Croatia Player 8",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Croatia Player 9",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Croatia Player 10",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Croatia Player 11",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Croatia Player 12",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Croatia Player 13",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Croatia Player 14",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Croatia Player 15",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Croatia Player 16",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Croatia Player 17",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Croatia Player 18",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Croatia Player 19",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Croatia Player 20",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "Croatia Player 21",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Croatia Player 22",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Croatia Player 23",
+            "position": "fwd",
+            "price": 80
+        },
+        {
+            "name": "Croatia Player 24",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Croatia Player 25",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Croatia Player 26",
+            "position": "fwd",
+            "price": 57
+        }
+    ],
+    "Uruguay": [
+        {
+            "name": "Uruguay Player 1",
+            "position": "gk",
+            "price": 59
+        },
+        {
+            "name": "Uruguay Player 2",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Uruguay Player 3",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Uruguay Player 4",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Uruguay Player 5",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Uruguay Player 6",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Uruguay Player 7",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Uruguay Player 8",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Uruguay Player 9",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Uruguay Player 10",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Uruguay Player 11",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Uruguay Player 12",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Uruguay Player 13",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Uruguay Player 14",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Uruguay Player 15",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Uruguay Player 16",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Uruguay Player 17",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Uruguay Player 18",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Uruguay Player 19",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Uruguay Player 20",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Uruguay Player 21",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Uruguay Player 22",
+            "position": "fwd",
+            "price": 67
+        },
+        {
+            "name": "Uruguay Player 23",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "Uruguay Player 24",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Uruguay Player 25",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "Uruguay Player 26",
+            "position": "fwd",
+            "price": 62
+        }
+    ],
+    "USA": [
+        {
+            "name": "USA Player 1",
+            "position": "gk",
+            "price": 59
+        },
+        {
+            "name": "USA Player 2",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "USA Player 3",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "USA Player 4",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "USA Player 5",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "USA Player 6",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "USA Player 7",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "USA Player 8",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "USA Player 9",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "USA Player 10",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "USA Player 11",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "USA Player 12",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "USA Player 13",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "USA Player 14",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "USA Player 15",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "USA Player 16",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "USA Player 17",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "USA Player 18",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "USA Player 19",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "USA Player 20",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "USA Player 21",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "USA Player 22",
+            "position": "fwd",
+            "price": 67
+        },
+        {
+            "name": "USA Player 23",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "USA Player 24",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "USA Player 25",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "USA Player 26",
+            "position": "fwd",
+            "price": 82
+        }
+    ],
+    "Mexico": [
+        {
+            "name": "Mexico Player 1",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Mexico Player 2",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Mexico Player 3",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Mexico Player 4",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Mexico Player 5",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Mexico Player 6",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Mexico Player 7",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Mexico Player 8",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Mexico Player 9",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Mexico Player 10",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Mexico Player 11",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Mexico Player 12",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Mexico Player 13",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Mexico Player 14",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Mexico Player 15",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Mexico Player 16",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Mexico Player 17",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Mexico Player 18",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Mexico Player 19",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Mexico Player 20",
+            "position": "fwd",
+            "price": 60
+        },
+        {
+            "name": "Mexico Player 21",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Mexico Player 22",
+            "position": "fwd",
+            "price": 61
+        },
+        {
+            "name": "Mexico Player 23",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Mexico Player 24",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Mexico Player 25",
+            "position": "fwd",
+            "price": 76
+        },
+        {
+            "name": "Mexico Player 26",
+            "position": "fwd",
+            "price": 84
+        }
+    ],
+    "Canada": [
+        {
+            "name": "Canada Player 1",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Canada Player 2",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Canada Player 3",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Canada Player 4",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Canada Player 5",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Canada Player 6",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Canada Player 7",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Canada Player 8",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Canada Player 9",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Canada Player 10",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Canada Player 11",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Canada Player 12",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Canada Player 13",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Canada Player 14",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Canada Player 15",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Canada Player 16",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Canada Player 17",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Canada Player 18",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Canada Player 19",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Canada Player 20",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Canada Player 21",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Canada Player 22",
+            "position": "fwd",
+            "price": 61
+        },
+        {
+            "name": "Canada Player 23",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Canada Player 24",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Canada Player 25",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Canada Player 26",
+            "position": "fwd",
+            "price": 67
+        }
+    ],
+    "Morocco": [
+        {
+            "name": "Morocco Player 1",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Morocco Player 2",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Morocco Player 3",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Morocco Player 4",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Morocco Player 5",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Morocco Player 6",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Morocco Player 7",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Morocco Player 8",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Morocco Player 9",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Morocco Player 10",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Morocco Player 11",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Morocco Player 12",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Morocco Player 13",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Morocco Player 14",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Morocco Player 15",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "Morocco Player 16",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Morocco Player 17",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "Morocco Player 18",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Morocco Player 19",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Morocco Player 20",
+            "position": "fwd",
+            "price": 70
+        },
+        {
+            "name": "Morocco Player 21",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "Morocco Player 22",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "Morocco Player 23",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Morocco Player 24",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Morocco Player 25",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Morocco Player 26",
+            "position": "fwd",
+            "price": 74
+        }
+    ],
+    "Senegal": [
+        {
+            "name": "Senegal Player 1",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Senegal Player 2",
+            "position": "gk",
+            "price": 57
+        },
+        {
+            "name": "Senegal Player 3",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Senegal Player 4",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Senegal Player 5",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Senegal Player 6",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Senegal Player 7",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Senegal Player 8",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Senegal Player 9",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Senegal Player 10",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Senegal Player 11",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Senegal Player 12",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Senegal Player 13",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Senegal Player 14",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Senegal Player 15",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Senegal Player 16",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Senegal Player 17",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Senegal Player 18",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Senegal Player 19",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Senegal Player 20",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "Senegal Player 21",
+            "position": "fwd",
+            "price": 76
+        },
+        {
+            "name": "Senegal Player 22",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Senegal Player 23",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Senegal Player 24",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Senegal Player 25",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "Senegal Player 26",
+            "position": "fwd",
+            "price": 64
+        }
+    ],
+    "Japan": [
+        {
+            "name": "Japan Player 1",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Japan Player 2",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Japan Player 3",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Japan Player 4",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Japan Player 5",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Japan Player 6",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Japan Player 7",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Japan Player 8",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Japan Player 9",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Japan Player 10",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Japan Player 11",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Japan Player 12",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Japan Player 13",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Japan Player 14",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Japan Player 15",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Japan Player 16",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Japan Player 17",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Japan Player 18",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Japan Player 19",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Japan Player 20",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Japan Player 21",
+            "position": "fwd",
+            "price": 71
+        },
+        {
+            "name": "Japan Player 22",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "Japan Player 23",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Japan Player 24",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Japan Player 25",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Japan Player 26",
+            "position": "fwd",
+            "price": 67
+        }
+    ],
+    "South Korea": [
+        {
+            "name": "South Korea Player 1",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "South Korea Player 2",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "South Korea Player 3",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "South Korea Player 4",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "South Korea Player 5",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "South Korea Player 6",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "South Korea Player 7",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "South Korea Player 8",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "South Korea Player 9",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "South Korea Player 10",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "South Korea Player 11",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "South Korea Player 12",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "South Korea Player 13",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "South Korea Player 14",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "South Korea Player 15",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "South Korea Player 16",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "South Korea Player 17",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "South Korea Player 18",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "South Korea Player 19",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "South Korea Player 20",
+            "position": "fwd",
+            "price": 82
+        },
+        {
+            "name": "South Korea Player 21",
+            "position": "fwd",
+            "price": 81
+        },
+        {
+            "name": "South Korea Player 22",
+            "position": "fwd",
+            "price": 59
+        },
+        {
+            "name": "South Korea Player 23",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "South Korea Player 24",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "South Korea Player 25",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "South Korea Player 26",
+            "position": "fwd",
+            "price": 84
+        }
+    ],
+    "Switzerland": [
+        {
+            "name": "Switzerland Player 1",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Switzerland Player 2",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Switzerland Player 3",
+            "position": "gk",
+            "price": 57
+        },
+        {
+            "name": "Switzerland Player 4",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Switzerland Player 5",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Switzerland Player 6",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Switzerland Player 7",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Switzerland Player 8",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Switzerland Player 9",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Switzerland Player 10",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Switzerland Player 11",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Switzerland Player 12",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Switzerland Player 13",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Switzerland Player 14",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Switzerland Player 15",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Switzerland Player 16",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "Switzerland Player 17",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Switzerland Player 18",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Switzerland Player 19",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Switzerland Player 20",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Switzerland Player 21",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "Switzerland Player 22",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Switzerland Player 23",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Switzerland Player 24",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Switzerland Player 25",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Switzerland Player 26",
+            "position": "fwd",
+            "price": 78
+        }
+    ],
+    "Denmark": [
+        {
+            "name": "Denmark Player 1",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Denmark Player 2",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Denmark Player 3",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Denmark Player 4",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Denmark Player 5",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Denmark Player 6",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Denmark Player 7",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Denmark Player 8",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Denmark Player 9",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Denmark Player 10",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Denmark Player 11",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Denmark Player 12",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Denmark Player 13",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Denmark Player 14",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Denmark Player 15",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Denmark Player 16",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Denmark Player 17",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Denmark Player 18",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Denmark Player 19",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "Denmark Player 20",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Denmark Player 21",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Denmark Player 22",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Denmark Player 23",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Denmark Player 24",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "Denmark Player 25",
+            "position": "fwd",
+            "price": 61
+        },
+        {
+            "name": "Denmark Player 26",
+            "position": "fwd",
+            "price": 64
+        }
+    ],
+    "Colombia": [
+        {
+            "name": "Colombia Player 1",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Colombia Player 2",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Colombia Player 3",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Colombia Player 4",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Colombia Player 5",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Colombia Player 6",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Colombia Player 7",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Colombia Player 8",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Colombia Player 9",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Colombia Player 10",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Colombia Player 11",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Colombia Player 12",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Colombia Player 13",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Colombia Player 14",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Colombia Player 15",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Colombia Player 16",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Colombia Player 17",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Colombia Player 18",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Colombia Player 19",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Colombia Player 20",
+            "position": "fwd",
+            "price": 81
+        },
+        {
+            "name": "Colombia Player 21",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Colombia Player 22",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Colombia Player 23",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "Colombia Player 24",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Colombia Player 25",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Colombia Player 26",
+            "position": "fwd",
+            "price": 63
+        }
+    ],
+    "Ecuador": [
+        {
+            "name": "Ecuador Player 1",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Ecuador Player 2",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Ecuador Player 3",
+            "position": "gk",
+            "price": 51
+        },
+        {
+            "name": "Ecuador Player 4",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Ecuador Player 5",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Ecuador Player 6",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Ecuador Player 7",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Ecuador Player 8",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Ecuador Player 9",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Ecuador Player 10",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Ecuador Player 11",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Ecuador Player 12",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Ecuador Player 13",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Ecuador Player 14",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Ecuador Player 15",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Ecuador Player 16",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Ecuador Player 17",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Ecuador Player 18",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Ecuador Player 19",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Ecuador Player 20",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Ecuador Player 21",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Ecuador Player 22",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Ecuador Player 23",
+            "position": "fwd",
+            "price": 70
+        },
+        {
+            "name": "Ecuador Player 24",
+            "position": "fwd",
+            "price": 81
+        },
+        {
+            "name": "Ecuador Player 25",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Ecuador Player 26",
+            "position": "fwd",
+            "price": 76
+        }
+    ],
+    "Peru": [
+        {
+            "name": "Peru Player 1",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Peru Player 2",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Peru Player 3",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Peru Player 4",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Peru Player 5",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Peru Player 6",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Peru Player 7",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Peru Player 8",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Peru Player 9",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Peru Player 10",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Peru Player 11",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Peru Player 12",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Peru Player 13",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Peru Player 14",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Peru Player 15",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Peru Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Peru Player 17",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Peru Player 18",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Peru Player 19",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Peru Player 20",
+            "position": "fwd",
+            "price": 76
+        },
+        {
+            "name": "Peru Player 21",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Peru Player 22",
+            "position": "fwd",
+            "price": 82
+        },
+        {
+            "name": "Peru Player 23",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Peru Player 24",
+            "position": "fwd",
+            "price": 76
+        },
+        {
+            "name": "Peru Player 25",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Peru Player 26",
+            "position": "fwd",
+            "price": 62
+        }
+    ],
+    "Chile": [
+        {
+            "name": "Chile Player 1",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Chile Player 2",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Chile Player 3",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Chile Player 4",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Chile Player 5",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Chile Player 6",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Chile Player 7",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Chile Player 8",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Chile Player 9",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Chile Player 10",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Chile Player 11",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Chile Player 12",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Chile Player 13",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Chile Player 14",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Chile Player 15",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Chile Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Chile Player 17",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Chile Player 18",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Chile Player 19",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Chile Player 20",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Chile Player 21",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Chile Player 22",
+            "position": "fwd",
+            "price": 67
+        },
+        {
+            "name": "Chile Player 23",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Chile Player 24",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "Chile Player 25",
+            "position": "fwd",
+            "price": 81
+        },
+        {
+            "name": "Chile Player 26",
+            "position": "fwd",
+            "price": 83
+        }
+    ],
+    "Wales": [
+        {
+            "name": "Wales Player 1",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Wales Player 2",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Wales Player 3",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Wales Player 4",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Wales Player 5",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Wales Player 6",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Wales Player 7",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Wales Player 8",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Wales Player 9",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Wales Player 10",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Wales Player 11",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Wales Player 12",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Wales Player 13",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Wales Player 14",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "Wales Player 15",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Wales Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Wales Player 17",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Wales Player 18",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Wales Player 19",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Wales Player 20",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Wales Player 21",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Wales Player 22",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Wales Player 23",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Wales Player 24",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Wales Player 25",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Wales Player 26",
+            "position": "fwd",
+            "price": 60
+        }
+    ],
+    "Poland": [
+        {
+            "name": "Poland Player 1",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Poland Player 2",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Poland Player 3",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Poland Player 4",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Poland Player 5",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Poland Player 6",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Poland Player 7",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Poland Player 8",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Poland Player 9",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Poland Player 10",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Poland Player 11",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Poland Player 12",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Poland Player 13",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Poland Player 14",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Poland Player 15",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Poland Player 16",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Poland Player 17",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Poland Player 18",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "Poland Player 19",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Poland Player 20",
+            "position": "fwd",
+            "price": 79
+        },
+        {
+            "name": "Poland Player 21",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Poland Player 22",
+            "position": "fwd",
+            "price": 79
+        },
+        {
+            "name": "Poland Player 23",
+            "position": "fwd",
+            "price": 70
+        },
+        {
+            "name": "Poland Player 24",
+            "position": "fwd",
+            "price": 60
+        },
+        {
+            "name": "Poland Player 25",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Poland Player 26",
+            "position": "fwd",
+            "price": 67
+        }
+    ],
+    "Sweden": [
+        {
+            "name": "Sweden Player 1",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Sweden Player 2",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Sweden Player 3",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Sweden Player 4",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Sweden Player 5",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Sweden Player 6",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Sweden Player 7",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Sweden Player 8",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Sweden Player 9",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Sweden Player 10",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Sweden Player 11",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Sweden Player 12",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Sweden Player 13",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Sweden Player 14",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Sweden Player 15",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Sweden Player 16",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Sweden Player 17",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Sweden Player 18",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Sweden Player 19",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Sweden Player 20",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Sweden Player 21",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "Sweden Player 22",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Sweden Player 23",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Sweden Player 24",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Sweden Player 25",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "Sweden Player 26",
+            "position": "fwd",
+            "price": 77
+        }
+    ],
+    "Serbia": [
+        {
+            "name": "Serbia Player 1",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Serbia Player 2",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Serbia Player 3",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Serbia Player 4",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Serbia Player 5",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Serbia Player 6",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Serbia Player 7",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Serbia Player 8",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Serbia Player 9",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Serbia Player 10",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Serbia Player 11",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Serbia Player 12",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Serbia Player 13",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Serbia Player 14",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "Serbia Player 15",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Serbia Player 16",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Serbia Player 17",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Serbia Player 18",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Serbia Player 19",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Serbia Player 20",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Serbia Player 21",
+            "position": "fwd",
+            "price": 67
+        },
+        {
+            "name": "Serbia Player 22",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Serbia Player 23",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Serbia Player 24",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Serbia Player 25",
+            "position": "fwd",
+            "price": 59
+        },
+        {
+            "name": "Serbia Player 26",
+            "position": "fwd",
+            "price": 81
+        }
+    ],
+    "Iran": [
+        {
+            "name": "Iran Player 1",
+            "position": "gk",
+            "price": 57
+        },
+        {
+            "name": "Iran Player 2",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Iran Player 3",
+            "position": "gk",
+            "price": 57
+        },
+        {
+            "name": "Iran Player 4",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Iran Player 5",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Iran Player 6",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Iran Player 7",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Iran Player 8",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Iran Player 9",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Iran Player 10",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Iran Player 11",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Iran Player 12",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Iran Player 13",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Iran Player 14",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Iran Player 15",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Iran Player 16",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Iran Player 17",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Iran Player 18",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Iran Player 19",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Iran Player 20",
+            "position": "fwd",
+            "price": 60
+        },
+        {
+            "name": "Iran Player 21",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Iran Player 22",
+            "position": "fwd",
+            "price": 79
+        },
+        {
+            "name": "Iran Player 23",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "Iran Player 24",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "Iran Player 25",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Iran Player 26",
+            "position": "fwd",
+            "price": 63
+        }
+    ],
+    "Saudi Arabia": [
+        {
+            "name": "Saudi Arabia Player 1",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Saudi Arabia Player 2",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Saudi Arabia Player 3",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Saudi Arabia Player 4",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Saudi Arabia Player 5",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Saudi Arabia Player 6",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Saudi Arabia Player 7",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Saudi Arabia Player 8",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Saudi Arabia Player 9",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Saudi Arabia Player 10",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Saudi Arabia Player 11",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Saudi Arabia Player 12",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Saudi Arabia Player 13",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Saudi Arabia Player 14",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Saudi Arabia Player 15",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Saudi Arabia Player 16",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Saudi Arabia Player 17",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Saudi Arabia Player 18",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Saudi Arabia Player 19",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Saudi Arabia Player 20",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Saudi Arabia Player 21",
+            "position": "fwd",
+            "price": 59
+        },
+        {
+            "name": "Saudi Arabia Player 22",
+            "position": "fwd",
+            "price": 80
+        },
+        {
+            "name": "Saudi Arabia Player 23",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "Saudi Arabia Player 24",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Saudi Arabia Player 25",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Saudi Arabia Player 26",
+            "position": "fwd",
+            "price": 66
+        }
+    ],
+    "Australia": [
+        {
+            "name": "Australia Player 1",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Australia Player 2",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Australia Player 3",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Australia Player 4",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Australia Player 5",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Australia Player 6",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Australia Player 7",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Australia Player 8",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Australia Player 9",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Australia Player 10",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Australia Player 11",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Australia Player 12",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Australia Player 13",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Australia Player 14",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Australia Player 15",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "Australia Player 16",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Australia Player 17",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Australia Player 18",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Australia Player 19",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Australia Player 20",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Australia Player 21",
+            "position": "fwd",
+            "price": 71
+        },
+        {
+            "name": "Australia Player 22",
+            "position": "fwd",
+            "price": 70
+        },
+        {
+            "name": "Australia Player 23",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Australia Player 24",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Australia Player 25",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Australia Player 26",
+            "position": "fwd",
+            "price": 74
+        }
+    ],
+    "Cameroon": [
+        {
+            "name": "Cameroon Player 1",
+            "position": "gk",
+            "price": 59
+        },
+        {
+            "name": "Cameroon Player 2",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Cameroon Player 3",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Cameroon Player 4",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Cameroon Player 5",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Cameroon Player 6",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Cameroon Player 7",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Cameroon Player 8",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Cameroon Player 9",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Cameroon Player 10",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Cameroon Player 11",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Cameroon Player 12",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Cameroon Player 13",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "Cameroon Player 14",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "Cameroon Player 15",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Cameroon Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Cameroon Player 17",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Cameroon Player 18",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Cameroon Player 19",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Cameroon Player 20",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "Cameroon Player 21",
+            "position": "fwd",
+            "price": 70
+        },
+        {
+            "name": "Cameroon Player 22",
+            "position": "fwd",
+            "price": 82
+        },
+        {
+            "name": "Cameroon Player 23",
+            "position": "fwd",
+            "price": 59
+        },
+        {
+            "name": "Cameroon Player 24",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Cameroon Player 25",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Cameroon Player 26",
+            "position": "fwd",
+            "price": 78
+        }
+    ],
+    "Ghana": [
+        {
+            "name": "Ghana Player 1",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Ghana Player 2",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Ghana Player 3",
+            "position": "gk",
+            "price": 57
+        },
+        {
+            "name": "Ghana Player 4",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Ghana Player 5",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Ghana Player 6",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Ghana Player 7",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Ghana Player 8",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Ghana Player 9",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Ghana Player 10",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Ghana Player 11",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Ghana Player 12",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Ghana Player 13",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Ghana Player 14",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Ghana Player 15",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Ghana Player 16",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Ghana Player 17",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Ghana Player 18",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Ghana Player 19",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Ghana Player 20",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Ghana Player 21",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Ghana Player 22",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Ghana Player 23",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Ghana Player 24",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Ghana Player 25",
+            "position": "fwd",
+            "price": 58
+        },
+        {
+            "name": "Ghana Player 26",
+            "position": "fwd",
+            "price": 63
+        }
+    ],
+    "Tunisia": [
+        {
+            "name": "Tunisia Player 1",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Tunisia Player 2",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Tunisia Player 3",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Tunisia Player 4",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Tunisia Player 5",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Tunisia Player 6",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Tunisia Player 7",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Tunisia Player 8",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Tunisia Player 9",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Tunisia Player 10",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Tunisia Player 11",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Tunisia Player 12",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Tunisia Player 13",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Tunisia Player 14",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Tunisia Player 15",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Tunisia Player 16",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Tunisia Player 17",
+            "position": "mid",
+            "price": 70
+        },
+        {
+            "name": "Tunisia Player 18",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Tunisia Player 19",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Tunisia Player 20",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Tunisia Player 21",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Tunisia Player 22",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Tunisia Player 23",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "Tunisia Player 24",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "Tunisia Player 25",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "Tunisia Player 26",
+            "position": "fwd",
+            "price": 78
+        }
+    ],
+    "Algeria": [
+        {
+            "name": "Algeria Player 1",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Algeria Player 2",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Algeria Player 3",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Algeria Player 4",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Algeria Player 5",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Algeria Player 6",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Algeria Player 7",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Algeria Player 8",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Algeria Player 9",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Algeria Player 10",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Algeria Player 11",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Algeria Player 12",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Algeria Player 13",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Algeria Player 14",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Algeria Player 15",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Algeria Player 16",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Algeria Player 17",
+            "position": "mid",
+            "price": 69
+        },
+        {
+            "name": "Algeria Player 18",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Algeria Player 19",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Algeria Player 20",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Algeria Player 21",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Algeria Player 22",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Algeria Player 23",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Algeria Player 24",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "Algeria Player 25",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "Algeria Player 26",
+            "position": "fwd",
+            "price": 64
+        }
+    ],
+    "Nigeria": [
+        {
+            "name": "Nigeria Player 1",
+            "position": "gk",
+            "price": 51
+        },
+        {
+            "name": "Nigeria Player 2",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Nigeria Player 3",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Nigeria Player 4",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Nigeria Player 5",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Nigeria Player 6",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Nigeria Player 7",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Nigeria Player 8",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Nigeria Player 9",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Nigeria Player 10",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Nigeria Player 11",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Nigeria Player 12",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Nigeria Player 13",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Nigeria Player 14",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Nigeria Player 15",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Nigeria Player 16",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Nigeria Player 17",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Nigeria Player 18",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Nigeria Player 19",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "Nigeria Player 20",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "Nigeria Player 21",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "Nigeria Player 22",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "Nigeria Player 23",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Nigeria Player 24",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Nigeria Player 25",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Nigeria Player 26",
+            "position": "fwd",
+            "price": 81
+        }
+    ],
+    "Mali": [
+        {
+            "name": "Mali Player 1",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Mali Player 2",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Mali Player 3",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Mali Player 4",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Mali Player 5",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Mali Player 6",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Mali Player 7",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Mali Player 8",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Mali Player 9",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Mali Player 10",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Mali Player 11",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Mali Player 12",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "Mali Player 13",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Mali Player 14",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Mali Player 15",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Mali Player 16",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "Mali Player 17",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Mali Player 18",
+            "position": "mid",
+            "price": 55
+        },
+        {
+            "name": "Mali Player 19",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Mali Player 20",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Mali Player 21",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "Mali Player 22",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Mali Player 23",
+            "position": "fwd",
+            "price": 82
+        },
+        {
+            "name": "Mali Player 24",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Mali Player 25",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Mali Player 26",
+            "position": "fwd",
+            "price": 56
+        }
+    ],
+    "Ivory Coast": [
+        {
+            "name": "Ivory Coast Player 1",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Ivory Coast Player 2",
+            "position": "gk",
+            "price": 50
+        },
+        {
+            "name": "Ivory Coast Player 3",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Ivory Coast Player 4",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Ivory Coast Player 5",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Ivory Coast Player 6",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Ivory Coast Player 7",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Ivory Coast Player 8",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Ivory Coast Player 9",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Ivory Coast Player 10",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Ivory Coast Player 11",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Ivory Coast Player 12",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Ivory Coast Player 13",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Ivory Coast Player 14",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Ivory Coast Player 15",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Ivory Coast Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Ivory Coast Player 17",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Ivory Coast Player 18",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Ivory Coast Player 19",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Ivory Coast Player 20",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Ivory Coast Player 21",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "Ivory Coast Player 22",
+            "position": "fwd",
+            "price": 74
+        },
+        {
+            "name": "Ivory Coast Player 23",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Ivory Coast Player 24",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Ivory Coast Player 25",
+            "position": "fwd",
+            "price": 80
+        },
+        {
+            "name": "Ivory Coast Player 26",
+            "position": "fwd",
+            "price": 69
+        }
+    ],
+    "Qatar": [
+        {
+            "name": "Qatar Player 1",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Qatar Player 2",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Qatar Player 3",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Qatar Player 4",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Qatar Player 5",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Qatar Player 6",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Qatar Player 7",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Qatar Player 8",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Qatar Player 9",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Qatar Player 10",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Qatar Player 11",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Qatar Player 12",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Qatar Player 13",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Qatar Player 14",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Qatar Player 15",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Qatar Player 16",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Qatar Player 17",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Qatar Player 18",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "Qatar Player 19",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Qatar Player 20",
+            "position": "fwd",
+            "price": 62
+        },
+        {
+            "name": "Qatar Player 21",
+            "position": "fwd",
+            "price": 71
+        },
+        {
+            "name": "Qatar Player 22",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "Qatar Player 23",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "Qatar Player 24",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Qatar Player 25",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "Qatar Player 26",
+            "position": "fwd",
+            "price": 76
+        }
+    ],
+    "UAE": [
+        {
+            "name": "UAE Player 1",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "UAE Player 2",
+            "position": "gk",
+            "price": 57
+        },
+        {
+            "name": "UAE Player 3",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "UAE Player 4",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "UAE Player 5",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "UAE Player 6",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "UAE Player 7",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "UAE Player 8",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "UAE Player 9",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "UAE Player 10",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "UAE Player 11",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "UAE Player 12",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "UAE Player 13",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "UAE Player 14",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "UAE Player 15",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "UAE Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "UAE Player 17",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "UAE Player 18",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "UAE Player 19",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "UAE Player 20",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "UAE Player 21",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "UAE Player 22",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "UAE Player 23",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "UAE Player 24",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "UAE Player 25",
+            "position": "fwd",
+            "price": 72
+        },
+        {
+            "name": "UAE Player 26",
+            "position": "fwd",
+            "price": 65
+        }
+    ],
+    "Uzbekistan": [
+        {
+            "name": "Uzbekistan Player 1",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Uzbekistan Player 2",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Uzbekistan Player 3",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Uzbekistan Player 4",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Uzbekistan Player 5",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "Uzbekistan Player 6",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Uzbekistan Player 7",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Uzbekistan Player 8",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Uzbekistan Player 9",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Uzbekistan Player 10",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Uzbekistan Player 11",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Uzbekistan Player 12",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Uzbekistan Player 13",
+            "position": "mid",
+            "price": 67
+        },
+        {
+            "name": "Uzbekistan Player 14",
+            "position": "mid",
+            "price": 56
+        },
+        {
+            "name": "Uzbekistan Player 15",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Uzbekistan Player 16",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Uzbekistan Player 17",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Uzbekistan Player 18",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Uzbekistan Player 19",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "Uzbekistan Player 20",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Uzbekistan Player 21",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "Uzbekistan Player 22",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Uzbekistan Player 23",
+            "position": "fwd",
+            "price": 61
+        },
+        {
+            "name": "Uzbekistan Player 24",
+            "position": "fwd",
+            "price": 75
+        },
+        {
+            "name": "Uzbekistan Player 25",
+            "position": "fwd",
+            "price": 59
+        },
+        {
+            "name": "Uzbekistan Player 26",
+            "position": "fwd",
+            "price": 83
+        }
+    ],
+    "New Zealand": [
+        {
+            "name": "New Zealand Player 1",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "New Zealand Player 2",
+            "position": "gk",
+            "price": 59
+        },
+        {
+            "name": "New Zealand Player 3",
+            "position": "gk",
+            "price": 57
+        },
+        {
+            "name": "New Zealand Player 4",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "New Zealand Player 5",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "New Zealand Player 6",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "New Zealand Player 7",
+            "position": "def",
+            "price": 57
+        },
+        {
+            "name": "New Zealand Player 8",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "New Zealand Player 9",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "New Zealand Player 10",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "New Zealand Player 11",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "New Zealand Player 12",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "New Zealand Player 13",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "New Zealand Player 14",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "New Zealand Player 15",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "New Zealand Player 16",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "New Zealand Player 17",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "New Zealand Player 18",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "New Zealand Player 19",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "New Zealand Player 20",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "New Zealand Player 21",
+            "position": "fwd",
+            "price": 84
+        },
+        {
+            "name": "New Zealand Player 22",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "New Zealand Player 23",
+            "position": "fwd",
+            "price": 67
+        },
+        {
+            "name": "New Zealand Player 24",
+            "position": "fwd",
+            "price": 80
+        },
+        {
+            "name": "New Zealand Player 25",
+            "position": "fwd",
+            "price": 64
+        },
+        {
+            "name": "New Zealand Player 26",
+            "position": "fwd",
+            "price": 59
+        }
+    ],
+    "Costa Rica": [
+        {
+            "name": "Costa Rica Player 1",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Costa Rica Player 2",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Costa Rica Player 3",
+            "position": "gk",
+            "price": 52
+        },
+        {
+            "name": "Costa Rica Player 4",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Costa Rica Player 5",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Costa Rica Player 6",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Costa Rica Player 7",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Costa Rica Player 8",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Costa Rica Player 9",
+            "position": "def",
+            "price": 59
+        },
+        {
+            "name": "Costa Rica Player 10",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Costa Rica Player 11",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Costa Rica Player 12",
+            "position": "mid",
+            "price": 57
+        },
+        {
+            "name": "Costa Rica Player 13",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Costa Rica Player 14",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "Costa Rica Player 15",
+            "position": "mid",
+            "price": 61
+        },
+        {
+            "name": "Costa Rica Player 16",
+            "position": "mid",
+            "price": 53
+        },
+        {
+            "name": "Costa Rica Player 17",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Costa Rica Player 18",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Costa Rica Player 19",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Costa Rica Player 20",
+            "position": "fwd",
+            "price": 85
+        },
+        {
+            "name": "Costa Rica Player 21",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "Costa Rica Player 22",
+            "position": "fwd",
+            "price": 65
+        },
+        {
+            "name": "Costa Rica Player 23",
+            "position": "fwd",
+            "price": 73
+        },
+        {
+            "name": "Costa Rica Player 24",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Costa Rica Player 25",
+            "position": "fwd",
+            "price": 60
+        },
+        {
+            "name": "Costa Rica Player 26",
+            "position": "fwd",
+            "price": 71
+        }
+    ],
+    "Panama": [
+        {
+            "name": "Panama Player 1",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Panama Player 2",
+            "position": "gk",
+            "price": 53
+        },
+        {
+            "name": "Panama Player 3",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "Panama Player 4",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Panama Player 5",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Panama Player 6",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Panama Player 7",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Panama Player 8",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Panama Player 9",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Panama Player 10",
+            "position": "def",
+            "price": 50
+        },
+        {
+            "name": "Panama Player 11",
+            "position": "def",
+            "price": 55
+        },
+        {
+            "name": "Panama Player 12",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Panama Player 13",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Panama Player 14",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Panama Player 15",
+            "position": "mid",
+            "price": 51
+        },
+        {
+            "name": "Panama Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Panama Player 17",
+            "position": "mid",
+            "price": 72
+        },
+        {
+            "name": "Panama Player 18",
+            "position": "mid",
+            "price": 52
+        },
+        {
+            "name": "Panama Player 19",
+            "position": "mid",
+            "price": 65
+        },
+        {
+            "name": "Panama Player 20",
+            "position": "fwd",
+            "price": 76
+        },
+        {
+            "name": "Panama Player 21",
+            "position": "fwd",
+            "price": 82
+        },
+        {
+            "name": "Panama Player 22",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Panama Player 23",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "Panama Player 24",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Panama Player 25",
+            "position": "fwd",
+            "price": 57
+        },
+        {
+            "name": "Panama Player 26",
+            "position": "fwd",
+            "price": 72
+        }
+    ],
+    "Honduras": [
+        {
+            "name": "Honduras Player 1",
+            "position": "gk",
+            "price": 56
+        },
+        {
+            "name": "Honduras Player 2",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Honduras Player 3",
+            "position": "gk",
+            "price": 55
+        },
+        {
+            "name": "Honduras Player 4",
+            "position": "def",
+            "price": 65
+        },
+        {
+            "name": "Honduras Player 5",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "Honduras Player 6",
+            "position": "def",
+            "price": 64
+        },
+        {
+            "name": "Honduras Player 7",
+            "position": "def",
+            "price": 56
+        },
+        {
+            "name": "Honduras Player 8",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Honduras Player 9",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Honduras Player 10",
+            "position": "def",
+            "price": 60
+        },
+        {
+            "name": "Honduras Player 11",
+            "position": "def",
+            "price": 63
+        },
+        {
+            "name": "Honduras Player 12",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Honduras Player 13",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "Honduras Player 14",
+            "position": "mid",
+            "price": 62
+        },
+        {
+            "name": "Honduras Player 15",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "Honduras Player 16",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Honduras Player 17",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Honduras Player 18",
+            "position": "mid",
+            "price": 73
+        },
+        {
+            "name": "Honduras Player 19",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Honduras Player 20",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Honduras Player 21",
+            "position": "fwd",
+            "price": 55
+        },
+        {
+            "name": "Honduras Player 22",
+            "position": "fwd",
+            "price": 56
+        },
+        {
+            "name": "Honduras Player 23",
+            "position": "fwd",
+            "price": 77
+        },
+        {
+            "name": "Honduras Player 24",
+            "position": "fwd",
+            "price": 82
+        },
+        {
+            "name": "Honduras Player 25",
+            "position": "fwd",
+            "price": 71
+        },
+        {
+            "name": "Honduras Player 26",
+            "position": "fwd",
+            "price": 62
+        }
+    ],
+    "Jamaica": [
+        {
+            "name": "Jamaica Player 1",
+            "position": "gk",
+            "price": 51
+        },
+        {
+            "name": "Jamaica Player 2",
+            "position": "gk",
+            "price": 54
+        },
+        {
+            "name": "Jamaica Player 3",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "Jamaica Player 4",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "Jamaica Player 5",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "Jamaica Player 6",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Jamaica Player 7",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Jamaica Player 8",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "Jamaica Player 9",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "Jamaica Player 10",
+            "position": "def",
+            "price": 53
+        },
+        {
+            "name": "Jamaica Player 11",
+            "position": "def",
+            "price": 61
+        },
+        {
+            "name": "Jamaica Player 12",
+            "position": "mid",
+            "price": 60
+        },
+        {
+            "name": "Jamaica Player 13",
+            "position": "mid",
+            "price": 71
+        },
+        {
+            "name": "Jamaica Player 14",
+            "position": "mid",
+            "price": 64
+        },
+        {
+            "name": "Jamaica Player 15",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Jamaica Player 16",
+            "position": "mid",
+            "price": 58
+        },
+        {
+            "name": "Jamaica Player 17",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Jamaica Player 18",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "Jamaica Player 19",
+            "position": "mid",
+            "price": 66
+        },
+        {
+            "name": "Jamaica Player 20",
+            "position": "fwd",
+            "price": 71
+        },
+        {
+            "name": "Jamaica Player 21",
+            "position": "fwd",
+            "price": 80
+        },
+        {
+            "name": "Jamaica Player 22",
+            "position": "fwd",
+            "price": 83
+        },
+        {
+            "name": "Jamaica Player 23",
+            "position": "fwd",
+            "price": 78
+        },
+        {
+            "name": "Jamaica Player 24",
+            "position": "fwd",
+            "price": 69
+        },
+        {
+            "name": "Jamaica Player 25",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "Jamaica Player 26",
+            "position": "fwd",
+            "price": 77
+        }
+    ],
+    "South Africa": [
+        {
+            "name": "South Africa Player 1",
+            "position": "gk",
+            "price": 60
+        },
+        {
+            "name": "South Africa Player 2",
+            "position": "gk",
+            "price": 58
+        },
+        {
+            "name": "South Africa Player 3",
+            "position": "gk",
+            "price": 51
+        },
+        {
+            "name": "South Africa Player 4",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "South Africa Player 5",
+            "position": "def",
+            "price": 58
+        },
+        {
+            "name": "South Africa Player 6",
+            "position": "def",
+            "price": 62
+        },
+        {
+            "name": "South Africa Player 7",
+            "position": "def",
+            "price": 51
+        },
+        {
+            "name": "South Africa Player 8",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "South Africa Player 9",
+            "position": "def",
+            "price": 52
+        },
+        {
+            "name": "South Africa Player 10",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "South Africa Player 11",
+            "position": "def",
+            "price": 54
+        },
+        {
+            "name": "South Africa Player 12",
+            "position": "mid",
+            "price": 63
+        },
+        {
+            "name": "South Africa Player 13",
+            "position": "mid",
+            "price": 74
+        },
+        {
+            "name": "South Africa Player 14",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "South Africa Player 15",
+            "position": "mid",
+            "price": 50
+        },
+        {
+            "name": "South Africa Player 16",
+            "position": "mid",
+            "price": 59
+        },
+        {
+            "name": "South Africa Player 17",
+            "position": "mid",
+            "price": 68
+        },
+        {
+            "name": "South Africa Player 18",
+            "position": "mid",
+            "price": 75
+        },
+        {
+            "name": "South Africa Player 19",
+            "position": "mid",
+            "price": 54
+        },
+        {
+            "name": "South Africa Player 20",
+            "position": "fwd",
+            "price": 71
+        },
+        {
+            "name": "South Africa Player 21",
+            "position": "fwd",
+            "price": 63
+        },
+        {
+            "name": "South Africa Player 22",
+            "position": "fwd",
+            "price": 62
+        },
+        {
+            "name": "South Africa Player 23",
+            "position": "fwd",
+            "price": 66
+        },
+        {
+            "name": "South Africa Player 24",
+            "position": "fwd",
+            "price": 70
+        },
+        {
+            "name": "South Africa Player 25",
+            "position": "fwd",
+            "price": 68
+        },
+        {
+            "name": "South Africa Player 26",
+            "position": "fwd",
+            "price": 74
+        }
+    ]
+}

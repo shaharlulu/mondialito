@@ -1,0 +1,738 @@
+{
+  "Mexico": [
+    {
+      "name": "Guillermo Ochoa",
+      "position": "gk",
+      "price": 55,
+      "image": "mexico_guillermo_ochoa.jpg"
+    },
+    {
+      "name": "Rodolfo Cota",
+      "position": "gk",
+      "price": 50,
+      "image": "mexico_rodolfo_cota.jpg"
+    },
+    {
+      "name": "Cesar Montes",
+      "position": "def",
+      "price": 55,
+      "image": "mexico_cesar_montes.jpg"
+    },
+    {
+      "name": "Jesus Gallardo",
+      "position": "def",
+      "price": 58,
+      "image": "mexico_jesus_gallardo.jpg"
+    },
+    {
+      "name": "Johan Vasquez",
+      "position": "def",
+      "price": 53,
+      "image": "mexico_johan_vasquez.jpg"
+    },
+    {
+      "name": "Gerardo Arteaga",
+      "position": "def",
+      "price": 52,
+      "image": "mexico_gerardo_arteaga.jpg"
+    },
+    {
+      "name": "Edson Alvarez",
+      "position": "mid",
+      "price": 80,
+      "image": "mexico_edson_alvarez.jpg"
+    },
+    {
+      "name": "Andres Guardado",
+      "position": "mid",
+      "price": 55,
+      "image": "mexico_andres_guardado.jpg"
+    },
+    {
+      "name": "Hector Herrera",
+      "position": "mid",
+      "price": 58,
+      "image": "mexico_hector_herrera.jpg"
+    },
+    {
+      "name": "Orbelin Pineda",
+      "position": "mid",
+      "price": 60,
+      "image": "mexico_orbelin_pineda.jpg"
+    },
+    {
+      "name": "Luis Romo",
+      "position": "mid",
+      "price": 55,
+      "image": "mexico_luis_romo.jpg"
+    },
+    {
+      "name": "Santiago Gimenez",
+      "position": "fwd",
+      "price": 95,
+      "image": "mexico_santiago_gimenez.jpg"
+    },
+    {
+      "name": "Raul Jimenez",
+      "position": "fwd",
+      "price": 75,
+      "image": "mexico_raul_jimenez.jpg"
+    },
+    {
+      "name": "Hirving Lozano",
+      "position": "fwd",
+      "price": 72,
+      "image": "mexico_hirving_lozano.jpg"
+    },
+    {
+      "name": "Henry Martin",
+      "position": "fwd",
+      "price": 60,
+      "image": "mexico_henry_martin.jpg"
+    }
+  ],
+  "South Korea": [
+    {
+      "name": "Jo Hyeon-woo",
+      "position": "gk",
+      "price": 52,
+      "image": "south_korea_jo_hyeonwoo.jpg"
+    },
+    {
+      "name": "Kim Seung-gyu",
+      "position": "gk",
+      "price": 50,
+      "image": "south_korea_kim_seunggyu.jpg"
+    },
+    {
+      "name": "Kim Min-jae",
+      "position": "def",
+      "price": 88,
+      "image": "south_korea_kim_minjae.jpg"
+    },
+    {
+      "name": "Kim Jin-su",
+      "position": "def",
+      "price": 55,
+      "image": "south_korea_kim_jinsu.jpg"
+    },
+    {
+      "name": "Lee Ki-je",
+      "position": "def",
+      "price": 52,
+      "image": "south_korea_lee_kije.jpg"
+    },
+    {
+      "name": "Yoon Jong-gyu",
+      "position": "def",
+      "price": 52,
+      "image": "south_korea_yoon_jonggyu.jpg"
+    },
+    {
+      "name": "Lee Kang-in",
+      "position": "mid",
+      "price": 90,
+      "image": "south_korea_lee_kangin.jpg"
+    },
+    {
+      "name": "Jung Woo-young",
+      "position": "mid",
+      "price": 58,
+      "image": "south_korea_jung_wooyoung.jpg"
+    },
+    {
+      "name": "Hwang In-beom",
+      "position": "mid",
+      "price": 63,
+      "image": "south_korea_hwang_inbeom.jpg"
+    },
+    {
+      "name": "Son Jun-ho",
+      "position": "mid",
+      "price": 60,
+      "image": "south_korea_son_junho.jpg"
+    },
+    {
+      "name": "Bae Jun-ho",
+      "position": "mid",
+      "price": 65,
+      "image": "south_korea_bae_junho.jpg"
+    },
+    {
+      "name": "Son Heung-min",
+      "position": "fwd",
+      "price": 120,
+      "image": "south_korea_son_heungmin.jpg"
+    },
+    {
+      "name": "Hwang Hee-chan",
+      "position": "fwd",
+      "price": 75,
+      "image": "south_korea_hwang_heechan.jpg"
+    },
+    {
+      "name": "Cho Gue-sung",
+      "position": "fwd",
+      "price": 68,
+      "image": "south_korea_cho_guesung.jpg"
+    },
+    {
+      "name": "Oh Hyeon-gyu",
+      "position": "fwd",
+      "price": 60,
+      "image": "south_korea_oh_hyeongyu.jpg"
+    }
+  ],
+  "South Africa": [
+    {
+      "name": "Ronwen Williams",
+      "position": "gk",
+      "price": 55,
+      "image": "south_africa_ronwen_williams.jpg"
+    },
+    {
+      "name": "Bruce Bvuma",
+      "position": "gk",
+      "price": 50,
+      "image": "south_africa_bruce_bvuma.jpg"
+    },
+    {
+      "name": "Siyanda Xulu",
+      "position": "def",
+      "price": 50,
+      "image": "south_africa_siyanda_xulu.jpg"
+    },
+    {
+      "name": "Rushine De Reuck",
+      "position": "def",
+      "price": 50,
+      "image": "south_africa_rushine_dereuck.jpg"
+    },
+    {
+      "name": "Reeve Frosler",
+      "position": "def",
+      "price": 52,
+      "image": "south_africa_reeve_frosler.jpg"
+    },
+    {
+      "name": "Innocent Maela",
+      "position": "def",
+      "price": 50,
+      "image": "south_africa_innocent_maela.jpg"
+    },
+    {
+      "name": "Teboho Mokoena",
+      "position": "mid",
+      "price": 65,
+      "image": "south_africa_teboho_mokoena.jpg"
+    },
+    {
+      "name": "Ethan Ngoura",
+      "position": "mid",
+      "price": 52,
+      "image": "south_africa_ethan_ngoura.jpg"
+    },
+    {
+      "name": "Themba Zwane",
+      "position": "mid",
+      "price": 58,
+      "image": "south_africa_themba_zwane.jpg"
+    },
+    {
+      "name": "Yusuf Maart",
+      "position": "mid",
+      "price": 55,
+      "image": "south_africa_yusuf_maart.jpg"
+    },
+    {
+      "name": "Keagan Dolly",
+      "position": "mid",
+      "price": 60,
+      "image": "south_africa_keagan_dolly.jpg"
+    },
+    {
+      "name": "Percy Tau",
+      "position": "fwd",
+      "price": 70,
+      "image": "south_africa_percy_tau.jpg"
+    },
+    {
+      "name": "Lyle Foster",
+      "position": "fwd",
+      "price": 68,
+      "image": "south_africa_lyle_foster.jpg"
+    },
+    {
+      "name": "Evidence Makgopa",
+      "position": "fwd",
+      "price": 60,
+      "image": "south_africa_evidence_makgopa.jpg"
+    },
+    {
+      "name": "Bongokuhle Hlongwane",
+      "position": "fwd",
+      "price": 55,
+      "image": "south_africa_bongokuhle_hlongwane.jpg"
+    }
+  ],
+  "Czech Republic": [
+    {
+      "name": "Jiri Pavlenka",
+      "position": "gk",
+      "price": 53,
+      "image": "czech_republic_jiri_pavlenka.jpg"
+    },
+    {
+      "name": "Tomas Vaclik",
+      "position": "gk",
+      "price": 50,
+      "image": "czech_republic_tomas_vaclik.jpg"
+    },
+    {
+      "name": "Tomas Holes",
+      "position": "def",
+      "price": 55,
+      "image": "czech_republic_tomas_holes.jpg"
+    },
+    {
+      "name": "Pavel Kaderabek",
+      "position": "def",
+      "price": 55,
+      "image": "czech_republic_pavel_kaderabek.jpg"
+    },
+    {
+      "name": "Ladislav Krejci",
+      "position": "def",
+      "price": 58,
+      "image": "czech_republic_ladislav_krejci.jpg"
+    },
+    {
+      "name": "Jakub Brabec",
+      "position": "def",
+      "price": 50,
+      "image": "czech_republic_jakub_brabec.jpg"
+    },
+    {
+      "name": "Tomas Soucek",
+      "position": "mid",
+      "price": 82,
+      "image": "czech_republic_tomas_soucek.jpg"
+    },
+    {
+      "name": "Vladimir Coufal",
+      "position": "mid",
+      "price": 60,
+      "image": "czech_republic_vladimir_coufal.jpg"
+    },
+    {
+      "name": "Lukas Provod",
+      "position": "mid",
+      "price": 55,
+      "image": "czech_republic_lukas_provod.jpg"
+    },
+    {
+      "name": "Jakub Jankto",
+      "position": "mid",
+      "price": 53,
+      "image": "czech_republic_jakub_jankto.jpg"
+    },
+    {
+      "name": "Alex Kral",
+      "position": "mid",
+      "price": 58,
+      "image": "czech_republic_alex_kral.jpg"
+    },
+    {
+      "name": "Patrik Schick",
+      "position": "fwd",
+      "price": 92,
+      "image": "czech_republic_patrik_schick.jpg"
+    },
+    {
+      "name": "Adam Hlozek",
+      "position": "fwd",
+      "price": 78,
+      "image": "czech_republic_adam_hlozek.jpg"
+    },
+    {
+      "name": "Tomas Chory",
+      "position": "fwd",
+      "price": 58,
+      "image": "czech_republic_tomas_chory.jpg"
+    },
+    {
+      "name": "Jan Kuchta",
+      "position": "fwd",
+      "price": 55,
+      "image": "czech_republic_jan_kuchta.jpg"
+    }
+  ],
+  "Canada": [
+    {
+      "name": "Maxime Crepeau",
+      "position": "gk",
+      "price": 55,
+      "image": "canada_maxime_crepeau.jpg"
+    },
+    {
+      "name": "James Pantemis",
+      "position": "gk",
+      "price": 50,
+      "image": "canada_james_pantemis.jpg"
+    },
+    {
+      "name": "Alphonso Davies",
+      "position": "def",
+      "price": 110,
+      "image": "canada_alphonso_davies.jpg"
+    },
+    {
+      "name": "Alistair Johnston",
+      "position": "def",
+      "price": 65,
+      "image": "canada_alistair_johnston.jpg"
+    },
+    {
+      "name": "Steven Vitoria",
+      "position": "def",
+      "price": 52,
+      "image": "canada_steven_vitoria.jpg"
+    },
+    {
+      "name": "Derek Cornelius",
+      "position": "def",
+      "price": 53,
+      "image": "canada_derek_cornelius.jpg"
+    },
+    {
+      "name": "Tajon Buchanan",
+      "position": "mid",
+      "price": 78,
+      "image": "canada_tajon_buchanan.jpg"
+    },
+    {
+      "name": "Jonathan Osorio",
+      "position": "mid",
+      "price": 63,
+      "image": "canada_jonathan_osorio.jpg"
+    },
+    {
+      "name": "Stephen Eustaquio",
+      "position": "mid",
+      "price": 70,
+      "image": "canada_stephen_eustaquio.jpg"
+    },
+    {
+      "name": "Samuel Piette",
+      "position": "mid",
+      "price": 52,
+      "image": "canada_samuel_piette.jpg"
+    },
+    {
+      "name": "Ismail Kone",
+      "position": "mid",
+      "price": 68,
+      "image": "canada_ismail_kone.jpg"
+    },
+    {
+      "name": "Jonathan David",
+      "position": "fwd",
+      "price": 105,
+      "image": "canada_jonathan_david.jpg"
+    },
+    {
+      "name": "Cyle Larin",
+      "position": "fwd",
+      "price": 72,
+      "image": "canada_cyle_larin.jpg"
+    },
+    {
+      "name": "Lucas Cavallini",
+      "position": "fwd",
+      "price": 55,
+      "image": "canada_lucas_cavallini.jpg"
+    },
+    {
+      "name": "Liam Millar",
+      "position": "fwd",
+      "price": 53,
+      "image": "canada_liam_millar.jpg"
+    }
+  ],
+  "Switzerland": [
+    {
+      "name": "Gregor Kobel",
+      "position": "gk",
+      "price": 65,
+      "image": "switzerland_gregor_kobel.jpg"
+    },
+    {
+      "name": "Jonas Omlin",
+      "position": "gk",
+      "price": 53,
+      "image": "switzerland_jonas_omlin.jpg"
+    },
+    {
+      "name": "Manuel Akanji",
+      "position": "def",
+      "price": 80,
+      "image": "switzerland_manuel_akanji.jpg"
+    },
+    {
+      "name": "Ricardo Rodriguez",
+      "position": "def",
+      "price": 58,
+      "image": "switzerland_ricardo_rodriguez.jpg"
+    },
+    {
+      "name": "Nico Elvedi",
+      "position": "def",
+      "price": 60,
+      "image": "switzerland_nico_elvedi.jpg"
+    },
+    {
+      "name": "Kevin Mbabu",
+      "position": "def",
+      "price": 53,
+      "image": "switzerland_kevin_mbabu.jpg"
+    },
+    {
+      "name": "Granit Xhaka",
+      "position": "mid",
+      "price": 85,
+      "image": "switzerland_granit_xhaka.jpg"
+    },
+    {
+      "name": "Remo Freuler",
+      "position": "mid",
+      "price": 65,
+      "image": "switzerland_remo_freuler.jpg"
+    },
+    {
+      "name": "Denis Zakaria",
+      "position": "mid",
+      "price": 68,
+      "image": "switzerland_denis_zakaria.jpg"
+    },
+    {
+      "name": "Fabian Frei",
+      "position": "mid",
+      "price": 52,
+      "image": "switzerland_fabian_frei.jpg"
+    },
+    {
+      "name": "Xherdan Shaqiri",
+      "position": "mid",
+      "price": 63,
+      "image": "switzerland_xherdan_shaqiri.jpg"
+    },
+    {
+      "name": "Breel Embolo",
+      "position": "fwd",
+      "price": 78,
+      "image": "switzerland_breel_embolo.jpg"
+    },
+    {
+      "name": "Haris Seferovic",
+      "position": "fwd",
+      "price": 60,
+      "image": "switzerland_haris_seferovic.jpg"
+    },
+    {
+      "name": "Noah Okafor",
+      "position": "fwd",
+      "price": 70,
+      "image": "switzerland_noah_okafor.jpg"
+    },
+    {
+      "name": "Zeki Amdouni",
+      "position": "fwd",
+      "price": 65,
+      "image": "switzerland_zeki_amdouni.jpg"
+    }
+  ],
+  "Qatar": [
+    {
+      "name": "Meshaal Barsham",
+      "position": "gk",
+      "price": 50,
+      "image": "qatar_meshaal_barsham.jpg"
+    },
+    {
+      "name": "Yousef Hassan",
+      "position": "gk",
+      "price": 50,
+      "image": "qatar_yousef_hassan.jpg"
+    },
+    {
+      "name": "Pedro Miguel",
+      "position": "def",
+      "price": 52,
+      "image": "qatar_pedro_miguel.jpg"
+    },
+    {
+      "name": "Bassam Al-Rawi",
+      "position": "def",
+      "price": 50,
+      "image": "qatar_bassam_alrawi.jpg"
+    },
+    {
+      "name": "Tarek Salman",
+      "position": "def",
+      "price": 50,
+      "image": "qatar_tarek_salman.jpg"
+    },
+    {
+      "name": "Homam Ahmed",
+      "position": "def",
+      "price": 50,
+      "image": "qatar_homam_ahmed.jpg"
+    },
+    {
+      "name": "Karim Boudiaf",
+      "position": "mid",
+      "price": 53,
+      "image": "qatar_karim_boudiaf.jpg"
+    },
+    {
+      "name": "Ali Asad",
+      "position": "mid",
+      "price": 50,
+      "image": "qatar_ali_asad.jpg"
+    },
+    {
+      "name": "Assim Madibo",
+      "position": "mid",
+      "price": 52,
+      "image": "qatar_assim_madibo.jpg"
+    },
+    {
+      "name": "Abdulaziz Hatem",
+      "position": "mid",
+      "price": 53,
+      "image": "qatar_abdulaziz_hatem.jpg"
+    },
+    {
+      "name": "Hassan Al-Haydos",
+      "position": "mid",
+      "price": 58,
+      "image": "qatar_hassan_alhaydos.jpg"
+    },
+    {
+      "name": "Akram Afif",
+      "position": "fwd",
+      "price": 72,
+      "image": "qatar_akram_afif.jpg"
+    },
+    {
+      "name": "Almoez Ali",
+      "position": "fwd",
+      "price": 68,
+      "image": "qatar_almoez_ali.jpg"
+    },
+    {
+      "name": "Mohammed Muntari",
+      "position": "fwd",
+      "price": 55,
+      "image": "qatar_mohammed_muntari.jpg"
+    },
+    {
+      "name": "Ismail Mohamad",
+      "position": "fwd",
+      "price": 50,
+      "image": "qatar_ismail_mohamad.jpg"
+    }
+  ],
+  "Bosnia": [
+    {
+      "name": "Nikola Vasilj",
+      "position": "gk",
+      "price": 53,
+      "image": "bosnia_nikola_vasilj.jpg"
+    },
+    {
+      "name": "Ibrahim Sehic",
+      "position": "gk",
+      "price": 50,
+      "image": "bosnia_ibrahim_sehic.jpg"
+    },
+    {
+      "name": "Sead Kolasinac",
+      "position": "def",
+      "price": 63,
+      "image": "bosnia_sead_kolasinac.jpg"
+    },
+    {
+      "name": "Anel Ahmedhodzic",
+      "position": "def",
+      "price": 65,
+      "image": "bosnia_anel_ahmedhodzic.jpg"
+    },
+    {
+      "name": "Ermin Bicakcic",
+      "position": "def",
+      "price": 50,
+      "image": "bosnia_ermin_bicakcic.jpg"
+    },
+    {
+      "name": "Amir Hadziahmetovic",
+      "position": "def",
+      "price": 52,
+      "image": "bosnia_amir_hadziahmetovic.jpg"
+    },
+    {
+      "name": "Miralem Pjanic",
+      "position": "mid",
+      "price": 65,
+      "image": "bosnia_miralem_pjanic.jpg"
+    },
+    {
+      "name": "Haris Hajradinovic",
+      "position": "mid",
+      "price": 55,
+      "image": "bosnia_haris_hajradinovic.jpg"
+    },
+    {
+      "name": "Amer Gojak",
+      "position": "mid",
+      "price": 53,
+      "image": "bosnia_amer_gojak.jpg"
+    },
+    {
+      "name": "Sasa Lukic",
+      "position": "mid",
+      "price": 60,
+      "image": "bosnia_sasa_lukic.jpg"
+    },
+    {
+      "name": "Armin Hodzic",
+      "position": "mid",
+      "price": 52,
+      "image": "bosnia_armin_hodzic.jpg"
+    },
+    {
+      "name": "Edin Dzeko",
+      "position": "fwd",
+      "price": 72,
+      "image": "bosnia_edin_dzeko.jpg"
+    },
+    {
+      "name": "Ermedin Demirovic",
+      "position": "fwd",
+      "price": 78,
+      "image": "bosnia_ermedin_demirovic.jpg"
+    },
+    {
+      "name": "Anel Husic",
+      "position": "fwd",
+      "price": 53,
+      "image": "bosnia_anel_husic.jpg"
+    },
+    {
+      "name": "Vedat Muriqi",
+      "position": "fwd",
+      "price": 68,
+      "image": "bosnia_vedat_muriqi.jpg"
+    }
+  ]
+}
